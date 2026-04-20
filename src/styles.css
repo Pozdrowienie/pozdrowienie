@@ -65,6 +65,13 @@
   --font-serif: "Fraunces", Georgia, serif;
   --color-surface: var(--surface);
   --color-surface-soft: var(--surface-soft);
+  --color-brand-navy: var(--brand-navy);
+  --color-mind: var(--mind);
+  --color-mind-foreground: var(--mind-foreground);
+  --color-mind-soft: var(--mind-soft);
+  --color-body: var(--body);
+  --color-body-foreground: var(--body-foreground);
+  --color-body-soft: var(--body-soft);
 }
 
 :root {
@@ -85,6 +92,13 @@
   --muted-foreground: oklch(0.5 0.03 200);
   --accent: oklch(0.7 0.1 195);
   --accent-foreground: oklch(0.99 0.005 180);
+  --brand-navy: oklch(0.28 0.08 250);
+  --mind: oklch(0.52 0.09 195);
+  --mind-foreground: oklch(0.99 0.005 180);
+  --mind-soft: oklch(0.95 0.025 195);
+  --body: oklch(0.62 0.16 15);
+  --body-foreground: oklch(0.99 0.005 15);
+  --body-soft: oklch(0.95 0.03 15);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
   --border: oklch(0.929 0.013 255.508);

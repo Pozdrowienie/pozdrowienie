@@ -1,20 +1,20 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
-import { specialists } from "@/data/specialists";
+import { mindSpecialists, bodySpecialists } from "@/data/specialists";
 import hero from "@/assets/hero.jpg";
-import { Heart, ShieldCheck, Sparkles } from "lucide-react";
+import { Brain, Flower2, Heart, ShieldCheck, Sparkles } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "PoZdrowienie — Terapia Społeczność Rozwój" },
+      { title: "PoZdrowienie — Terapia · Społeczność · Rozwój" },
       {
         name: "description",
         content:
-          "PoZdrowienie w Bolesławcu — holistyczne podejście do zdrowia psychicznego. Terapia, rozwój i społeczność.",
+          "PoZdrowienie w Bolesławcu — holistyczne podejście do zdrowia psychicznego i fizycznego. Terapia, joga, taniec, rozwój.",
       },
       { property: "og:title", content: "PoZdrowienie" },
-      { property: "og:description", content: "PoZdrowienie — Terapia Społeczność Rozwój" },
+      { property: "og:description", content: "Terapia · Społeczność · Rozwój — Bolesławiec" },
     ],
   }),
   component: Index,
@@ -30,15 +30,17 @@ function Index() {
             <span className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-secondary-foreground">
               <Sparkles className="h-3.5 w-3.5" /> ZDROWIE PSYCHICZNE | BOLESŁAWIEC
             </span>
-            <h1 className="mt-6 text-4xl font-semibold leading-[1.1] text-foreground md:text-5xl lg:text-6xl">
-              PoZdrowienie <br />
-              <span className="text-primary">Terapia Społecznośc Rozwój</span>
+            <h1 className="mt-6 font-serif text-5xl font-semibold leading-[1.05] text-brand-navy md:text-6xl lg:text-7xl">
+              PoZdrowienie
             </h1>
+            <p className="mt-3 font-serif text-2xl leading-tight text-brand-navy/85 md:text-3xl">
+              Terapia · Społeczność · Rozwój
+            </p>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
               PoZdrowienie w Bolesławcu jest miejscem, które powstało z potrzeby równowagi i
-              holistycznego spojrzenia na zdrowie. W PoZdrowieniu dbamy o przestrzeń ciała i
-              umysłu, tutaj ruch spotyka się ze spokojem, a umysł otrzymuje profesjonalne
-              wsparcie w drodze do równowagi.
+              holistycznego spojrzenia na zdrowie. Dbamy o przestrzeń ciała i umysłu —
+              ruch spotyka się ze spokojem, a umysł otrzymuje profesjonalne wsparcie w
+              drodze do równowagi.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg" className="rounded-full px-7">
@@ -51,10 +53,10 @@ function Index() {
           </div>
 
           <div className="relative">
-            <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-br from-primary/20 to-accent/10 blur-2xl" />
+            <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-br from-brand-navy/15 to-body/15 blur-2xl" />
             <img
               src={hero}
-              alt="Calm therapy office"
+              alt="Przestrzeń PoZdrowienia"
               width={1536}
               height={1024}
               className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-xl"
@@ -63,16 +65,74 @@ function Index() {
         </div>
       </section>
 
-      {/* Values */}
+      {/* Dwie przestrzenie */}
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="text-center">
+          <span className="text-xs font-medium uppercase tracking-[0.25em] text-brand-navy">
+            DWIE PRZESTRZENIE
+          </span>
+          <h2 className="mt-3 font-serif text-3xl font-semibold md:text-4xl">
+            Umysł i ciało w jednej harmonii
+          </h2>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <Link
+            to="/umysl"
+            className="group relative overflow-hidden rounded-3xl border border-mind/20 bg-mind-soft p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl md:p-10"
+          >
+            <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-mind/10 blur-2xl transition-opacity group-hover:opacity-80" />
+            <div className="relative">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-mind text-mind-foreground shadow-md">
+                <Brain className="h-7 w-7" />
+              </div>
+              <h3 className="mt-6 font-serif text-2xl font-semibold text-mind md:text-3xl">
+                Przestrzeń umysłu
+              </h3>
+              <p className="mt-3 text-muted-foreground">
+                Psycholog, psychiatra, psychoterapia i seksuologia. Profesjonalne wsparcie
+                w drodze do równowagi emocjonalnej i zdrowia psychicznego.
+              </p>
+              <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-mind group-hover:underline">
+                Poznaj specjalistów →
+              </span>
+            </div>
+          </Link>
+
+          <Link
+            to="/cialo"
+            className="group relative overflow-hidden rounded-3xl border border-body/25 bg-body-soft p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl md:p-10"
+          >
+            <div className="absolute -right-8 -top-8 h-40 w-40 rounded-full bg-body/15 blur-2xl transition-opacity group-hover:opacity-80" />
+            <div className="relative">
+              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-body text-body-foreground shadow-md">
+                <Flower2 className="h-7 w-7" />
+              </div>
+              <h3 className="mt-6 font-serif text-2xl font-semibold text-body md:text-3xl">
+                Przestrzeń ciała
+              </h3>
+              <p className="mt-3 text-muted-foreground">
+                Hatha Joga i Terapia Tańcem i Ruchem. Praca z ciałem, oddechem i ekspresją
+                — droga do uważności, ugruntowania i radości z ruchu.
+              </p>
+              <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-body group-hover:underline">
+                Zajęcia i specjaliści →
+              </span>
+            </div>
+          </Link>
+        </div>
+      </section>
+
+      {/* Wartości */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-6 md:grid-cols-3">
           {[
-            { icon: Heart, title: "Empathetic Care", text: "Every visit begins with listening — without judgment, at your pace." },
-            { icon: ShieldCheck, title: "Confidential & Safe", text: "A discreet space governed by medical ethics and privacy." },
-            { icon: Sparkles, title: "Evidence-Based", text: "Treatments grounded in current clinical research and practice." },
+            { icon: Heart, title: "Empatia", text: "Każda wizyta zaczyna się od wysłuchania — bez oceniania, w Twoim tempie." },
+            { icon: ShieldCheck, title: "Dyskrecja i bezpieczeństwo", text: "Przestrzeń oparta na etyce zawodowej i poszanowaniu prywatności." },
+            { icon: Sparkles, title: "Holistycznie", text: "Łączymy profesjonalne metody pracy z umysłem i ciałem." },
           ].map(({ icon: Icon, title, text }) => (
             <div key={title} className="rounded-2xl border border-border/60 bg-surface p-6 shadow-sm">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-navy/10 text-brand-navy">
                 <Icon className="h-6 w-6" />
               </div>
               <h3 className="mt-4 text-lg font-semibold">{title}</h3>
@@ -82,60 +142,98 @@ function Index() {
         </div>
       </section>
 
-      {/* Specialists */}
+      {/* Specjaliści */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="text-center">
-          <span className="text-xs font-medium uppercase tracking-[0.25em] text-primary">
+          <span className="text-xs font-medium uppercase tracking-[0.25em] text-brand-navy">
             NASZ TEAM
           </span>
-          <h2 className="mt-3 text-3xl font-semibold md:text-4xl">Specjaliści PoZdrowienia</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            
-          </p>
+          <h2 className="mt-3 font-serif text-3xl font-semibold md:text-4xl">
+            Specjaliści PoZdrowienia
+          </h2>
         </div>
 
-        <div className="mt-14 grid grid-cols-2 gap-x-6 gap-y-12 md:grid-cols-4">
-          {specialists.map((s) => (
-            <Link
-              key={s.slug}
-              to="/specialists/$slug"
-              params={{ slug: s.slug }}
-              className="group flex flex-col items-center text-center"
-            >
-              <div className="relative">
-                <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-primary/30 to-accent/10 opacity-0 blur-xl transition-opacity group-hover:opacity-100" />
-                <div className="relative h-44 w-44 overflow-hidden rounded-full border-4 border-surface shadow-lg ring-1 ring-border/60 transition-transform group-hover:-translate-y-1">
-                  <img
-                    src={s.image}
-                    alt={s.name}
-                    width={768}
-                    height={768}
-                    loading="lazy"
-                    className="h-full w-full object-cover"
-                  />
-                </div>
-              </div>
-              <p className="mt-5 text-xs font-medium uppercase tracking-wider text-primary">
-                {s.role}
-              </p>
-              <h3 className="mt-1 text-lg font-semibold">{s.name}</h3>
-            </Link>
-          ))}
+        {/* Umysł */}
+        <div className="mt-12">
+          <div className="flex items-center gap-3">
+            <span className="h-2 w-2 rounded-full bg-mind" />
+            <h3 className="font-serif text-xl font-semibold text-mind">Przestrzeń umysłu</h3>
+          </div>
+          <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-4">
+            {mindSpecialists.map((s) => (
+              <SpecialistCard key={s.slug} s={s} accent="mind" />
+            ))}
+          </div>
+        </div>
+
+        {/* Ciało */}
+        <div className="mt-16">
+          <div className="flex items-center gap-3">
+            <span className="h-2 w-2 rounded-full bg-body" />
+            <h3 className="font-serif text-xl font-semibold text-body">Przestrzeń ciała</h3>
+          </div>
+          <div className="mt-6 grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-4">
+            {bodySpecialists.map((s) => (
+              <SpecialistCard key={s.slug} s={s} accent="body" />
+            ))}
+          </div>
         </div>
       </section>
 
       {/* CTA */}
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <div className="overflow-hidden rounded-3xl bg-primary px-8 py-14 text-center text-primary-foreground shadow-xl md:px-16">
-          <h2 className="text-3xl font-semibold md:text-4xl">Umów wizytę</h2>
+        <div className="overflow-hidden rounded-3xl bg-brand-navy px-8 py-14 text-center text-primary-foreground shadow-xl md:px-16">
+          <h2 className="font-serif text-3xl font-semibold md:text-4xl">Umów wizytę</h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/85">
-            
+            Skontaktuj się z nami — odpowiemy na pytania i pomożemy wybrać odpowiedniego specjalistę.
           </p>
           <Button asChild size="lg" variant="secondary" className="mt-8 rounded-full px-8">
-            <Link to="/contact">Book Appointment</Link>
+            <Link to="/contact">Umów wizytę</Link>
           </Button>
         </div>
       </section>
     </>
+  );
+}
+
+function SpecialistCard({
+  s,
+  accent,
+}: {
+  s: { slug: string; name: string; role: string; image: string };
+  accent: "mind" | "body";
+}) {
+  const ringClass = accent === "mind" ? "ring-mind/30" : "ring-body/40";
+  const roleClass = accent === "mind" ? "text-mind" : "text-body";
+  return (
+    <Link
+      to="/specialists/$slug"
+      params={{ slug: s.slug }}
+      className="group flex flex-col items-center text-center"
+    >
+      <div className="relative">
+        <div
+          className={`absolute -inset-2 rounded-full opacity-0 blur-xl transition-opacity group-hover:opacity-100 ${
+            accent === "mind" ? "bg-mind/30" : "bg-body/30"
+          }`}
+        />
+        <div
+          className={`relative h-36 w-36 overflow-hidden rounded-full border-4 border-surface shadow-lg ring-2 transition-transform group-hover:-translate-y-1 ${ringClass}`}
+        >
+          <img
+            src={s.image}
+            alt={s.name}
+            width={768}
+            height={768}
+            loading="lazy"
+            className="h-full w-full object-cover"
+          />
+        </div>
+      </div>
+      <p className={`mt-4 text-xs font-medium uppercase tracking-wider ${roleClass}`}>
+        {s.role}
+      </p>
+      <h3 className="mt-1 font-serif text-base font-semibold">{s.name}</h3>
+    </Link>
   );
 }

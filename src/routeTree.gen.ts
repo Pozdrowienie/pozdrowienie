@@ -9,13 +9,20 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as UmyslRouteImport } from './routes/umysl'
 import { Route as SpecialistsRouteImport } from './routes/specialists'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CialoRouteImport } from './routes/cialo'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SpecialistsSlugRouteImport } from './routes/specialists.$slug'
 
+const UmyslRoute = UmyslRouteImport.update({
+  id: '/umysl',
+  path: '/umysl',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SpecialistsRoute = SpecialistsRouteImport.update({
   id: '/specialists',
   path: '/specialists',
@@ -29,6 +36,11 @@ const PricingRoute = PricingRouteImport.update({
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CialoRoute = CialoRouteImport.update({
+  id: '/cialo',
+  path: '/cialo',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -50,26 +62,32 @@ const SpecialistsSlugRoute = SpecialistsSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/cialo': typeof CialoRoute
   '/contact': typeof ContactRoute
   '/pricing': typeof PricingRoute
   '/specialists': typeof SpecialistsRouteWithChildren
+  '/umysl': typeof UmyslRoute
   '/specialists/$slug': typeof SpecialistsSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/cialo': typeof CialoRoute
   '/contact': typeof ContactRoute
   '/pricing': typeof PricingRoute
   '/specialists': typeof SpecialistsRouteWithChildren
+  '/umysl': typeof UmyslRoute
   '/specialists/$slug': typeof SpecialistsSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/cialo': typeof CialoRoute
   '/contact': typeof ContactRoute
   '/pricing': typeof PricingRoute
   '/specialists': typeof SpecialistsRouteWithChildren
+  '/umysl': typeof UmyslRoute
   '/specialists/$slug': typeof SpecialistsSlugRoute
 }
 export interface FileRouteTypes {
@@ -77,38 +95,53 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/cialo'
     | '/contact'
     | '/pricing'
     | '/specialists'
+    | '/umysl'
     | '/specialists/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
+    | '/cialo'
     | '/contact'
     | '/pricing'
     | '/specialists'
+    | '/umysl'
     | '/specialists/$slug'
   id:
     | '__root__'
     | '/'
     | '/about'
+    | '/cialo'
     | '/contact'
     | '/pricing'
     | '/specialists'
+    | '/umysl'
     | '/specialists/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  CialoRoute: typeof CialoRoute
   ContactRoute: typeof ContactRoute
   PricingRoute: typeof PricingRoute
   SpecialistsRoute: typeof SpecialistsRouteWithChildren
+  UmyslRoute: typeof UmyslRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/umysl': {
+      id: '/umysl'
+      path: '/umysl'
+      fullPath: '/umysl'
+      preLoaderRoute: typeof UmyslRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/specialists': {
       id: '/specialists'
       path: '/specialists'
@@ -128,6 +161,13 @@ declare module '@tanstack/react-router' {
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cialo': {
+      id: '/cialo'
+      path: '/cialo'
+      fullPath: '/cialo'
+      preLoaderRoute: typeof CialoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -169,9 +209,11 @@ const SpecialistsRouteWithChildren = SpecialistsRoute._addFileChildren(
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  CialoRoute: CialoRoute,
   ContactRoute: ContactRoute,
   PricingRoute: PricingRoute,
   SpecialistsRoute: SpecialistsRouteWithChildren,
+  UmyslRoute: UmyslRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
