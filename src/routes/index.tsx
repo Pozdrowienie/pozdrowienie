@@ -7,14 +7,14 @@ import { Heart, ShieldCheck, Sparkles } from "lucide-react";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Gabinet Zdrowia Psychicznego — Anna Antoniewicz" },
+      { title: "PoZdrowienie — Terapia Społeczność Rozwój" },
       {
         name: "description",
         content:
-          "Compassionate mental health care in Bolesławiec. Psychiatry, psychology, psychotherapy and sexology in a warm, professional environment.",
+          "PoZdrowienie w Bolesławcu — holistyczne podejście do zdrowia psychicznego. Terapia, rozwój i społeczność.",
       },
-      { property: "og:title", content: "Gabinet Zdrowia Psychicznego — Anna Antoniewicz" },
-      { property: "og:description", content: "Take care of your mental health in a supportive environment." },
+      { property: "og:title", content: "PoZdrowienie" },
+      { property: "og:description", content: "PoZdrowienie — Terapia Społeczność Rozwój" },
     ],
   }),
   component: Index,
@@ -28,22 +28,24 @@ function Index() {
         <div className="mx-auto grid max-w-6xl gap-12 px-6 pb-20 pt-16 lg:grid-cols-2 lg:items-center lg:pt-24">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-secondary-foreground">
-              <Sparkles className="h-3.5 w-3.5" /> Bolesławiec, Poland
+              <Sparkles className="h-3.5 w-3.5" /> ZDROWIE PSYCHICZNE | BOLESŁAWIEC
             </span>
             <h1 className="mt-6 text-4xl font-semibold leading-[1.1] text-foreground md:text-5xl lg:text-6xl">
-              Take Care of Your Mental Health in a{" "}
-              <span className="text-primary">Supportive Environment</span>
+              PoZdrowienie <br />
+              <span className="text-primary">Terapia Społecznośc Rozwój</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Our team of psychiatrists, psychologists and therapists offers professional,
-              empathetic care tailored to every step of your journey toward wellbeing.
+              PoZdrowienie w Bolesławcu jest miejscem, które powstało z potrzeby równowagi i
+              holistycznego spojrzenia na zdrowie. W PoZdrowieniu dbamy o przestrzeń ciała i
+              umysłu, tutaj ruch spotyka się ze spokojem, a umysł otrzymuje profesjonalne
+              wsparcie w drodze do równowagi.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button asChild size="lg" className="rounded-full px-7">
-                <Link to="/specialists">Meet Our Team</Link>
+                <Link to="/specialists">Poznaj specjalistów</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-full px-7">
-                <Link to="/contact">Book Appointment</Link>
+                <Link to="/contact">Kontakt</Link>
               </Button>
             </div>
           </div>
