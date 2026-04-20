@@ -65,6 +65,13 @@
   --font-serif: "Fraunces", Georgia, serif;
   --color-surface: var(--surface);
   --color-surface-soft: var(--surface-soft);
+  --color-brand-navy: var(--brand-navy);
+  --color-mind: var(--mind);
+  --color-mind-foreground: var(--mind-foreground);
+  --color-mind-soft: var(--mind-soft);
+  --color-body: var(--body);
+  --color-body-foreground: var(--body-foreground);
+  --color-body-soft: var(--body-soft);
 }
 
 :root {
