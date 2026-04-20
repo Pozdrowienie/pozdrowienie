@@ -24,10 +24,10 @@ export function SiteHeader() {
           />
           <span className="hidden flex-col leading-tight sm:flex">
             <span className="font-serif text-sm font-semibold text-primary">
-              Gabinet Zdrowia Psychicznego
+              PoZdrowienie
             </span>
             <span className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
-              Anna Antoniewicz
+              TERAPIA SPOŁECZNOŚĆ ROZWÓJ
             </span>
           </span>
         </Link>
@@ -47,7 +47,7 @@ export function SiteHeader() {
         </nav>
 
         <Button asChild className="rounded-full px-5 shadow-sm">
-          <Link to="/contact">Book Appointment</Link>
+          <Link to="/contact">Umów wizytę</Link>
         </Button>
       </div>
     </header>
