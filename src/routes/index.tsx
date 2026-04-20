@@ -86,11 +86,11 @@ function Index() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="text-center">
           <span className="text-xs font-medium uppercase tracking-[0.25em] text-primary">
-            Our Team
+            NASZ TEAM
           </span>
-          <h2 className="mt-3 text-3xl font-semibold md:text-4xl">Our Specialists</h2>
+          <h2 className="mt-3 text-3xl font-semibold md:text-4xl">Specjaliści PoZdrowienia</h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Click on a specialist to learn more about their approach, specializations and pricing.
+            
           </p>
         </div>
 
@@ -127,9 +127,9 @@ function Index() {
       {/* CTA */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="overflow-hidden rounded-3xl bg-primary px-8 py-14 text-center text-primary-foreground shadow-xl md:px-16">
-          <h2 className="text-3xl font-semibold md:text-4xl">Ready to take the first step?</h2>
+          <h2 className="text-3xl font-semibold md:text-4xl">Umów wizytę</h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/85">
-            Book an appointment with one of our specialists today. We're here to listen.
+            
           </p>
           <Button asChild size="lg" variant="secondary" className="mt-8 rounded-full px-8">
             <Link to="/contact">Book Appointment</Link>
