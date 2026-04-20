@@ -4,10 +4,11 @@ import { Button } from "@/components/ui/button";
 
 const nav = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "About Us" },
-  { to: "/specialists", label: "Specialists" },
-  { to: "/pricing", label: "Pricing" },
-  { to: "/contact", label: "Contact" },
+  { to: "/umysl", label: "Przestrzeń umysłu" },
+  { to: "/cialo", label: "Przestrzeń ciała" },
+  { to: "/specialists", label: "Specjaliści" },
+  { to: "/pricing", label: "Cennik" },
+  { to: "/contact", label: "Kontakt" },
 ] as const;
 
 export function SiteHeader() {
@@ -17,28 +18,28 @@ export function SiteHeader() {
         <Link to="/" className="flex items-center gap-3">
           <img
             src={logo}
-            alt="Gabinet Zdrowia Psychicznego Anna Antoniewicz"
+            alt="PoZdrowienie"
             width={56}
             height={56}
             className="h-14 w-auto"
           />
           <span className="hidden flex-col leading-tight sm:flex">
-            <span className="font-serif text-sm font-semibold text-primary">
+            <span className="font-serif text-xl font-semibold text-brand-navy">
               PoZdrowienie
             </span>
-            <span className="text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
-              TERAPIA SPOŁECZNOŚĆ ROZWÓJ
+            <span className="text-[10px] uppercase tracking-[0.22em] text-brand-navy/70">
+              Terapia · Społeczność · Rozwój
             </span>
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-6 lg:flex">
           {nav.map((item) => (
             <Link
               key={item.to}
               to={item.to}
-              className="text-sm font-medium text-foreground/75 transition-colors hover:text-primary"
-              activeProps={{ className: "text-primary" }}
+              className="text-sm font-medium text-foreground/75 transition-colors hover:text-brand-navy"
+              activeProps={{ className: "text-brand-navy font-semibold" }}
               activeOptions={{ exact: item.to === "/" }}
             >
               {item.label}
