@@ -2,10 +2,10 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { getSpecialist } from "@/data/specialists";
+import { getSpecialist, type Specialist } from "@/data/specialists";
 
 export const Route = createFileRoute("/specialists/$slug")({
-  loader: ({ params }) => {
+  loader: ({ params }): { specialist: Specialist } => {
     const specialist = getSpecialist(params.slug);
     if (!specialist) throw notFound();
     return { specialist };
