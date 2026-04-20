@@ -8,26 +8,26 @@ export function SiteFooter() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <h3 className="font-serif text-lg font-semibold text-primary">
-              Contact Details
+              Kontakt
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 text-primary" />
-                ul. Kubika 4, 59-700 Bolesławiec, Poland
+                ul. Jeleniogórska 5, 59-700 Bolesławiec
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-primary" /> +48 600 000 000
+                <Phone className="h-4 w-4 text-primary" />
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                kontakt@gabinet-antoniewicz.pl
+                
               </li>
             </ul>
           </div>
 
           <div>
             <h3 className="font-serif text-lg font-semibold text-primary">
-              Quick Links
+              Linki
             </h3>
             <ul className="mt-4 space-y-2 text-sm">
               <li><Link to="/" className="text-muted-foreground hover:text-primary">Home</Link></li>
@@ -40,14 +40,14 @@ export function SiteFooter() {
 
           <div>
             <h3 className="font-serif text-lg font-semibold text-primary">
-              Opening Hours
+              Godziny otwarcia
             </h3>
             <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
-                <Clock className="h-4 w-4 text-primary" /> Mon – Fri: 9:00 – 19:00
+                <Clock className="h-4 w-4 text-primary" /> Pon– Pt: 9:00 – 20:00
               </li>
-              <li className="ml-6">Sat: 9:00 – 14:00</li>
-              <li className="ml-6">Sun: Closed</li>
+              <li className="ml-6"></li>
+              <li className="ml-6"></li>
             </ul>
           </div>
         </div>
