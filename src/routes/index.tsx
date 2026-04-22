@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { mindSpecialists, bodySpecialists } from "@/data/specialists";
-import hero from "@/assets/hero.jpg";
+import { BrandHero } from "@/components/brand-hero";
 import { Brain, Flower2, Heart, ShieldCheck, Sparkles } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -24,44 +24,27 @@ function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="mx-auto grid max-w-6xl gap-12 px-6 pb-20 pt-16 lg:grid-cols-2 lg:items-center lg:pt-24">
-          <div>
-            <span className="inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-secondary-foreground">
-              <Sparkles className="h-3.5 w-3.5" /> ZDROWIE PSYCHICZNE | BOLESŁAWIEC
-            </span>
-            <h1 className="mt-6 font-serif text-5xl font-semibold leading-[1.05] text-brand-navy md:text-6xl lg:text-7xl">
-              PoZdrowienie
-            </h1>
-            <p className="mt-3 font-serif text-2xl leading-tight text-brand-navy/85 md:text-3xl">
-              Terapia · Społeczność · Rozwój
-            </p>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              PoZdrowienie w Bolesławcu jest miejscem, które powstało z potrzeby równowagi i
-              holistycznego spojrzenia na zdrowie. Dbamy o przestrzeń ciała i umysłu —
-              ruch spotyka się ze spokojem, a umysł otrzymuje profesjonalne wsparcie w
-              drodze do równowagi.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild size="lg" className="rounded-full px-7">
-                <Link to="/specialists">Poznaj specjalistów</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="rounded-full px-7">
-                <Link to="/contact">Kontakt</Link>
-              </Button>
-            </div>
-          </div>
+      <BrandHero
+        eyebrow="Zdrowie psychiczne | Bolesławiec"
+        title="PoZdrowienie"
+        subtitle="Terapia · Społeczność · Rozwój"
+      />
 
-          <div className="relative">
-            <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-br from-brand-navy/15 to-body/15 blur-2xl" />
-            <img
-              src={hero}
-              alt="Przestrzeń PoZdrowienia"
-              width={1536}
-              height={1024}
-              className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-xl"
-            />
-          </div>
+      {/* Intro */}
+      <section className="mx-auto max-w-4xl px-6 py-16 text-center">
+        <p className="text-lg leading-relaxed text-muted-foreground">
+          PoZdrowienie w Bolesławcu jest miejscem, które powstało z potrzeby równowagi i
+          holistycznego spojrzenia na zdrowie. Dbamy o przestrzeń ciała i umysłu — ruch
+          spotyka się ze spokojem, a umysł otrzymuje profesjonalne wsparcie w drodze do
+          równowagi.
+        </p>
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <Button asChild size="lg" className="rounded-full px-7">
+            <Link to="/specialists">Poznaj specjalistów</Link>
+          </Button>
+          <Button asChild size="lg" variant="outline" className="rounded-full px-7">
+            <Link to="/contact">Kontakt</Link>
+          </Button>
         </div>
       </section>
 

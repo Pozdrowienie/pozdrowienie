@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { mindSpecialists, bodySpecialists, type Specialist } from "@/data/specialists";
+import { BrandWatermark } from "@/components/brand-watermark";
 import { Brain, Flower2 } from "lucide-react";
 
 export const Route = createFileRoute("/specialists")({
@@ -23,8 +24,9 @@ export const Route = createFileRoute("/specialists")({
 
 function SpecialistsPage() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20">
-      <div className="text-center">
+    <section className="relative mx-auto max-w-6xl px-6 py-20">
+      <BrandWatermark position="bottom-right" size={500} opacity={0.06} />
+      <div className="relative text-center">
         <span className="text-xs font-medium uppercase tracking-[0.25em] text-brand-navy">
           NASZ TEAM
         </span>

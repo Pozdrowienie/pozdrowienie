@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { bodySpecialists } from "@/data/specialists";
+import { BrandWatermark } from "@/components/brand-watermark";
 import { Flower2 } from "lucide-react";
 
 export const Route = createFileRoute("/cialo")({
@@ -39,8 +40,9 @@ function BodyPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid gap-8 md:grid-cols-2">
+      <section className="relative mx-auto max-w-6xl px-6 py-16">
+        <BrandWatermark position="bottom-right" size={440} opacity={0.06} />
+        <div className="relative grid gap-8 md:grid-cols-2">
           {bodySpecialists.map((s) => (
             <Link
               key={s.slug}
