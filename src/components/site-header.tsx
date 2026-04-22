@@ -21,7 +21,7 @@ export function SiteHeader() {
             alt="PoZdrowienie"
             width={56}
             height={56}
-            className="h-14 w-auto"
+            className="h-12 w-12 rounded-full object-cover shadow-sm ring-1 ring-brand-navy/15"
           />
           <span className="hidden flex-col leading-tight sm:flex">
             <span className="font-serif text-xl font-semibold text-brand-navy">

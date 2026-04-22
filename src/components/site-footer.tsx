@@ -1,10 +1,28 @@
 import { Link } from "@tanstack/react-router";
 import { MapPin, Clock, Facebook, Instagram } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 export function SiteFooter() {
   return (
     <footer className="mt-24 border-t border-border/60 bg-secondary/40">
       <div className="mx-auto max-w-6xl px-6 py-14">
+        <Link to="/" className="mb-10 flex items-center gap-3">
+          <img
+            src={logo}
+            alt="PoZdrowienie"
+            width={56}
+            height={56}
+            className="h-14 w-14 rounded-full object-cover shadow-sm ring-1 ring-brand-navy/15"
+          />
+          <span className="flex flex-col leading-tight">
+            <span className="font-serif text-xl font-semibold text-brand-navy">
+              PoZdrowienie
+            </span>
+            <span className="text-[10px] uppercase tracking-[0.22em] text-brand-navy/70">
+              Terapia · Społeczność · Rozwój
+            </span>
+          </span>
+        </Link>
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <h3 className="font-serif text-lg font-semibold text-brand-navy">
