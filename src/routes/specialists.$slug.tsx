@@ -1,8 +1,8 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { getSpecialist, type Specialist } from "@/data/specialists";
+import { getSpecialist, telHref, type Specialist } from "@/data/specialists";
 
 export const Route = createFileRoute("/specialists/$slug")({
   loader: ({ params }): { specialist: Specialist } => {
@@ -57,9 +57,13 @@ function SpecialistProfile() {
             <p className="text-xs font-medium uppercase tracking-[0.25em] text-primary">{specialist.role}</p>
             <h1 className="mt-2 font-serif text-3xl font-semibold md:text-4xl">{specialist.name}</h1>
           </div>
-          <Button asChild size="lg" className="mt-6 w-full rounded-full">
-            <Link to="/contact">Book an Appointment with {specialist.name.split(" ")[0]}</Link>
-          </Button>
+          <a
+            href={telHref(specialist.phone)}
+            className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-sm transition hover:bg-primary/90"
+          >
+            <Phone className="h-4 w-4" />
+            Zadzwoń: {specialist.phone}
+          </a>
         </div>
 
         <div>
