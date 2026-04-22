@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { mindSpecialists } from "@/data/specialists";
+import { BrandWatermark } from "@/components/brand-watermark";
 import { Brain } from "lucide-react";
 
 export const Route = createFileRoute("/umysl")({
@@ -39,8 +40,9 @@ function MindPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid gap-8 md:grid-cols-2">
+      <section className="relative mx-auto max-w-6xl px-6 py-16">
+        <BrandWatermark position="bottom-right" size={440} opacity={0.06} />
+        <div className="relative grid gap-8 md:grid-cols-2">
           {mindSpecialists.map((s) => (
             <Link
               key={s.slug}

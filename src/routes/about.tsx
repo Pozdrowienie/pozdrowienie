@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { BrandWatermark } from "@/components/brand-watermark";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -14,8 +15,9 @@ export const Route = createFileRoute("/about")({
 
 function About() {
   return (
-    <section className="mx-auto max-w-3xl px-6 py-20">
-      <span className="text-xs font-medium uppercase tracking-[0.25em] text-primary">About Us</span>
+    <section className="relative mx-auto max-w-3xl px-6 py-20">
+      <BrandWatermark position="bottom-right" size={420} opacity={0.07} />
+      <span className="relative text-xs font-medium uppercase tracking-[0.25em] text-primary">About Us</span>
       <h1 className="mt-3 text-4xl font-semibold md:text-5xl">A clinic built on care</h1>
       <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
         Gabinet Zdrowia Psychicznego Anna Antoniewicz is a private mental health practice

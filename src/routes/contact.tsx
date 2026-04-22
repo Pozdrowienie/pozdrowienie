@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { BrandWatermark } from "@/components/brand-watermark";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -19,8 +20,9 @@ export const Route = createFileRoute("/contact")({
 
 function Contact() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20">
-      <div className="text-center">
+    <section className="relative mx-auto max-w-6xl px-6 py-20">
+      <BrandWatermark position="bottom-right" size={460} opacity={0.07} />
+      <div className="relative text-center">
         <span className="text-xs font-medium uppercase tracking-[0.25em] text-primary">Contact</span>
         <h1 className="mt-3 text-4xl font-semibold md:text-5xl">Book an Appointment</h1>
         <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
