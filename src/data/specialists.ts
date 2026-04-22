@@ -5,18 +5,41 @@ import sexologist from "@/assets/specialist-sexologist.jpg";
 import annaMarciniak from "@/assets/specialist-anna-marciniak.jpg";
 import ulaPalczewska from "@/assets/specialist-ula-palczewska.jpg";
 
-export type SpecialistCategory = "mind" | "body";
+export type SpecialistCategory =
+  | "psycholog"
+  | "psychiatra"
+  | "psychoterapeuta"
+  | "joga"
+  | "taniec"
+  | "coaching"
+  | "dzieci";
 
 export type Specialist = {
   slug: string;
   name: string;
   role: string;
   category: SpecialistCategory;
+  /** mind = turkus, body = róż — używane w stylach kart */
+  space: "mind" | "body";
   image: string;
+  phone: string;
   about: string;
   specializations: string[];
   methods: string[];
   pricing: { name: string; price: string; duration: string }[];
+};
+
+export const categoryMeta: Record<
+  SpecialistCategory,
+  { label: string; space: "mind" | "body" }
+> = {
+  psycholog: { label: "Psycholog", space: "mind" },
+  psychiatra: { label: "Psychiatra", space: "mind" },
+  psychoterapeuta: { label: "Psychoterapeuta", space: "mind" },
+  dzieci: { label: "Psycholog dzieci i młodzieży", space: "mind" },
+  coaching: { label: "Coaching", space: "mind" },
+  joga: { label: "Joga", space: "body" },
+  taniec: { label: "Taniec Intuicyjny", space: "body" },
 };
 
 export const specialists: Specialist[] = [
@@ -24,152 +47,165 @@ export const specialists: Specialist[] = [
     slug: "krystian-antoniewicz",
     name: "Krystian Antoniewicz",
     role: "Psychiatra",
-    category: "mind",
+    category: "psychiatra",
+    space: "mind",
     image: krystian,
+    phone: "+48 600 100 101",
     about:
-      "Doctor of medicine specializing in adult psychiatry with over 15 years of clinical experience. Krystian focuses on mood disorders, anxiety, and pharmacological treatment, always combining medical expertise with deep empathy for each patient's story.",
+      "Lekarz specjalista psychiatrii dorosłych z ponad 15-letnim doświadczeniem klinicznym. Łączy wiedzę medyczną z empatią i indywidualnym podejściem do pacjenta.",
     specializations: [
-      "Depression & mood disorders",
-      "Anxiety & panic disorders",
-      "Bipolar disorder",
-      "Sleep disorders",
-      "Pharmacological treatment",
+      "Depresja i zaburzenia nastroju",
+      "Zaburzenia lękowe i napady paniki",
+      "Choroba afektywna dwubiegunowa",
+      "Zaburzenia snu",
+      "Farmakoterapia",
     ],
     methods: [
-      "Comprehensive psychiatric assessment",
-      "Evidence-based pharmacotherapy",
-      "Integrative consultation with therapists",
-      "Long-term care planning",
+      "Pełna ocena psychiatryczna",
+      "Farmakoterapia oparta na dowodach",
+      "Konsultacje integracyjne z terapeutami",
+      "Plan długoterminowej opieki",
     ],
     pricing: [
-      { name: "First consultation", price: "350 PLN", duration: "60 min" },
-      { name: "Follow-up visit", price: "250 PLN", duration: "30 min" },
-      { name: "Prescription renewal", price: "150 PLN", duration: "15 min" },
+      { name: "Pierwsza konsultacja", price: "350 zł", duration: "60 min" },
+      { name: "Wizyta kontrolna", price: "250 zł", duration: "30 min" },
+      { name: "Recepta", price: "150 zł", duration: "15 min" },
     ],
   },
   {
     slug: "anna-antoniewicz",
     name: "Anna Antoniewicz",
     role: "Psycholog",
-    category: "mind",
+    category: "psycholog",
+    space: "mind",
     image: anna,
+    phone: "+48 600 100 102",
     about:
-      "Certified clinical psychologist passionate about helping individuals navigate life transitions, stress, and relationships. Anna creates a safe, non-judgmental space where clients can explore their inner world and grow.",
+      "Psycholog kliniczny z pasją do wspierania w zmianach życiowych, stresie i relacjach. Tworzy bezpieczną, nieoceniającą przestrzeń.",
     specializations: [
-      "Stress & burnout",
-      "Self-esteem & personal growth",
-      "Relationship difficulties",
-      "Grief & life transitions",
-      "Diagnostic assessment",
+      "Stres i wypalenie",
+      "Samoocena i rozwój osobisty",
+      "Trudności w relacjach",
+      "Żałoba i kryzysy życiowe",
+      "Diagnoza psychologiczna",
     ],
     methods: [
-      "Cognitive-behavioural approach",
-      "Humanistic & person-centered",
-      "Mindfulness-based interventions",
-      "Psychoeducation",
+      "Podejście poznawczo-behawioralne",
+      "Podejście humanistyczne",
+      "Interwencje oparte na uważności",
+      "Psychoedukacja",
     ],
     pricing: [
-      { name: "Individual session", price: "220 PLN", duration: "50 min" },
-      { name: "Diagnostic consultation", price: "280 PLN", duration: "60 min" },
-      { name: "Couples session", price: "320 PLN", duration: "75 min" },
+      { name: "Sesja indywidualna", price: "220 zł", duration: "50 min" },
+      { name: "Konsultacja diagnostyczna", price: "280 zł", duration: "60 min" },
+      { name: "Sesja par", price: "320 zł", duration: "75 min" },
     ],
   },
   {
-    slug: "psychotherapist",
+    slug: "psychoterapeuta",
     name: "Wkrótce",
     role: "Psychoterapeuta",
-    category: "mind",
+    category: "psychoterapeuta",
+    space: "mind",
     image: therapist,
+    phone: "+48 600 100 103",
     about:
-      "Our psychotherapy specialist will soon join the team. Trained in long-term integrative therapy, focused on helping clients understand patterns, heal trauma, and build lasting change.",
+      "Psychoterapia integracyjna — praca nad wzorcami, traumą i trwałą zmianą.",
     specializations: [
-      "Trauma & PTSD",
-      "Personality disorders",
-      "Long-term psychotherapy",
-      "Emotion regulation",
+      "Trauma i PTSD",
+      "Zaburzenia osobowości",
+      "Psychoterapia długoterminowa",
+      "Regulacja emocji",
     ],
-    methods: [
-      "Integrative psychotherapy",
-      "Schema therapy",
-      "Psychodynamic approach",
-    ],
+    methods: ["Psychoterapia integracyjna", "Terapia schematu", "Podejście psychodynamiczne"],
     pricing: [
-      { name: "Therapy session", price: "230 PLN", duration: "50 min" },
-      { name: "Initial consultation", price: "260 PLN", duration: "60 min" },
+      { name: "Sesja terapii", price: "230 zł", duration: "50 min" },
+      { name: "Konsultacja wstępna", price: "260 zł", duration: "60 min" },
     ],
   },
   {
-    slug: "sexologist",
+    slug: "psycholog-dzieci",
     name: "Wkrótce",
-    role: "Seksuolog",
-    category: "mind",
+    role: "Psycholog dzieci i młodzieży",
+    category: "dzieci",
+    space: "mind",
     image: sexologist,
+    phone: "+48 600 100 104",
     about:
-      "Our sexology specialist offers discreet, professional support for individuals and couples. A safe space to discuss intimacy, identity, and relationship concerns without judgment.",
+      "Wsparcie psychologiczne dla dzieci, młodzieży i ich rodzin. Diagnoza, terapia oraz konsultacje wychowawcze.",
     specializations: [
-      "Intimacy difficulties",
-      "Couples sexual therapy",
-      "Sexual identity & orientation",
-      "Sexual education",
+      "Trudności emocjonalne i lękowe",
+      "Problemy szkolne",
+      "Konsultacje rodzicielskie",
+      "Diagnoza rozwojowa",
     ],
-    methods: [
-      "Cognitive-behavioural sex therapy",
-      "Couples-focused interventions",
-      "Psychoeducation",
-    ],
+    methods: ["Terapia poznawczo-behawioralna", "Praca przez zabawę", "Psychoedukacja rodzin"],
     pricing: [
-      { name: "Individual consultation", price: "280 PLN", duration: "60 min" },
-      { name: "Couples session", price: "380 PLN", duration: "75 min" },
+      { name: "Konsultacja", price: "220 zł", duration: "50 min" },
+      { name: "Konsultacja rodzicielska", price: "260 zł", duration: "60 min" },
+    ],
+  },
+  {
+    slug: "coaching",
+    name: "Wkrótce",
+    role: "Coach",
+    category: "coaching",
+    space: "mind",
+    image: therapist,
+    phone: "+48 600 100 105",
+    about:
+      "Coaching rozwojowy i kariery — praca nad celami, motywacją i odkrywaniem zasobów.",
+    specializations: ["Coaching kariery", "Coaching życiowy", "Wypalenie zawodowe"],
+    methods: ["Model GROW", "Praca z wartościami", "Plany działania"],
+    pricing: [
+      { name: "Sesja coachingowa", price: "250 zł", duration: "60 min" },
+      { name: "Pakiet 5 sesji", price: "1100 zł", duration: "5 × 60 min" },
     ],
   },
   {
     slug: "anna-marciniak",
     name: "Anna Marciniak",
     role: "Hatha Joga",
-    category: "body",
+    category: "joga",
+    space: "body",
     image: annaMarciniak,
+    phone: "+48 600 100 106",
     about:
-      "Nauczycielka Hatha Jogi z wieloletnią praktyką. Prowadzi zajęcia w nurcie klasycznym, łącząc pracę z oddechem, asanami i uważnością. Tworzy przestrzeń, w której każdy — niezależnie od poziomu — może odnaleźć równowagę ciała i umysłu.",
+      "Nauczycielka Hatha Jogi z wieloletnią praktyką. Tworzy przestrzeń, w której każdy odnajdzie równowagę ciała i umysłu.",
     specializations: [
       "Hatha Joga klasyczna",
       "Joga dla początkujących",
-      "Praca z oddechem (pranayama)",
+      "Pranayama",
       "Joga regeneracyjna",
     ],
-    methods: [
-      "Asany dostosowane do możliwości uczestnika",
-      "Techniki oddechowe",
-      "Relaksacja i medytacja",
-    ],
+    methods: ["Asany dostosowane do uczestnika", "Techniki oddechowe", "Relaksacja i medytacja"],
     pricing: [
-      { name: "Zajęcia grupowe", price: "50 PLN", duration: "75 min" },
-      { name: "Karnet 4 wejścia", price: "180 PLN", duration: "miesiąc" },
-      { name: "Sesja indywidualna", price: "150 PLN", duration: "60 min" },
+      { name: "Zajęcia grupowe", price: "50 zł", duration: "75 min" },
+      { name: "Karnet 4 wejścia", price: "180 zł", duration: "miesiąc" },
+      { name: "Sesja indywidualna", price: "150 zł", duration: "60 min" },
     ],
   },
   {
     slug: "ula-palczewska",
     name: "Ula Palczewska",
-    role: "Terapia Tańcem i Ruchem",
-    category: "body",
+    role: "Taniec Intuicyjny",
+    category: "taniec",
+    space: "body",
     image: ulaPalczewska,
+    phone: "+48 600 100 107",
     about:
-      "Certyfikowana terapeutka tańcem i ruchem (DMT). Pomaga odkrywać emocje przez świadomy ruch ciała, wspierając integrację psychofizyczną. Zajęcia są bezpieczną przestrzenią ekspresji, niezależnie od doświadczenia tanecznego.",
+      "Certyfikowana terapeutka tańcem i ruchem (DMT). Pomaga odkrywać emocje przez świadomy ruch ciała.",
     specializations: [
       "Terapia tańcem i ruchem (DMT)",
       "Praca z ciałem i emocjami",
       "Świadomość ciała",
       "Grupy terapeutyczne",
     ],
-    methods: [
-      "Improwizacja ruchowa",
-      "Autentyczny ruch",
-      "Praca z oddechem i ugruntowaniem",
-    ],
+    methods: ["Improwizacja ruchowa", "Autentyczny ruch", "Praca z oddechem i ugruntowaniem"],
     pricing: [
-      { name: "Zajęcia grupowe", price: "60 PLN", duration: "90 min" },
-      { name: "Sesja indywidualna", price: "180 PLN", duration: "60 min" },
-      { name: "Warsztat weekendowy", price: "350 PLN", duration: "8 godz." },
+      { name: "Zajęcia grupowe", price: "60 zł", duration: "90 min" },
+      { name: "Sesja indywidualna", price: "180 zł", duration: "60 min" },
+      { name: "Warsztat weekendowy", price: "350 zł", duration: "8 godz." },
     ],
   },
 ];
@@ -177,5 +213,7 @@ export const specialists: Specialist[] = [
 export const getSpecialist = (slug: string) =>
   specialists.find((s) => s.slug === slug);
 
-export const mindSpecialists = specialists.filter((s) => s.category === "mind");
-export const bodySpecialists = specialists.filter((s) => s.category === "body");
+export const mindSpecialists = specialists.filter((s) => s.space === "mind");
+export const bodySpecialists = specialists.filter((s) => s.space === "body");
+
+export const telHref = (phone: string) => `tel:${phone.replace(/\s+/g, "")}`;

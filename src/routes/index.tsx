@@ -166,12 +166,13 @@ function Index() {
       {/* CTA */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="overflow-hidden rounded-3xl bg-brand-navy px-8 py-14 text-center text-primary-foreground shadow-xl md:px-16">
-          <h2 className="font-serif text-3xl font-semibold md:text-4xl">Umów wizytę</h2>
+          <h2 className="font-serif text-3xl font-semibold md:text-4xl">Zadzwoń do specjalisty</h2>
           <p className="mx-auto mt-4 max-w-xl text-primary-foreground/85">
-            Skontaktuj się z nami — odpowiemy na pytania i pomożemy wybrać odpowiedniego specjalistę.
+            Każdy specjalista PoZdrowienia odbiera telefon i osobiście umawia wizyty —
+            bez formularzy i pośredników.
           </p>
           <Button asChild size="lg" variant="secondary" className="mt-8 rounded-full px-8">
-            <Link to="/contact">Umów wizytę</Link>
+            <Link to="/specialists">Zobacz numery do specjalistów</Link>
           </Button>
         </div>
       </section>

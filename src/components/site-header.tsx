@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
 import logo from "@/assets/logo.png";
-import { Button } from "@/components/ui/button";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -47,9 +46,12 @@ export function SiteHeader() {
           ))}
         </nav>
 
-        <Button asChild className="rounded-full px-5 shadow-sm">
-          <Link to="/contact">Umów wizytę</Link>
-        </Button>
+        <Link
+          to="/specialists"
+          className="rounded-full bg-brand-navy px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-navy/90"
+        >
+          Zadzwoń do specjalisty
+        </Link>
       </div>
     </header>
   );
