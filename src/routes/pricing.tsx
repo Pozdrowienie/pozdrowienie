@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { specialists, telHref } from "@/data/specialists";
-import building from "@/assets/building.png";
+import building from "@/assets/building-sketch.png";
 import logo from "@/assets/logo.png";
 import { BrandWatermark } from "@/components/brand-watermark";
 import { Phone } from "lucide-react";
@@ -20,29 +20,35 @@ export const Route = createFileRoute("/pricing")({
 function Pricing() {
   return (
     <>
-      {/* Subpage hero with building + logo */}
-      <section className="relative isolate w-full overflow-hidden text-white">
+      {/* Subpage hero — light pink with line-art building + logo */}
+      <section className="relative isolate w-full overflow-hidden bg-blush">
         <img
           src={building}
-          alt="PoZdrowienie — budynek"
-          className="absolute inset-0 -z-20 h-full w-full object-cover"
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-y-0 right-0 hidden h-full w-[55%] select-none object-contain object-right opacity-80 md:block"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-brand-navy/70 via-brand-navy/45 to-brand-navy/75" />
-        <div className="mx-auto flex max-w-5xl flex-col items-center px-6 py-20 text-center">
+        <img
+          src={building}
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 h-full w-full select-none object-contain object-bottom opacity-20 md:hidden"
+        />
+        <div className="relative mx-auto flex max-w-5xl flex-col items-start px-6 py-20 text-brand-navy">
           <img
             src={logo}
             alt="PoZdrowienie"
             width={120}
             height={120}
-            className="h-24 w-24 rounded-full bg-white/90 p-2 shadow-xl ring-2 ring-white/60"
+            className="h-20 w-20 rounded-full bg-white/80 p-2 shadow-md ring-1 ring-brand-navy/15"
           />
-          <span className="mt-6 inline-block rounded-full bg-white/15 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.25em] backdrop-blur">
+          <span className="mt-6 inline-block rounded-full bg-white/70 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.25em] backdrop-blur">
             Cennik
           </span>
-          <h1 className="mt-4 font-serif text-4xl font-semibold drop-shadow md:text-6xl">
+          <h1 className="mt-4 font-serif text-4xl font-semibold md:text-6xl">
             CENNIK USŁUG
           </h1>
-          <p className="mx-auto mt-4 max-w-2xl text-white/90">
+          <p className="mt-4 max-w-xl text-brand-navy/80">
             Wszystkie konsultacje odbywają się po wcześniejszym umówieniu. Zadzwoń
             bezpośrednio do specjalisty, aby umówić wizytę.
           </p>
