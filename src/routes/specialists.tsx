@@ -1,7 +1,14 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { mindSpecialists, bodySpecialists, type Specialist } from "@/data/specialists";
+import { createFileRoute } from "@tanstack/react-router";
+import { useState, useMemo, useRef, useEffect } from "react";
+import {
+  specialists,
+  categoryMeta,
+  type SpecialistCategory,
+} from "@/data/specialists";
 import { BrandWatermark } from "@/components/brand-watermark";
-import { Brain, Flower2 } from "lucide-react";
+import { CategoryCircles } from "@/components/category-circles";
+import { SpecialistCard } from "@/components/specialist-card";
+import { BrandWaves } from "@/components/brand-waves";
 
 export const Route = createFileRoute("/specialists")({
   head: () => ({
@@ -10,7 +17,7 @@ export const Route = createFileRoute("/specialists")({
       {
         name: "description",
         content:
-          "Zespół PoZdrowienia: psycholodzy, psychiatra, psychoterapeuci, seksuolog, instruktorka jogi i terapeutka tańcem.",
+          "Zespół PoZdrowienia: psycholodzy, psychiatra, psychoterapeuta, joga, taniec intuicyjny i coaching. Zadzwoń i umów wizytę bezpośrednio.",
       },
       { property: "og:title", content: "Specjaliści PoZdrowienia" },
       {
@@ -23,98 +30,72 @@ export const Route = createFileRoute("/specialists")({
 });
 
 function SpecialistsPage() {
+  const [active, setActive] = useState<SpecialistCategory | "all">("all");
+  const listRef = useRef<HTMLDivElement | null>(null);
+  const firstRender = useRef(true);
+
+  const filtered = useMemo(() => {
+    if (active === "all") return specialists;
+    return specialists.filter((s) => s.category === active);
+  }, [active]);
+
+  useEffect(() => {
+    if (firstRender.current) {
+      firstRender.current = false;
+      return;
+    }
+    listRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [active]);
+
+  const heading =
+    active === "all" ? "Poznaj naszych specjalistów" : categoryMeta[active].label;
+
   return (
-    <section className="relative mx-auto max-w-6xl px-6 py-20">
-      <BrandWatermark position="bottom-right" size={500} opacity={0.06} />
-      <div className="relative text-center">
-        <span className="text-xs font-medium uppercase tracking-[0.25em] text-brand-navy">
-          NASZ TEAM
-        </span>
-        <h1 className="mt-3 font-serif text-4xl font-semibold md:text-5xl">
-          Specjaliści PoZdrowienia
-        </h1>
-        <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-          Multidyscyplinarny zespół oddany Twojemu dobrostanowi.
-        </p>
-      </div>
+    <>
+      <BrandWaves className="-mb-px" />
 
-      <div className="mt-16">
-        <SectionHeader
-          icon={<Brain className="h-5 w-5" />}
-          title="Przestrzeń umysłu"
-          accent="mind"
-        />
-        <Grid items={mindSpecialists} accent="mind" />
-      </div>
+      <section className="relative mx-auto max-w-6xl px-6 pt-10 pb-6">
+        <BrandWatermark position="bottom-right" size={500} opacity={0.05} />
+        <div className="relative text-center">
+          <span className="text-xs font-semibold uppercase tracking-[0.25em] text-brand-navy">
+            NASZ TEAM
+          </span>
+          <h1 className="mt-3 font-serif text-4xl font-semibold md:text-5xl">
+            Specjaliści PoZdrowienia
+          </h1>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            Wybierz kategorię, aby zobaczyć specjalistów. Z każdym możesz umówić się
+            bezpośrednio telefonicznie.
+          </p>
+        </div>
 
-      <div className="mt-20">
-        <SectionHeader
-          icon={<Flower2 className="h-5 w-5" />}
-          title="Przestrzeń ciała"
-          accent="body"
-        />
-        <Grid items={bodySpecialists} accent="body" />
-      </div>
-    </section>
-  );
-}
+        <div className="mt-12">
+          <CategoryCircles active={active} onSelect={setActive} />
+        </div>
+      </section>
 
-function SectionHeader({
-  icon,
-  title,
-  accent,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  accent: "mind" | "body";
-}) {
-  const colorClass = accent === "mind" ? "text-mind bg-mind/10" : "text-body bg-body/10";
-  const titleClass = accent === "mind" ? "text-mind" : "text-body";
-  return (
-    <div className="flex items-center gap-3">
-      <span className={`flex h-9 w-9 items-center justify-center rounded-xl ${colorClass}`}>
-        {icon}
-      </span>
-      <h2 className={`font-serif text-2xl font-semibold ${titleClass}`}>{title}</h2>
-    </div>
-  );
-}
+      <section
+        ref={listRef}
+        className="relative mx-auto max-w-6xl scroll-mt-24 px-6 pb-20 pt-10"
+      >
+        <h2 className="mb-8 text-center font-serif text-2xl font-semibold md:text-3xl">
+          {heading}
+        </h2>
 
-function Grid({ items, accent }: { items: Specialist[]; accent: "mind" | "body" }) {
-  const ring = accent === "mind" ? "ring-mind/30" : "ring-body/40";
-  const roleColor = accent === "mind" ? "text-mind" : "text-body";
-  const border = accent === "mind" ? "border-mind/20" : "border-body/25";
-  return (
-    <div className="mt-6 grid gap-8 md:grid-cols-2">
-      {items.map((s) => (
-        <Link
-          key={s.slug}
-          to="/specialists/$slug"
-          params={{ slug: s.slug }}
-          className={`group flex items-center gap-6 rounded-3xl border bg-surface p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg ${border}`}
-        >
-          <div className={`h-28 w-28 shrink-0 overflow-hidden rounded-full ring-2 ${ring}`}>
-            <img
-              src={s.image}
-              alt={s.name}
-              width={768}
-              height={768}
-              loading="lazy"
-              className="h-full w-full object-cover"
-            />
+        {filtered.length === 0 ? (
+          <p className="text-center text-muted-foreground">
+            Brak specjalistów w tej kategorii.
+          </p>
+        ) : (
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {filtered.map((s) => (
+              <SpecialistCard key={s.slug} s={s} />
+            ))}
           </div>
-          <div>
-            <p className={`text-xs font-semibold uppercase tracking-wider ${roleColor}`}>
-              {s.role}
-            </p>
-            <h3 className="mt-1 font-serif text-2xl font-semibold">{s.name}</h3>
-            <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">{s.about}</p>
-            <span className={`mt-3 inline-block text-sm font-medium group-hover:underline ${roleColor}`}>
-              Zobacz profil →
-            </span>
-          </div>
-        </Link>
-      ))}
-    </div>
+        )}
+      </section>
+
+      <BrandWaves flip />
+    </>
   );
 }
