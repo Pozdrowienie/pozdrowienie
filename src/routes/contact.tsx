@@ -20,10 +20,10 @@ function Contact() {
     <section className="relative mx-auto max-w-6xl px-6 py-20">
       <BrandWatermark position="bottom-right" size={460} opacity={0.07} />
       <div className="relative text-center">
-        <span className="text-xs font-medium uppercase tracking-[0.25em] text-primary">Contact</span>
-        <h1 className="mt-3 text-4xl font-semibold md:text-5xl">Book an Appointment</h1>
+        <span className="text-xs font-medium uppercase tracking-[0.25em] text-primary">KONTAKT</span>
+        <h1 className="mt-3 text-4xl font-semibold md:text-5xl">Zostańmy w kontakcie</h1>
         <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-          Send us a message and we'll get back to you within one business day.
+          Z każdym specjalistą umówisz się indywidualnie.
         </p>
       </div>
 
@@ -34,8 +34,8 @@ function Contact() {
             title="Adres"
             lines={["ul. Jeleniogórska 5", "59-700 Bolesławiec", "obok Szpitala św. Łukasza"]}
           />
-          <InfoRow icon={Phone} title="Telefon" lines={["+48 600 000 000"]} />
-          <InfoRow icon={Mail} title="Email" lines={["kontakt@gabinet-antoniewicz.pl"]} />
+          <InfoRow icon={Phone} title="Telefon informacja ogólna" lines={["+48 792 99 7337"]} />
+          <InfoRow icon={Mail} title="Email" lines={["ka.psychiatra@gmail.com"]} />
           <InfoRow icon={Clock} title="Godziny otwarcia" lines={["Pon – Pt: 9:00 – 20:00"]} />
           <Button asChild size="lg" className="w-full rounded-full">
             <a
