@@ -124,9 +124,9 @@ export const specialists: Specialist[] = [
     ],
   },
   {
-    slug: "psycholog-dzieci",
-    name: "Wkrótce",
-    role: "Psycholog dzieci i młodzieży",
+    slug: "anna-antoniewicz",
+    name: "Anna Antoniewicz",
+    role: "PSYCHOLOG DZIECI I MŁODZIEŻY I RODZICÓW",
     category: "dzieci",
     space: "mind",
     image: sexologist,
@@ -146,8 +146,8 @@ export const specialists: Specialist[] = [
     ],
   },
   {
-    slug: "coaching",
-    name: "Wkrótce",
+    slug: "tomasz-karczewski",
+    name: "Tomasz Karczewski ",
     role: "Coach",
     category: "coaching",
     space: "mind",
@@ -188,7 +188,7 @@ export const specialists: Specialist[] = [
   {
     slug: "ula-palczewska",
     name: "Ula Palczewska",
-    role: "Taniec Intuicyjny",
+    role: "TERAPIA TAŃCEM I RUCHEM (DMT)\nTANIEC INTUICYJNY",
     category: "taniec",
     space: "body",
     image: ulaPalczewska,
