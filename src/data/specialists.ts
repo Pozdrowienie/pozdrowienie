@@ -36,10 +36,10 @@ export const categoryMeta: Record<
   psycholog: { label: "Psycholog", space: "mind" },
   psychiatra: { label: "Psychiatra", space: "mind" },
   psychoterapeuta: { label: "Psychoterapeuta", space: "mind" },
-  dzieci: { label: "Psycholog dzieci i młodzieży", space: "mind" },
+  dzieci: { label: "PSYCHOLOG DZIECI I MŁODZIEŻY I RODZICÓW", space: "mind" },
   coaching: { label: "Coaching", space: "mind" },
   joga: { label: "Joga", space: "body" },
-  taniec: { label: "Taniec Intuicyjny", space: "body" },
+  taniec: { label: "TERAPIA TAŃCEM I RUCHEM (DMT)\nTANIEC INTUICYJNY", space: "body" },
 };
 
 export const specialists: Specialist[] = [
@@ -124,9 +124,9 @@ export const specialists: Specialist[] = [
     ],
   },
   {
-    slug: "psycholog-dzieci",
-    name: "Wkrótce",
-    role: "Psycholog dzieci i młodzieży",
+    slug: "anna-antoniewicz",
+    name: "Anna Antoniewicz",
+    role: "PSYCHOLOG DZIECI I MŁODZIEŻY I RODZICÓW",
     category: "dzieci",
     space: "mind",
     image: sexologist,
@@ -146,8 +146,8 @@ export const specialists: Specialist[] = [
     ],
   },
   {
-    slug: "coaching",
-    name: "Wkrótce",
+    slug: "tomasz-karczewski",
+    name: "Tomasz Karczewski ",
     role: "Coach",
     category: "coaching",
     space: "mind",
@@ -188,7 +188,7 @@ export const specialists: Specialist[] = [
   {
     slug: "ula-palczewska",
     name: "Ula Palczewska",
-    role: "Taniec Intuicyjny",
+    role: "TERAPIA TAŃCEM I RUCHEM (DMT)\nTANIEC INTUICYJNY",
     category: "taniec",
     space: "body",
     image: ulaPalczewska,
