@@ -73,8 +73,8 @@ export const specialists: Specialist[] = [
     ],
   },
   {
-    slug: "anna-antoniewicz",
-    name: "Anna Antoniewicz",
+    slug: "aksana-gogulska",
+    name: "Aksana Gogulska",
     role: "Psycholog",
     category: "psycholog",
     space: "mind",
@@ -102,8 +102,8 @@ export const specialists: Specialist[] = [
     ],
   },
   {
-    slug: "psychoterapeuta",
-    name: "Wkrótce",
+    slug: "karolina-ferensowicz",
+    name: "Karolina Ferensowicz",
     role: "Psychoterapeuta",
     category: "psychoterapeuta",
     space: "mind",
