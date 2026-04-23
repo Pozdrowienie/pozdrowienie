@@ -64,8 +64,8 @@ function SpecialistsPage() {
             Specjaliści PoZdrowienia
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Wybierz kategorię, aby zobaczyć specjalistów. Z każdym możesz umówić się
-            bezpośrednio telefonicznie.
+            Wybierz kategorię, aby zobaczyć specjalistów.&nbsp;<br />
+            Z każdym możesz umówić się bezpośrednio telefonicznie.
           </p>
         </div>
 
