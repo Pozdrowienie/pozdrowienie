@@ -1,8 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { specialists, telHref } from "@/data/specialists";
-import building from "@/assets/building-sketch.png";
-import logo from "@/assets/logo.png";
 import { BrandWatermark } from "@/components/brand-watermark";
+import { BrandHero } from "@/components/brand-hero";
 import { Phone } from "lucide-react";
 
 export const Route = createFileRoute("/pricing")({
