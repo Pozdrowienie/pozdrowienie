@@ -1,5 +1,6 @@
 import krystian from "@/assets/specialist-krystian.jpg";
 import anna from "@/assets/specialist-anna.jpg";
+import karolina from "@/assets/specialist-karolina.jpg";
 import therapist from "@/assets/specialist-therapist.jpg";
 import sexologist from "@/assets/specialist-sexologist.jpg";
 import annaMarciniak from "@/assets/specialist-anna-marciniak.jpg";
@@ -46,11 +47,11 @@ export const specialists: Specialist[] = [
   {
     slug: "krystian-antoniewicz",
     name: "Krystian Antoniewicz",
-    role: "Psychiatra",
+    role: "lek. med. — Specjalista psychiatra",
     category: "psychiatra",
     space: "mind",
     image: krystian,
-    phone: "+48 600 100 101",
+    phone: "+48 506 023 127",
     about:
       "Lekarz specjalista psychiatrii dorosłych z ponad 15-letnim doświadczeniem klinicznym. Łączy wiedzę medyczną z empatią i indywidualnym podejściem do pacjenta.",
     specializations: [
@@ -75,11 +76,11 @@ export const specialists: Specialist[] = [
   {
     slug: "aksana-gogulska",
     name: "Aksana Gogulska",
-    role: "Psycholog",
+    role: "Psycholog — Diagnosta ADHD",
     category: "psycholog",
     space: "mind",
     image: anna,
-    phone: "+48 600 100 102",
+    phone: "+48 781 028 389",
     about:
       "Psycholog kliniczny z pasją do wspierania w zmianach życiowych, stresie i relacjach. Tworzy bezpieczną, nieoceniającą przestrzeń.",
     specializations: [
@@ -104,11 +105,11 @@ export const specialists: Specialist[] = [
   {
     slug: "karolina-ferensowicz",
     name: "Karolina Ferensowicz",
-    role: "Psychoterapeuta",
+    role: "Psycholog, psychoterapeuta, specjalista w dziedzinie seksuologii",
     category: "psychoterapeuta",
     space: "mind",
-    image: therapist,
-    phone: "+48 600 100 103",
+    image: karolina,
+    phone: "+48 609 020 417",
     about:
       "Psychoterapia integracyjna — praca nad wzorcami, traumą i trwałą zmianą.",
     specializations: [
