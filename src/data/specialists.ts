@@ -98,9 +98,9 @@ export const specialists: Specialist[] = [
       "Psychoedukacja",
     ],
     pricing: [
-      { name: "Sesja indywidualna", price: "220 zł", duration: "50 min" },
-      { name: "Konsultacja diagnostyczna", price: "280 zł", duration: "60 min" },
-      { name: "Sesja par", price: "320 zł", duration: "75 min" },
+      { name: "Sesja indywidualna", price: "180 zł", duration: "50 min" },
+      { name: "Konsultacja diagnostyczna", price: "600 - 800 zł", duration: "50 min" },
+      { name: "Interwencja Kryzysowa", price: "180 zł", duration: "50 min" },
     ],
   },
   {
