@@ -69,9 +69,9 @@ export const specialists: Specialist[] = [
       "Plan długoterminowej opieki",
     ],
     pricing: [
-      { name: "Pierwsza konsultacja", price: "350 zł", duration: "60 min" },
-      { name: "Wizyta kontrolna", price: "250 zł", duration: "30 min" },
-      { name: "Recepta", price: "150 zł", duration: "15 min" },
+      { name: "Pierwsza konsultacja", price: "350 zł", duration: "" },
+      { name: "Wizyta kontrolna", price: "300 zł", duration: "" },
+      { name: "Recepta", price: "150 zł", duration: "" },
     ],
   },
   {
