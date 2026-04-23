@@ -7,6 +7,7 @@ import {
   Music2,
   Sparkles,
   Baby,
+  MessagesSquare,
 } from "lucide-react";
 
 const ORDER: SpecialistCategory[] = [
