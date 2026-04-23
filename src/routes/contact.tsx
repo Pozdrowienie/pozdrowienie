@@ -29,41 +29,37 @@ function Contact() {
 
       <div className="mt-14 grid gap-10 lg:grid-cols-[1fr_1.2fr]">
         <div className="space-y-6">
-          <InfoRow icon={MapPin} title="Address" lines={["ul. Kubika 4", "59-700 Bolesławiec, Poland"]} />
-          <InfoRow icon={Phone} title="Phone" lines={["+48 600 000 000"]} />
+          <InfoRow
+            icon={MapPin}
+            title="Adres"
+            lines={["ul. Jeleniogórska 5", "59-700 Bolesławiec", "obok Szpitala św. Łukasza"]}
+          />
+          <InfoRow icon={Phone} title="Telefon" lines={["+48 600 000 000"]} />
           <InfoRow icon={Mail} title="Email" lines={["kontakt@gabinet-antoniewicz.pl"]} />
-          <InfoRow icon={Clock} title="Opening hours" lines={["Mon – Fri: 9:00 – 19:00", "Sat: 9:00 – 14:00"]} />
+          <InfoRow icon={Clock} title="Godziny otwarcia" lines={["Pon – Pt: 9:00 – 20:00"]} />
+          <Button asChild size="lg" className="w-full rounded-full">
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=Jeleniog%C3%B3rska+5%2C+59-700+Boles%C5%82awiec"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Navigation className="mr-2 h-4 w-4" />
+              Wyznacz trasę dojazdu
+            </a>
+          </Button>
         </div>
 
-        <form
-          className="space-y-5 rounded-3xl border border-border/60 bg-surface p-8 shadow-sm"
-          onSubmit={(e) => {
-            e.preventDefault();
-            alert("Thank you! We will contact you shortly.");
-          }}
-        >
-          <div className="grid gap-5 sm:grid-cols-2">
-            <div className="space-y-2">
-              <Label htmlFor="name">Full name</Label>
-              <Input id="name" required placeholder="Jane Doe" />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="phone">Phone</Label>
-              <Input id="phone" required placeholder="+48 ..." />
-            </div>
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="email">Email</Label>
-            <Input id="email" type="email" required placeholder="you@email.com" />
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="message">Message</Label>
-            <Textarea id="message" rows={5} placeholder="Which specialist would you like to see, and when works best?" />
-          </div>
-          <Button type="submit" size="lg" className="w-full rounded-full">
-            Send Request
-          </Button>
-        </form>
+        <div className="overflow-hidden rounded-3xl border border-border/60 shadow-sm">
+          <iframe
+            title="Trasa dojazdu — ul. Jeleniogórska 5, Bolesławiec"
+            src="https://www.google.com/maps?q=Jeleniog%C3%B3rska+5%2C+59-700+Boles%C5%82awiec&output=embed"
+            width="100%"
+            height="520"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="block h-[520px] w-full"
+          />
+        </div>
       </div>
     </section>
   );
