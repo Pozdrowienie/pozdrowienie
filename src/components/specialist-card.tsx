@@ -51,7 +51,7 @@ export function SpecialistCard({ s }: { s: Specialist }) {
         className={`mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold shadow-sm transition ${accent.btn}`}
       >
         <Phone className="h-4 w-4" />
-        Zadzwoń i zarezerwuj miejsce
+        {s.space === "mind" ? "Zadzwoń i umów wizytę" : "Zadzwoń i zarezerwuj miejsce"}
       </a>
       <a
         href={telHref(s.phone)}
