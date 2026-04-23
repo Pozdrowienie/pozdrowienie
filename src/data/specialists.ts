@@ -216,7 +216,7 @@ export const specialists: Specialist[] = [
     category: "taniec",
     space: "body",
     image: ulaPalczewska,
-    phone: "+48 600 100 107",
+    phone: "+48 608 525 148",
     about:
       "Certyfikowana terapeutka tańcem i ruchem (DMT). Pomaga odkrywać emocje przez świadomy ruch ciała.",
     specializations: [
