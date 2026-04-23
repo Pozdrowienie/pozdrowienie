@@ -193,7 +193,7 @@ export const specialists: Specialist[] = [
     category: "joga",
     space: "body",
     image: annaMarciniak,
-    phone: "+48 600 100 106",
+    phone: "+48 691 063 822",
     about:
       "Nauczycielka Hatha Jogi z wieloletnią praktyką. Tworzy przestrzeń, w której każdy odnajdzie równowagę ciała i umysłu.",
     specializations: [
