@@ -48,11 +48,11 @@ export const specialists: Specialist[] = [
   {
     slug: "krystian-antoniewicz",
     name: "Krystian Antoniewicz",
-    role: "lek. med. — Specjalista psychiatra",
+    role: "SPECJALISTA PSYCHIATRA",
     category: "psychiatra",
     space: "mind",
     image: krystian,
-    phone: "+48 506 023 127",
+    phone: "+48 792 99 73 37",
     about:
       "Lekarz specjalista psychiatrii dorosłych z ponad 15-letnim doświadczeniem klinicznym. Łączy wiedzę medyczną z empatią i indywidualnym podejściem do pacjenta.",
     specializations: [
