@@ -126,13 +126,35 @@ export const specialists: Specialist[] = [
     ],
   },
   {
+    slug: "marek-pisarski",
+    name: "Marek Pisarski",
+    role: "Psycholog, psychoterapeuta — doświadczony w pracy z uzależnieniami",
+    category: "psychoterapeuta",
+    space: "mind",
+    image: marek,
+    phone: "+48 608 503 674",
+    about:
+      "Psycholog i psychoterapeuta z wieloletnim doświadczeniem w pracy z osobami zmagającymi się z uzależnieniami oraz ich bliskimi.",
+    specializations: [
+      "Uzależnienia i współuzależnienie",
+      "Praca z osobami DDA / DDD",
+      "Kryzysy emocjonalne",
+      "Psychoterapia indywidualna",
+    ],
+    methods: ["Podejście integracyjne", "Praca z procesem zmiany", "Wsparcie w trzeźwieniu"],
+    pricing: [
+      { name: "Sesja terapii", price: "230 zł", duration: "50 min" },
+      { name: "Konsultacja wstępna", price: "260 zł", duration: "60 min" },
+    ],
+  },
+  {
     slug: "anna-antoniewicz",
     name: "Anna Antoniewicz",
     role: "PSYCHOLOG DZIECI I MŁODZIEŻY I RODZICÓW",
     category: "dzieci",
     space: "mind",
-    image: sexologist,
-    phone: "+48 600 100 104",
+    image: annaAntoniewicz,
+    phone: "+48 577 157 373",
     about:
       "Wsparcie psychologiczne dla dzieci, młodzieży i ich rodzin. Diagnoza, terapia oraz konsultacje wychowawcze.",
     specializations: [
@@ -153,8 +175,8 @@ export const specialists: Specialist[] = [
     role: "Coach",
     category: "coaching",
     space: "mind",
-    image: therapist,
-    phone: "+48 600 100 105",
+    image: tomasz,
+    phone: "+48 533 206 040",
     about:
       "Coaching rozwojowy i kariery — praca nad celami, motywacją i odkrywaniem zasobów.",
     specializations: ["Coaching kariery", "Coaching życiowy", "Wypalenie zawodowe"],
