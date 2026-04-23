@@ -7,6 +7,7 @@ import {
   Music2,
   Sparkles,
   Baby,
+  MessagesSquare,
 } from "lucide-react";
 
 const ORDER: SpecialistCategory[] = [
@@ -22,7 +23,7 @@ const ORDER: SpecialistCategory[] = [
 const ICONS: Record<SpecialistCategory, React.ComponentType<{ className?: string }>> = {
   psycholog: Brain,
   psychiatra: Stethoscope,
-  psychoterapeuta: HeartHandshake,
+  psychoterapeuta: MessagesSquare,
   dzieci: Baby,
   coaching: Sparkles,
   joga: Flower2,
