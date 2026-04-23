@@ -1,8 +1,9 @@
 import krystian from "@/assets/specialist-krystian.jpg";
 import anna from "@/assets/specialist-anna.jpg";
 import karolina from "@/assets/specialist-karolina.jpg";
-import therapist from "@/assets/specialist-therapist.jpg";
-import sexologist from "@/assets/specialist-sexologist.jpg";
+import marek from "@/assets/specialist-marek.jpg";
+import annaAntoniewicz from "@/assets/specialist-anna-antoniewicz.jpg";
+import tomasz from "@/assets/specialist-tomasz.jpg";
 import annaMarciniak from "@/assets/specialist-anna-marciniak.jpg";
 import ulaPalczewska from "@/assets/specialist-ula-palczewska.jpg";
 
