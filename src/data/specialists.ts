@@ -121,8 +121,8 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Psychoterapia integracyjna", "Terapia schematu", "Podejście psychodynamiczne"],
     pricing: [
-      { name: "Sesja terapii", price: "230 zł", duration: "50 min" },
-      { name: "Konsultacja wstępna", price: "260 zł", duration: "60 min" },
+      { name: "Sesja psychoterapii", price: "200 zł", duration: "50 min" },
+      { name: "Konsultacja wstępna", price: "250 zł", duration: "60 min" },
     ],
   },
   {
@@ -143,8 +143,8 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Podejście integracyjne", "Praca z procesem zmiany", "Wsparcie w trzeźwieniu"],
     pricing: [
-      { name: "Sesja terapii", price: "230 zł", duration: "50 min" },
-      { name: "Konsultacja wstępna", price: "260 zł", duration: "60 min" },
+      { name: "Sesja psychoterapii", price: "200 zł", duration: "50 min" },
+      { name: "Konsultacja wstępna", price: "250 zł", duration: "60 min" },
     ],
   },
   {
@@ -165,8 +165,8 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Terapia poznawczo-behawioralna", "Praca przez zabawę", "Psychoedukacja rodzin"],
     pricing: [
-      { name: "Konsultacja", price: "220 zł", duration: "50 min" },
-      { name: "Konsultacja rodzicielska", price: "260 zł", duration: "60 min" },
+      { name: "Konsultacja psychologiczna z dzieckiem/ nastolatkiem", price: "180 zł", duration: "50 min" },
+      { name: "Konsultacja rodzicielska", price: "180 zł", duration: "50 min" },
     ],
   },
   {
@@ -182,8 +182,8 @@ export const specialists: Specialist[] = [
     specializations: ["Coaching kariery", "Coaching życiowy", "Wypalenie zawodowe"],
     methods: ["Model GROW", "Praca z wartościami", "Plany działania"],
     pricing: [
-      { name: "Sesja coachingowa", price: "250 zł", duration: "60 min" },
-      { name: "Pakiet 5 sesji", price: "1100 zł", duration: "5 × 60 min" },
+      { name: "Sesja coachingowa", price: "200 zł", duration: "50 min" },
+      { name: "Męskie Kręgi - warsztaty rozwojowe ", price: "100 zł", duration: "60 min" },
     ],
   },
   {
@@ -204,9 +204,9 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Asany dostosowane do uczestnika", "Techniki oddechowe", "Relaksacja i medytacja"],
     pricing: [
-      { name: "Zajęcia grupowe", price: "50 zł", duration: "75 min" },
-      { name: "Karnet 4 wejścia", price: "180 zł", duration: "miesiąc" },
-      { name: "Sesja indywidualna", price: "150 zł", duration: "60 min" },
+      { name: "Zajęcia grupowe", price: "50 zł", duration: "60 min" },
+      { name: "Karnet 4 wejścia", price: "190 zł", duration: "miesiąc" },
+      { name: "Warsztat dla kobiet  \"Medytacja i joga\" ", price: "100 zł", duration: "2 - 3 godz." },
     ],
   },
   {
