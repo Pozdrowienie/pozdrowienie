@@ -1,8 +1,9 @@
 import krystian from "@/assets/specialist-krystian.jpg";
 import anna from "@/assets/specialist-anna.jpg";
 import karolina from "@/assets/specialist-karolina.jpg";
-import therapist from "@/assets/specialist-therapist.jpg";
-import sexologist from "@/assets/specialist-sexologist.jpg";
+import marek from "@/assets/specialist-marek.jpg";
+import annaAntoniewicz from "@/assets/specialist-anna-antoniewicz.jpg";
+import tomasz from "@/assets/specialist-tomasz.jpg";
 import annaMarciniak from "@/assets/specialist-anna-marciniak.jpg";
 import ulaPalczewska from "@/assets/specialist-ula-palczewska.jpg";
 
@@ -125,13 +126,35 @@ export const specialists: Specialist[] = [
     ],
   },
   {
+    slug: "marek-pisarski",
+    name: "Marek Pisarski",
+    role: "Psycholog, psychoterapeuta — doświadczony w pracy z uzależnieniami",
+    category: "psychoterapeuta",
+    space: "mind",
+    image: marek,
+    phone: "+48 608 503 674",
+    about:
+      "Psycholog i psychoterapeuta z wieloletnim doświadczeniem w pracy z osobami zmagającymi się z uzależnieniami oraz ich bliskimi.",
+    specializations: [
+      "Uzależnienia i współuzależnienie",
+      "Praca z osobami DDA / DDD",
+      "Kryzysy emocjonalne",
+      "Psychoterapia indywidualna",
+    ],
+    methods: ["Podejście integracyjne", "Praca z procesem zmiany", "Wsparcie w trzeźwieniu"],
+    pricing: [
+      { name: "Sesja terapii", price: "230 zł", duration: "50 min" },
+      { name: "Konsultacja wstępna", price: "260 zł", duration: "60 min" },
+    ],
+  },
+  {
     slug: "anna-antoniewicz",
     name: "Anna Antoniewicz",
     role: "PSYCHOLOG DZIECI I MŁODZIEŻY I RODZICÓW",
     category: "dzieci",
     space: "mind",
-    image: sexologist,
-    phone: "+48 600 100 104",
+    image: annaAntoniewicz,
+    phone: "+48 577 157 373",
     about:
       "Wsparcie psychologiczne dla dzieci, młodzieży i ich rodzin. Diagnoza, terapia oraz konsultacje wychowawcze.",
     specializations: [
@@ -152,8 +175,8 @@ export const specialists: Specialist[] = [
     role: "Coach",
     category: "coaching",
     space: "mind",
-    image: therapist,
-    phone: "+48 600 100 105",
+    image: tomasz,
+    phone: "+48 533 206 040",
     about:
       "Coaching rozwojowy i kariery — praca nad celami, motywacją i odkrywaniem zasobów.",
     specializations: ["Coaching kariery", "Coaching życiowy", "Wypalenie zawodowe"],
@@ -170,7 +193,7 @@ export const specialists: Specialist[] = [
     category: "joga",
     space: "body",
     image: annaMarciniak,
-    phone: "+48 600 100 106",
+    phone: "+48 691 063 822",
     about:
       "Nauczycielka Hatha Jogi z wieloletnią praktyką. Tworzy przestrzeń, w której każdy odnajdzie równowagę ciała i umysłu.",
     specializations: [
