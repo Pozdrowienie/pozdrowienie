@@ -197,7 +197,7 @@ export const specialists: Specialist[] = [
     image: annaMarciniak,
     phone: "+48 691 063 822",
     about:
-      "Nauczycielka Hatha Jogi z wieloletnią praktyką. Tworzy przestrzeń, w której każdy odnajdzie równowagę ciała i umysłu.",
+      "Ania prowadzi klasyczną Hatha Jogę – zajęcia o umiarkowanej intensywności, które są bezpieczną przystanią zarówno dla osób początkujących, jak i tych wracających do formy.\n\nSkupiamy się tu na precyzji ruchu i głębokim oddechu.\n\nTo połączenie przynosi konkretne efekty:\nUlga dla ciała: Poczujesz wyraźne rozluźnienie napięć w kręgosłupie i wzmocnienie mięśni.\n\nSpokój dla głowy: Zredukujesz stres, wyciszysz myśli i poprawisz jakość swojego snu.\nAnia dba o to, byś na macie czuł się swobodnie i bezpiecznie, odzyskując naturalną energię życiową.",
     specializations: [
       "Hatha Joga klasyczna",
       "Joga dla początkujących",
