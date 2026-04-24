@@ -54,9 +54,9 @@ export const specialists: Specialist[] = [
     category: "psychiatra",
     space: "mind",
     image: krystian,
-    phone: "+48 792 99 73 37",
+    phone: "+48 792 997 337",
     about:
-      "Lekarz specjalista psychiatrii dorosłych z ponad 15-letnim doświadczeniem klinicznym. Łączy wiedzę medyczną z empatią i indywidualnym podejściem do pacjenta.",
+      "Prowadzę praktykę lekarską od 20 lat. Od 2003 roku pracuję w Wojewódzkim Szpitalu dla Nerwowo i Psychicznie Chorych w Bolesławcu.\n\nPoszerzyłem moje kompetencje, kończąc w 2014 roku szkolenie z zakresu psychoterapii psychodynamicznej w Krakowskim Centrum Psychodynamicznym.\n\nSpecjalizuję się w diagnostyce i leczeniu szerokiego spektrum zaburzeń, m.in. depresji, zaburzeń lękowych, schizofrenii oraz innych psychoz. W swojej praktyce łączę wiedzę medyczną z podejściem psychoterapeutycznym, wspierając pacjentów w odzyskiwaniu zdrowia i powrocie do ról społecznych. Rejestracja czynna od poniedziałku do piątku w godzinach 13:00–15:00.",
     specializations: [
       "Depresja i zaburzenia nastroju",
       "Zaburzenia lękowe i napady paniki",
@@ -85,7 +85,7 @@ export const specialists: Specialist[] = [
     image: anna,
     phone: "+48 781 028 389",
     about:
-      "Psycholog kliniczny z pasją do wspierania w zmianach życiowych, stresie i relacjach. Tworzy bezpieczną, nieoceniającą przestrzeń.",
+      "Swoją pracę opieram na autentycznym zaangażowaniu i wieloletnim doświadczeniu w bezpośredniej pracy z pacjentem. Głównymi obszarami mojej specjalizacji są interwencja kryzysowa oraz diagnoza ADHD. Oferuję szerokie wsparcie psychologiczne osobom dorosłym, towarzysząc im zarówno w rozwoju osobistym, jak i w skutecznym radzeniu sobie z trudami codzienności.\n\nW ramach mojej praktyki prowadzę poradnictwo psychologiczne obejmujące konsultacje i doradztwo. W pracy wykorzystuję również techniki Mindfulness (uważności) oraz psychoedukację, dzieląc się wiedzą w zakresie zdrowia psychicznego. Dbam o najwyższą jakość swoich usług, dlatego stale podnoszę kwalifikacje poprzez udział w specjalistycznych szkoleniach i kursach.",
     specializations: [
       "Stres i wypalenie",
       "Samoocena i rozwój osobisty",
@@ -114,7 +114,7 @@ export const specialists: Specialist[] = [
     image: karolina,
     phone: "+48 609 020 417",
     about:
-      "Psychoterapia integracyjna — praca nad wzorcami, traumą i trwałą zmianą.",
+      "Jestem psychologiem, psychoterapeutą, dyplomowanym specjalistą w dziedzinie seksuologii. Absolwentką Całościowego Kursu Psychoterapii w nurcie integratywnym. Psychoterapeutą psychoz. Certyfikowanym diagnostą zaburzeń związanych z traumą i dysocjacją (poziom podstawowy i zaawansowany).\n\nPracuję łącząc podejście psychodynamiczne z innymi paradygmatami. Dopasowuję podejście indywidualnie w zależności od zgłaszanych problemów, osobistych potrzeb i osobowości pacjenta. Prowadzę psychoterapię indywidualną oraz grupową osób dorosłych i młodzieży.\n\nZ kim pracuje?\nWspieram osoby zmagające się z trudnościami adaptacyjnymi, poszukujące wsparcia w radzeniu sobie ze stresem, emocjami i wyzwaniami życiowymi. Towarzyszę również osobom borykającym się z bardziej złożonymi kryzysami psychicznymi.",
     specializations: [
       "Trauma i PTSD",
       "Zaburzenia osobowości",
@@ -136,7 +136,7 @@ export const specialists: Specialist[] = [
     image: marek,
     phone: "+48 608 503 674",
     about:
-      "Psycholog i psychoterapeuta z wieloletnim doświadczeniem w pracy z osobami zmagającymi się z uzależnieniami oraz ich bliskimi.",
+      "Jestem psychologiem, psychoterapeutą realizującym całościowe, pięcioletnie szkolenie psychoterapeutyczne, akredytowane przez Polskie Towarzystwo Psychiatryczne w szkole integracyjnej. W swojej pracy łączę elementy z różnych nurtów psychoterapeutycznych w zależności od problematyki i potrzeb Klienta. Pracuję z osobami dorosłymi w kontakcie indywidualnym oraz grupowym, zaś swoją pracę poddaje superwizji.\n\nW swojej dotychczasowej pracy dobrze poznałem problematykę dolegliwości depresyjnych i lękowych, wspieram ludzi w różnego rodzaju kryzysach psychicznych. Posiadam doświadczenie w pracy z różnymi formami uzależnienia (behawioralne: seksoholizm, hazard, medialne oraz uzależnienia od substancji: alkoholizm, narkomania/lekomania). Pracuję także z bliskimi uzależnionych, którzy borykają się z własnymi trudnościami (współuzależnienie, DDA/DDD, przemoc).",
     specializations: [
       "Uzależnienia i współuzależnienie",
       "Praca z osobami DDA / DDD",
@@ -158,7 +158,7 @@ export const specialists: Specialist[] = [
     image: annaAntoniewicz,
     phone: "+48 577 157 373",
     about:
-      "Wsparcie psychologiczne dla dzieci, młodzieży i ich rodzin. Diagnoza, terapia oraz konsultacje wychowawcze.",
+      "Jestem psychologiem, pedagogiem i socjoterapeutką z ponad dziesięcioletnim doświadczeniem w pracy z dziećmi. Wierzę, że każde zachowanie dziecka to ukryty komunikat. W moim gabinecie pomagam rozkodować te wiadomości.\n\nZ kim pracuję?\nWspieram dzieci i młodzież w naturalnych wyzwaniach rozwojowych – od adaptacji w przedszkolu, przez trudności rówieśnicze, aż po burzliwy okres dojrzewania. W pracy z rodzicami bliskie jest mi podejście NVC (Porozumienie bez Przemocy), w którym zachowanie dziecka rozumiemy jako komunikat o jego niezaspokojonych potrzebach. Nieustannie poszerzam swoje kwalifikację, uczestniczę w kursach i szkoleniach. Od października rozpoczynam 4-letnią Szkołę Psychoterapii w nurcie Poznawczo-Behawioralnym. Prowadzę Treningi Umiejętności Społecznych i warsztaty rozwijające kompetencje emocjonalne dla dzieci i młodzieży.",
     specializations: [
       "Trudności emocjonalne i lękowe",
       "Problemy szkolne",
@@ -180,7 +180,7 @@ export const specialists: Specialist[] = [
     image: tomasz,
     phone: "+48 533 206 040",
     about:
-      "Coaching rozwojowy i kariery — praca nad celami, motywacją i odkrywaniem zasobów.",
+      "Coach na poziomie PCC (ICF Level 2) Komunikacja dla Rozwoju. Coaching to dla mnie coś znacznie więcej niż praca czy narzędzie biznesowe. To głęboki proces odkrywania siebie, odwagi i autentyczności.\nDo coacha nie trafiają ludzie „chorzy” – trafiają świadomi i odważni, którzy decydują się wziąć odpowiedzialność za swoje życie i wyruszyć w podróż ku zmianie.\n\nZawsze będę stał na straży wartości coachingowych i wierzył w moc rozwoju opartego na autentyczności, szacunku i zaufaniu. Sesje Coachingu indywidualne i grupowe. Trener Mentalny w trakcie certyfikacji.\nMaskulinum Męskie Kręgi - w trakcie certyfikacji.",
     specializations: ["Coaching kariery", "Coaching życiowy", "Wypalenie zawodowe"],
     methods: ["Model GROW", "Praca z wartościami", "Plany działania"],
     pricing: [
@@ -197,7 +197,7 @@ export const specialists: Specialist[] = [
     image: annaMarciniak,
     phone: "+48 691 063 822",
     about:
-      "Nauczycielka Hatha Jogi z wieloletnią praktyką. Tworzy przestrzeń, w której każdy odnajdzie równowagę ciała i umysłu.",
+      "Ania prowadzi klasyczną Hatha Jogę – zajęcia o umiarkowanej intensywności, które są bezpieczną przystanią zarówno dla osób początkujących, jak i tych wracających do formy.\n\nSkupiamy się tu na precyzji ruchu i głębokim oddechu.\n\nTo połączenie przynosi konkretne efekty:\nUlga dla ciała: Poczujesz wyraźne rozluźnienie napięć w kręgosłupie i wzmocnienie mięśni.\n\nSpokój dla głowy: Zredukujesz stres, wyciszysz myśli i poprawisz jakość swojego snu.\nAnia dba o to, byś na macie czuł się swobodnie i bezpiecznie, odzyskując naturalną energię życiową.",
     specializations: [
       "Hatha Joga klasyczna",
       "Joga dla początkujących",
@@ -221,7 +221,7 @@ export const specialists: Specialist[] = [
     imagePosition: "center 18%",
     phone: "+48 608 525 148",
     about:
-      "Certyfikowana terapeutka tańcem i ruchem (DMT). Pomaga odkrywać emocje przez świadomy ruch ciała.",
+      "Z wykształcenia jestem fizjoterapeutką, absolwentką 4-letniej Szkoły Counsellingu Gestalt oraz Trenerką Rozwojowej Pracy poprzez Ciało, Taniec i Ruch (w trakcie szkolenia) w Polskim Instytucie Psychoterapii Tańcem i Ruchem w Warszawie. Od dziecka towarzyszy mi muzyka, a od czasów nastoletnich taniec współczesny, który do dziś, stale porusza moje serce. Myślę obrazami, czuję dźwiękami, poruszam się z obecnością. Zawsze marzyłam o pracy, która w sposób twórczy i rozwojowy łączyłaby ciało, emocje, świadomość - najlepiej w ruchu i taką obecnie mam przyjemność doświadczać.",
     specializations: [
       "Terapia tańcem i ruchem (DMT)",
       "Praca z ciałem i emocjami",
