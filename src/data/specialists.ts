@@ -158,7 +158,7 @@ export const specialists: Specialist[] = [
     image: annaAntoniewicz,
     phone: "+48 577 157 373",
     about:
-      "Wsparcie psychologiczne dla dzieci, młodzieży i ich rodzin. Diagnoza, terapia oraz konsultacje wychowawcze.",
+      "Jestem psychologiem, pedagogiem i socjoterapeutką z ponad dziesięcioletnim doświadczeniem w pracy z dziećmi. Wierzę, że każde zachowanie dziecka to ukryty komunikat. W moim gabinecie pomagam rozkodować te wiadomości.\n\nZ kim pracuję?\nWspieram dzieci i młodzież w naturalnych wyzwaniach rozwojowych – od adaptacji w przedszkolu, przez trudności rówieśnicze, aż po burzliwy okres dojrzewania. W pracy z rodzicami bliskie jest mi podejście NVC (Porozumienie bez Przemocy), w którym zachowanie dziecka rozumiemy jako komunikat o jego niezaspokojonych potrzebach. Nieustannie poszerzam swoje kwalifikację, uczestniczę w kursach i szkoleniach. Od października rozpoczynam 4-letnią Szkołę Psychoterapii w nurcie Poznawczo-Behawioralnym. Prowadzę Treningi Umiejętności Społecznych i warsztaty rozwijające kompetencje emocjonalne dla dzieci i młodzieży.",
     specializations: [
       "Trudności emocjonalne i lękowe",
       "Problemy szkolne",
