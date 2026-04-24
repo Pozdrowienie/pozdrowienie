@@ -34,78 +34,52 @@ export function BrandHero({
         }}
       />
 
-      {/* Bold flowing mint + pink "wywijaski" — thick organic ribbons */}
+      {/* Bold flowing mint + pink "wywijaski" — soft filled hills like the brand sheet */}
       <svg
         aria-hidden="true"
         viewBox="0 0 1440 600"
         preserveAspectRatio="none"
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-[70%] w-full"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-[55%] w-full"
       >
         <defs>
-          <linearGradient id="hero-mint" x1="0" y1="0" x2="1" y2="0">
+          <linearGradient id="hero-mint-fill" x1="0" y1="1" x2="1" y2="0">
             <stop offset="0%" stopColor="#7fc3b1" stopOpacity="0.95" />
-            <stop offset="100%" stopColor="#bfe0d4" stopOpacity="0.7" />
+            <stop offset="100%" stopColor="#bfe0d4" stopOpacity="0.75" />
           </linearGradient>
-          <linearGradient id="hero-mint-2" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#a8d6c5" stopOpacity="0.85" />
-            <stop offset="100%" stopColor="#7fc3b1" stopOpacity="0.55" />
+          <linearGradient id="hero-mint-fill-2" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0%" stopColor="#a8d6c5" stopOpacity="0.6" />
+            <stop offset="100%" stopColor="#cfe7dd" stopOpacity="0.35" />
           </linearGradient>
-          <linearGradient id="hero-pink" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#f9c5d2" stopOpacity="0.85" />
-            <stop offset="100%" stopColor="#ef9bb0" stopOpacity="0.95" />
+          <linearGradient id="hero-pink-fill" x1="1" y1="1" x2="0" y2="0">
+            <stop offset="0%" stopColor="#ef9bb0" stopOpacity="0.95" />
+            <stop offset="100%" stopColor="#fadbe2" stopOpacity="0.75" />
           </linearGradient>
-          <linearGradient id="hero-pink-2" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#ef9bb0" stopOpacity="0.7" />
-            <stop offset="100%" stopColor="#f4b3c4" stopOpacity="0.85" />
+          <linearGradient id="hero-pink-fill-2" x1="1" y1="1" x2="0" y2="0">
+            <stop offset="0%" stopColor="#f4b3c4" stopOpacity="0.55" />
+            <stop offset="100%" stopColor="#fde7ee" stopOpacity="0.35" />
           </linearGradient>
         </defs>
 
-        {/* Left mint — thick bold ribbons */}
+        {/* Mint hill — back layer */}
         <path
-          d="M-80,480 C180,360 380,560 720,420"
-          fill="none"
-          stroke="url(#hero-mint)"
-          strokeWidth="22"
-          strokeLinecap="round"
+          d="M-40,600 L-40,360 C180,260 420,420 760,340 L760,600 Z"
+          fill="url(#hero-mint-fill-2)"
         />
+        {/* Mint hill — front layer */}
         <path
-          d="M-80,560 C220,500 440,620 720,500"
-          fill="none"
-          stroke="url(#hero-mint-2)"
-          strokeWidth="14"
-          strokeLinecap="round"
-        />
-        <path
-          d="M-80,420 C160,300 360,500 700,360"
-          fill="none"
-          stroke="#7fc3b1"
-          strokeOpacity="0.45"
-          strokeWidth="6"
-          strokeLinecap="round"
+          d="M-40,600 L-40,440 C200,360 440,500 780,420 L780,600 Z"
+          fill="url(#hero-mint-fill)"
         />
 
-        {/* Right pink — thick bold ribbons */}
+        {/* Pink hill — back layer */}
         <path
-          d="M720,420 C1040,560 1240,360 1520,500"
-          fill="none"
-          stroke="url(#hero-pink)"
-          strokeWidth="22"
-          strokeLinecap="round"
+          d="M1480,600 L1480,360 C1240,260 1000,420 660,340 L660,600 Z"
+          fill="url(#hero-pink-fill-2)"
         />
+        {/* Pink hill — front layer */}
         <path
-          d="M720,500 C1020,620 1260,480 1520,580"
-          fill="none"
-          stroke="url(#hero-pink-2)"
-          strokeWidth="14"
-          strokeLinecap="round"
-        />
-        <path
-          d="M700,360 C1040,500 1260,300 1520,440"
-          fill="none"
-          stroke="#ef9bb0"
-          strokeOpacity="0.5"
-          strokeWidth="6"
-          strokeLinecap="round"
+          d="M1480,600 L1480,440 C1240,360 1000,500 680,420 L680,600 Z"
+          fill="url(#hero-pink-fill)"
         />
       </svg>
 
