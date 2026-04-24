@@ -136,7 +136,7 @@ export const specialists: Specialist[] = [
     image: marek,
     phone: "+48 608 503 674",
     about:
-      "Psycholog i psychoterapeuta z wieloletnim doświadczeniem w pracy z osobami zmagającymi się z uzależnieniami oraz ich bliskimi.",
+      "Jestem psychologiem, psychoterapeutą realizującym całościowe, pięcioletnie szkolenie psychoterapeutyczne, akredytowane przez Polskie Towarzystwo Psychiatryczne w szkole integracyjnej. W swojej pracy łączę elementy z różnych nurtów psychoterapeutycznych w zależności od problematyki i potrzeb Klienta. Pracuję z osobami dorosłymi w kontakcie indywidualnym oraz grupowym, zaś swoją pracę poddaje superwizji.\n\nW swojej dotychczasowej pracy dobrze poznałem problematykę dolegliwości depresyjnych i lękowych, wspieram ludzi w różnego rodzaju kryzysach psychicznych. Posiadam doświadczenie w pracy z różnymi formami uzależnienia (behawioralne: seksoholizm, hazard, medialne oraz uzależnienia od substancji: alkoholizm, narkomania/lekomania). Pracuję także z bliskimi uzależnionych, którzy borykają się z własnymi trudnościami (współuzależnienie, DDA/DDD, przemoc).",
     specializations: [
       "Uzależnienia i współuzależnienie",
       "Praca z osobami DDA / DDD",
