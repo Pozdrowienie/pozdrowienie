@@ -126,7 +126,11 @@ function SpecialistProfile() {
           <div className="space-y-10">
             <div>
               <h2 className="font-serif text-2xl font-semibold text-brand-navy">O mnie</h2>
-              <p className="mt-4 leading-relaxed text-muted-foreground">{s.about}</p>
+              <div className="mt-4 space-y-4 leading-relaxed text-muted-foreground">
+                {s.about.split("\n\n").map((para, i) => (
+                  <p key={i} className="whitespace-pre-line">{para}</p>
+                ))}
+              </div>
             </div>
 
             <PlaceholderSection
