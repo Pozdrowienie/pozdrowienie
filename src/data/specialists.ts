@@ -221,7 +221,7 @@ export const specialists: Specialist[] = [
     imagePosition: "center 18%",
     phone: "+48 608 525 148",
     about:
-      "Certyfikowana terapeutka tańcem i ruchem (DMT). Pomaga odkrywać emocje przez świadomy ruch ciała.",
+      "Z wykształcenia jestem fizjoterapeutką, absolwentką 4-letniej Szkoły Counsellingu Gestalt oraz Trenerką Rozwojowej Pracy poprzez Ciało, Taniec i Ruch (w trakcie szkolenia) w Polskim Instytucie Psychoterapii Tańcem i Ruchem w Warszawie. Od dziecka towarzyszy mi muzyka, a od czasów nastoletnich taniec współczesny, który do dziś, stale porusza moje serce. Myślę obrazami, czuję dźwiękami, poruszam się z obecnością. Zawsze marzyłam o pracy, która w sposób twórczy i rozwojowy łączyłaby ciało, emocje, świadomość - najlepiej w ruchu i taką obecnie mam przyjemność doświadczać.",
     specializations: [
       "Terapia tańcem i ruchem (DMT)",
       "Praca z ciałem i emocjami",
