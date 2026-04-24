@@ -34,54 +34,80 @@ export function BrandHero({
         }}
       />
 
-      {/* Bold flowing mint + pink "wywijaski" — soft filled hills like the brand sheet */}
+      {/* Layered organic hills — mint left, pink right (matches brand sheet) */}
       <svg
         aria-hidden="true"
-        viewBox="0 0 1440 600"
+        viewBox="0 0 1440 320"
         preserveAspectRatio="none"
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-[55%] w-full"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-[42%] w-full"
       >
         <defs>
-          <linearGradient id="hero-mint-fill" x1="0" y1="1" x2="1" y2="0">
-            <stop offset="0%" stopColor="#7fc3b1" stopOpacity="0.95" />
-            <stop offset="100%" stopColor="#bfe0d4" stopOpacity="0.75" />
+          {/* Mint — three tonal stops, vertical for soft top fade */}
+          <linearGradient id="hero-mint-a" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#bfe0d4" stopOpacity="0" />
+            <stop offset="60%" stopColor="#a8d2c3" stopOpacity="0.55" />
+            <stop offset="100%" stopColor="#7fb8a4" stopOpacity="0.85" />
           </linearGradient>
-          <linearGradient id="hero-mint-fill-2" x1="0" y1="1" x2="1" y2="0">
-            <stop offset="0%" stopColor="#a8d6c5" stopOpacity="0.6" />
-            <stop offset="100%" stopColor="#cfe7dd" stopOpacity="0.35" />
+          <linearGradient id="hero-mint-b" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#cfe7dd" stopOpacity="0" />
+            <stop offset="55%" stopColor="#b8dccd" stopOpacity="0.45" />
+            <stop offset="100%" stopColor="#8ec3b1" stopOpacity="0.7" />
           </linearGradient>
-          <linearGradient id="hero-pink-fill" x1="1" y1="1" x2="0" y2="0">
-            <stop offset="0%" stopColor="#ef9bb0" stopOpacity="0.95" />
-            <stop offset="100%" stopColor="#fadbe2" stopOpacity="0.75" />
+          <linearGradient id="hero-mint-c" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#d6ebe2" stopOpacity="0" />
+            <stop offset="100%" stopColor="#a8d2c3" stopOpacity="0.45" />
           </linearGradient>
-          <linearGradient id="hero-pink-fill-2" x1="1" y1="1" x2="0" y2="0">
-            <stop offset="0%" stopColor="#f4b3c4" stopOpacity="0.55" />
-            <stop offset="100%" stopColor="#fde7ee" stopOpacity="0.35" />
+
+          {/* Pink — three tonal stops */}
+          <linearGradient id="hero-pink-a" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#fadbe2" stopOpacity="0" />
+            <stop offset="55%" stopColor="#f4b3c4" stopOpacity="0.6" />
+            <stop offset="100%" stopColor="#e892a8" stopOpacity="0.9" />
+          </linearGradient>
+          <linearGradient id="hero-pink-b" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#fde7ee" stopOpacity="0" />
+            <stop offset="55%" stopColor="#f6c2d0" stopOpacity="0.45" />
+            <stop offset="100%" stopColor="#ef9bb0" stopOpacity="0.7" />
+          </linearGradient>
+          <linearGradient id="hero-pink-c" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#fdeef2" stopOpacity="0" />
+            <stop offset="100%" stopColor="#f4b3c4" stopOpacity="0.45" />
           </linearGradient>
         </defs>
 
-        {/* Mint hill — back layer */}
+        {/* MINT LEFT — back hill (tall, broad) */}
         <path
-          d="M-40,600 L-40,360 C180,260 420,420 760,340 L760,600 Z"
-          fill="url(#hero-mint-fill-2)"
+          d="M-40,320 L-40,150 C140,90 320,170 520,140 C620,125 700,160 760,180 L760,320 Z"
+          fill="url(#hero-mint-c)"
         />
-        {/* Mint hill — front layer */}
+        {/* MINT — mid hill */}
         <path
-          d="M-40,600 L-40,440 C200,360 440,500 780,420 L780,600 Z"
-          fill="url(#hero-mint-fill)"
+          d="M-40,320 L-40,200 C160,140 340,210 540,190 C640,180 720,210 760,225 L760,320 Z"
+          fill="url(#hero-mint-b)"
+        />
+        {/* MINT — front hill (darker, lower) */}
+        <path
+          d="M-40,320 L-40,235 C180,185 360,250 560,235 C660,228 730,245 760,255 L760,320 Z"
+          fill="url(#hero-mint-a)"
         />
 
-        {/* Pink hill — back layer */}
+        {/* PINK RIGHT — back hill */}
         <path
-          d="M1480,600 L1480,360 C1240,260 1000,420 660,340 L660,600 Z"
-          fill="url(#hero-pink-fill-2)"
+          d="M1480,320 L1480,140 C1300,80 1100,170 900,140 C800,125 720,160 680,180 L680,320 Z"
+          fill="url(#hero-pink-c)"
         />
-        {/* Pink hill — front layer */}
+        {/* PINK — mid hill */}
         <path
-          d="M1480,600 L1480,440 C1240,360 1000,500 680,420 L680,600 Z"
-          fill="url(#hero-pink-fill)"
+          d="M1480,320 L1480,195 C1280,135 1080,205 880,190 C780,180 710,210 680,225 L680,320 Z"
+          fill="url(#hero-pink-b)"
+        />
+        {/* PINK — front hill */}
+        <path
+          d="M1480,320 L1480,230 C1260,180 1080,245 880,235 C780,228 710,245 680,255 L680,320 Z"
+          fill="url(#hero-pink-a)"
         />
       </svg>
+
 
       {/* Line-art building — desktop right side, mobile faint backdrop */}
       <img
