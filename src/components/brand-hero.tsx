@@ -108,17 +108,6 @@ export function BrandHero({
         />
       </svg>
 
-        {/* Pink hill — back layer */}
-        <path
-          d="M1480,600 L1480,360 C1240,260 1000,420 660,340 L660,600 Z"
-          fill="url(#hero-pink-fill-2)"
-        />
-        {/* Pink hill — front layer */}
-        <path
-          d="M1480,600 L1480,440 C1240,360 1000,500 680,420 L680,600 Z"
-          fill="url(#hero-pink-fill)"
-        />
-      </svg>
 
       {/* Line-art building — desktop right side, mobile faint backdrop */}
       <img
