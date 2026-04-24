@@ -85,7 +85,7 @@ export const specialists: Specialist[] = [
     image: anna,
     phone: "+48 781 028 389",
     about:
-      "Psycholog kliniczny z pasją do wspierania w zmianach życiowych, stresie i relacjach. Tworzy bezpieczną, nieoceniającą przestrzeń.",
+      "Swoją pracę opieram na autentycznym zaangażowaniu i wieloletnim doświadczeniu w bezpośredniej pracy z pacjentem. Głównymi obszarami mojej specjalizacji są interwencja kryzysowa oraz diagnoza ADHD. Oferuję szerokie wsparcie psychologiczne osobom dorosłym, towarzysząc im zarówno w rozwoju osobistym, jak i w skutecznym radzeniu sobie z trudami codzienności.\n\nW ramach mojej praktyki prowadzę poradnictwo psychologiczne obejmujące konsultacje i doradztwo. W pracy wykorzystuję również techniki Mindfulness (uważności) oraz psychoedukację, dzieląc się wiedzą w zakresie zdrowia psychicznego. Dbam o najwyższą jakość swoich usług, dlatego stale podnoszę kwalifikacje poprzez udział w specjalistycznych szkoleniach i kursach.",
     specializations: [
       "Stres i wypalenie",
       "Samoocena i rozwój osobisty",
