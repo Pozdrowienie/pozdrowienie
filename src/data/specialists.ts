@@ -114,7 +114,7 @@ export const specialists: Specialist[] = [
     image: karolina,
     phone: "+48 609 020 417",
     about:
-      "Psychoterapia integracyjna — praca nad wzorcami, traumą i trwałą zmianą.",
+      "Jestem psychologiem, psychoterapeutą, dyplomowanym specjalistą w dziedzinie seksuologii. Absolwentką Całościowego Kursu Psychoterapii w nurcie integratywnym. Psychoterapeutą psychoz. Certyfikowanym diagnostą zaburzeń związanych z traumą i dysocjacją (poziom podstawowy i zaawansowany).\n\nPracuję łącząc podejście psychodynamiczne z innymi paradygmatami. Dopasowuję podejście indywidualnie w zależności od zgłaszanych problemów, osobistych potrzeb i osobowości pacjenta. Prowadzę psychoterapię indywidualną oraz grupową osób dorosłych i młodzieży.\n\nZ kim pracuje?\nWspieram osoby zmagające się z trudnościami adaptacyjnymi, poszukujące wsparcia w radzeniu sobie ze stresem, emocjami i wyzwaniami życiowymi. Towarzyszę również osobom borykającym się z bardziej złożonymi kryzysami psychicznymi.",
     specializations: [
       "Trauma i PTSD",
       "Zaburzenia osobowości",
