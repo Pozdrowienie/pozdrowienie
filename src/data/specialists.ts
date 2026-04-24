@@ -24,6 +24,8 @@ export type Specialist = {
   /** mind = turkus, body = róż — używane w stylach kart */
   space: "mind" | "body";
   image: string;
+  /** Optional CSS object-position for circular crops (e.g. "center 20%"). */
+  imagePosition?: string;
   phone: string;
   about: string;
   specializations: string[];
