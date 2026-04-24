@@ -34,50 +34,78 @@ export function BrandHero({
         }}
       />
 
-      {/* Floating mint + pink wavy lines — bottom corners, very light */}
+      {/* Bold flowing mint + pink "wywijaski" — thick organic ribbons */}
       <svg
         aria-hidden="true"
         viewBox="0 0 1440 600"
         preserveAspectRatio="none"
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-[55%] w-full"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-[70%] w-full"
       >
         <defs>
           <linearGradient id="hero-mint" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#bfe0d4" stopOpacity="0.55" />
-            <stop offset="100%" stopColor="#7fc3b1" stopOpacity="0.25" />
+            <stop offset="0%" stopColor="#7fc3b1" stopOpacity="0.95" />
+            <stop offset="100%" stopColor="#bfe0d4" stopOpacity="0.7" />
+          </linearGradient>
+          <linearGradient id="hero-mint-2" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stopColor="#a8d6c5" stopOpacity="0.85" />
+            <stop offset="100%" stopColor="#7fc3b1" stopOpacity="0.55" />
           </linearGradient>
           <linearGradient id="hero-pink" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#f9c5d2" stopOpacity="0.45" />
-            <stop offset="100%" stopColor="#ef9bb0" stopOpacity="0.55" />
+            <stop offset="0%" stopColor="#f9c5d2" stopOpacity="0.85" />
+            <stop offset="100%" stopColor="#ef9bb0" stopOpacity="0.95" />
+          </linearGradient>
+          <linearGradient id="hero-pink-2" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stopColor="#ef9bb0" stopOpacity="0.7" />
+            <stop offset="100%" stopColor="#f4b3c4" stopOpacity="0.85" />
           </linearGradient>
         </defs>
-        {/* Left mint ribbons */}
+
+        {/* Left mint — thick bold ribbons */}
         <path
-          d="M-50,520 C220,420 380,560 700,470"
+          d="M-80,480 C180,360 380,560 720,420"
           fill="none"
           stroke="url(#hero-mint)"
-          strokeWidth="2.5"
+          strokeWidth="22"
+          strokeLinecap="round"
         />
         <path
-          d="M-50,560 C260,470 420,590 720,510"
+          d="M-80,560 C220,500 440,620 720,500"
+          fill="none"
+          stroke="url(#hero-mint-2)"
+          strokeWidth="14"
+          strokeLinecap="round"
+        />
+        <path
+          d="M-80,420 C160,300 360,500 700,360"
           fill="none"
           stroke="#7fc3b1"
-          strokeOpacity="0.35"
-          strokeWidth="1.5"
+          strokeOpacity="0.45"
+          strokeWidth="6"
+          strokeLinecap="round"
         />
-        {/* Right pink ribbons */}
+
+        {/* Right pink — thick bold ribbons */}
         <path
-          d="M740,500 C1020,580 1240,440 1500,540"
+          d="M720,420 C1040,560 1240,360 1520,500"
           fill="none"
           stroke="url(#hero-pink)"
-          strokeWidth="2.5"
+          strokeWidth="22"
+          strokeLinecap="round"
         />
         <path
-          d="M760,540 C1040,610 1260,490 1500,580"
+          d="M720,500 C1020,620 1260,480 1520,580"
+          fill="none"
+          stroke="url(#hero-pink-2)"
+          strokeWidth="14"
+          strokeLinecap="round"
+        />
+        <path
+          d="M700,360 C1040,500 1260,300 1520,440"
           fill="none"
           stroke="#ef9bb0"
-          strokeOpacity="0.4"
-          strokeWidth="1.5"
+          strokeOpacity="0.5"
+          strokeWidth="6"
+          strokeLinecap="round"
         />
       </svg>
 

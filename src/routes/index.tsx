@@ -184,7 +184,7 @@ function SpecialistCard({
   s,
   accent,
 }: {
-  s: { slug: string; name: string; role: string; image: string };
+  s: { slug: string; name: string; role: string; image: string; imagePosition?: string };
   accent: "mind" | "body";
 }) {
   const ringClass = accent === "mind" ? "ring-mind/30" : "ring-body/40";
@@ -211,6 +211,7 @@ function SpecialistCard({
             height={768}
             loading="lazy"
             className="h-full w-full object-cover"
+            style={{ objectPosition: s.imagePosition ?? "center" }}
           />
         </div>
       </div>

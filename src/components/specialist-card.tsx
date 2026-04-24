@@ -36,6 +36,7 @@ export function SpecialistCard({ s }: { s: Specialist }) {
             height={512}
             loading="lazy"
             className="h-full w-full object-cover transition-transform group-hover:scale-105"
+            style={{ objectPosition: s.imagePosition ?? "center" }}
           />
         </div>
         <p

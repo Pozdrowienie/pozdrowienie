@@ -24,6 +24,8 @@ export type Specialist = {
   /** mind = turkus, body = róż — używane w stylach kart */
   space: "mind" | "body";
   image: string;
+  /** Optional CSS object-position for circular crops (e.g. "center 20%"). */
+  imagePosition?: string;
   phone: string;
   about: string;
   specializations: string[];
@@ -216,6 +218,7 @@ export const specialists: Specialist[] = [
     category: "taniec",
     space: "body",
     image: ulaPalczewska,
+    imagePosition: "center 18%",
     phone: "+48 608 525 148",
     about:
       "Certyfikowana terapeutka tańcem i ruchem (DMT). Pomaga odkrywać emocje przez świadomy ruch ciała.",
