@@ -193,16 +193,16 @@ function SpecialistCard({
     <Link
       to="/specialists/$slug"
       params={{ slug: s.slug }}
-      className="group flex flex-col items-center text-center"
+      className="group flex cursor-pointer flex-col items-center text-center"
     >
       <div className="relative">
         <div
           className={`absolute -inset-2 rounded-full opacity-0 blur-xl transition-opacity group-hover:opacity-100 ${
-            accent === "mind" ? "bg-mind/30" : "bg-body/30"
+            accent === "mind" ? "bg-mind/40" : "bg-body/40"
           }`}
         />
         <div
-          className={`relative h-36 w-36 overflow-hidden rounded-full border-4 border-surface shadow-lg ring-2 transition-transform group-hover:-translate-y-1 ${ringClass}`}
+          className={`relative h-36 w-36 overflow-hidden rounded-full border-4 border-surface shadow-lg ring-2 transition-all duration-300 group-hover:-translate-y-1 group-hover:scale-105 group-hover:shadow-xl group-hover:ring-4 ${ringClass}`}
         >
           <img
             src={s.image}
