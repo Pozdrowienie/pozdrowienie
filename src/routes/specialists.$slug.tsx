@@ -113,6 +113,12 @@ function SpecialistProfile() {
               <p className="mt-3 text-xs text-muted-foreground">
                 Specjalista osobiście odbiera telefon i ustala dogodny termin.
               </p>
+              <Link
+                to="/pricing"
+                className={`mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full border ${accent.border} bg-surface px-6 py-2.5 text-sm font-semibold text-brand-navy transition hover:bg-surface/70`}
+              >
+                Zobacz Cennik
+              </Link>
             </div>
           </div>
 
