@@ -3,7 +3,7 @@ import anna from "@/assets/specialist-anna.jpg";
 import karolina from "@/assets/specialist-karolina.jpg";
 import marek from "@/assets/specialist-marek.jpg";
 import annaAntoniewicz from "@/assets/specialist-anna-antoniewicz.jpg";
-import tomasz from "@/assets/specialist-tomasz.jpg";
+import tomasz from "@/assets/specialist-tomasz-karczewski-new.jpeg";
 import annaMarciniak from "@/assets/specialist-anna-marciniak.jpg";
 import ulaPalczewska from "@/assets/specialist-ula-palczewska.jpg";
 
@@ -178,6 +178,7 @@ export const specialists: Specialist[] = [
     category: "coaching",
     space: "mind",
     image: tomasz,
+    imagePosition: "center 17%",
     phone: "+48 533 206 040",
     about:
       "Coach na poziomie PCC (ICF Level 2) Komunikacja dla Rozwoju. Coaching to dla mnie coś znacznie więcej niż praca czy narzędzie biznesowe. To głęboki proces odkrywania siebie, odwagi i autentyczności.\nDo coacha nie trafiają ludzie „chorzy” – trafiają świadomi i odważni, którzy decydują się wziąć odpowiedzialność za swoje życie i wyruszyć w podróż ku zmianie.\n\nZawsze będę stał na straży wartości coachingowych i wierzył w moc rozwoju opartego na autentyczności, szacunku i zaufaniu. Sesje Coachingu indywidualne i grupowe. Trener Mentalny w trakcie certyfikacji.\nMaskulinum Męskie Kręgi - w trakcie certyfikacji.",
