@@ -1,6 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import type { ComponentType } from "react";
-import { ArrowLeft, BookOpen, GraduationCap, Phone, Sparkles } from "lucide-react";
+import { ArrowLeft, ListChecks, Phone, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BrandHero } from "@/components/brand-hero";
 import { BrandWaves } from "@/components/brand-waves";
@@ -25,9 +24,6 @@ export function SpecialistDetail({ specialist: s }: { specialist: Specialist }) 
           dot: "bg-body",
           icon: "bg-body text-body-foreground",
         };
-
-  const education = s.education?.length ? s.education : [s.role];
-  const courses = s.courses?.length ? s.courses : s.methods;
 
   return (
     <>
@@ -81,13 +77,18 @@ export function SpecialistDetail({ specialist: s }: { specialist: Specialist }) 
                 <Phone className="h-5 w-5" />
                 {s.phone}
               </a>
+              <Button asChild variant="outline" className="mt-3 w-full rounded-full border-brand-green/35 bg-surface/80">
+                <Link to="/pricing">
+                  <ListChecks className="mr-2 h-4 w-4" /> Cennik
+                </Link>
+              </Button>
               <p className="mt-3 text-xs text-muted-foreground">
                 Specjalista osobiście odbiera telefon i ustala dogodny termin.
               </p>
             </div>
           </aside>
 
-          <div className="space-y-10">
+          <div className="space-y-12">
             <section>
               <h2 className="font-serif text-2xl font-semibold text-brand-navy">O mnie</h2>
               <div className="mt-4 space-y-4 leading-relaxed text-muted-foreground">
@@ -97,16 +98,14 @@ export function SpecialistDetail({ specialist: s }: { specialist: Specialist }) 
               </div>
             </section>
 
-            <InfoSection icon={GraduationCap} accent={accent} title="Wykształcenie" items={education} />
-            <BrandWaves className="-my-2" />
-            <InfoSection icon={BookOpen} accent={accent} title="Ukończone kursy" items={courses} />
+            <BrandWaves className="-my-4" />
 
             <section>
               <div className="flex items-center gap-3">
                 <span className={`flex h-9 w-9 items-center justify-center rounded-xl ${accent.icon}`}>
                   <Sparkles className="h-4 w-4" />
                 </span>
-                <h2 className="font-serif text-2xl font-semibold text-brand-navy">Specjalizacja</h2>
+                <h2 className="font-serif text-2xl font-semibold text-brand-navy">Specjalizacja / W czym pomagam</h2>
               </div>
               <ul className="mt-4 grid gap-3 sm:grid-cols-2">
                 {s.specializations.map((item) => (
@@ -145,36 +144,5 @@ export function SpecialistDetail({ specialist: s }: { specialist: Specialist }) 
         </a>
       </div>
     </>
-  );
-}
-
-function InfoSection({
-  icon: Icon,
-  title,
-  items,
-  accent,
-}: {
-  icon: ComponentType<{ className?: string }>;
-  title: string;
-  items: string[];
-  accent: { icon: string; border: string; dot: string };
-}) {
-  return (
-    <section>
-      <div className="flex items-center gap-3">
-        <span className={`flex h-9 w-9 items-center justify-center rounded-xl ${accent.icon}`}>
-          <Icon className="h-4 w-4" />
-        </span>
-        <h2 className="font-serif text-2xl font-semibold text-brand-navy">{title}</h2>
-      </div>
-      <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-        {items.map((item) => (
-          <li key={item} className={`flex items-start gap-3 rounded-xl border ${accent.border} bg-surface px-4 py-3 text-sm`}>
-            <span className={`mt-2 h-1.5 w-1.5 shrink-0 rounded-full ${accent.dot}`} />
-            <span>{item}</span>
-          </li>
-        ))}
-      </ul>
-    </section>
   );
 }
