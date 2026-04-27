@@ -31,6 +31,8 @@ export type Specialist = {
   imageTransformOrigin?: string;
   phone: string;
   about: string;
+  education?: string[];
+  courses?: string[];
   specializations: string[];
   methods: string[];
   pricing: { name: string; price: string; duration: string }[];
@@ -60,6 +62,8 @@ export const specialists: Specialist[] = [
     phone: "+48 792 997 337",
     about:
       "Prowadzę praktykę lekarską od 20 lat. Od 2003 roku pracuję w Wojewódzkim Szpitalu dla Nerwowo i Psychicznie Chorych w Bolesławcu.\n\nPoszerzyłem moje kompetencje, kończąc w 2014 roku szkolenie z zakresu psychoterapii psychodynamicznej w Krakowskim Centrum Psychodynamicznym.\n\nSpecjalizuję się w diagnostyce i leczeniu szerokiego spektrum zaburzeń, m.in. depresji, zaburzeń lękowych, schizofrenii oraz innych psychoz. W swojej praktyce łączę wiedzę medyczną z podejściem psychoterapeutycznym, wspierając pacjentów w odzyskiwaniu zdrowia i powrocie do ról społecznych. Rejestracja czynna od poniedziałku do piątku w godzinach 13:00–15:00.",
+    education: ["Specjalista psychiatra", "Szkolenie z psychoterapii psychodynamicznej — Krakowskie Centrum Psychodynamiczne"],
+    courses: ["Psychoterapia psychodynamiczna", "Wieloletnia praktyka szpitalna i ambulatoryjna"],
     specializations: [
       "Depresja i zaburzenia nastroju",
       "Zaburzenia lękowe i napady paniki",

@@ -16,7 +16,7 @@ export function SpecialistCard({ s }: { s: Specialist }) {
           ring: "ring-body/45",
           role: "text-body",
           border: "border-body/25",
-          btn: "bg-body text-body-foreground hover:bg-body/90",
+            btn: "bg-action text-action-foreground hover:bg-action/90",
         };
 
   return (
@@ -24,7 +24,7 @@ export function SpecialistCard({ s }: { s: Specialist }) {
       className={`group flex flex-col items-center rounded-3xl border bg-surface p-6 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-lg ${accent.border}`}
     >
       <Link
-        to="/specialists/$slug"
+        to="/specjalisci/$slug"
         params={{ slug: s.slug }}
         className="flex flex-col items-center"
       >
@@ -53,7 +53,7 @@ export function SpecialistCard({ s }: { s: Specialist }) {
 
       <a
         href={telHref(s.phone)}
-        className={`mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold shadow-sm transition ${accent.btn}`}
+        className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-action px-5 py-2.5 text-sm font-semibold text-action-foreground shadow-sm transition hover:bg-action/90"
       >
         <Phone className="h-4 w-4" />
         {s.space === "mind" ? "Zadzwoń i umów wizytę" : "Zadzwoń i zarezerwuj miejsce"}

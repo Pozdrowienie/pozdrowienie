@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { getSpecialist, type Specialist } from "@/data/specialists";
 import { SpecialistDetail } from "@/components/specialist-detail";
 
-export const Route = createFileRoute("/specialists/$slug")({
+export const Route = createFileRoute("/specjalisci/$slug")({
   loader: ({ params }): { specialist: Specialist } => {
     const specialist = getSpecialist(params.slug);
     if (!specialist) throw notFound();

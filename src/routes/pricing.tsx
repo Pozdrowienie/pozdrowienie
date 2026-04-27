@@ -32,8 +32,8 @@ function Pricing() {
           {specialists.map((s) => {
             const accent =
               s.space === "mind"
-                ? { role: "text-mind", btn: "bg-mind text-mind-foreground hover:bg-mind/90", price: "text-mind" }
-                : { role: "text-body", btn: "bg-body text-body-foreground hover:bg-body/90", price: "text-body" };
+                ? { role: "text-mind", btn: "bg-action text-action-foreground hover:bg-action/90", price: "text-mind" }
+                : { role: "text-body", btn: "bg-action text-action-foreground hover:bg-action/90", price: "text-body" };
             return (
               <div
                 key={s.slug}

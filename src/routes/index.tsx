@@ -187,7 +187,7 @@ function Index() {
             <Button
               asChild
               size="lg"
-              className="rounded-full bg-body px-8 text-body-foreground shadow-lg hover:bg-body/90"
+              className="rounded-full bg-action px-8 text-action-foreground shadow-lg hover:bg-action/90"
             >
               <Link to="/pricing" className="gap-2">
                 <Tags className="h-5 w-5" /> Zobacz cennik
@@ -219,7 +219,7 @@ function SpecialistCard({
   const roleClass = accent === "mind" ? "text-mind" : "text-body";
   return (
     <Link
-      to="/specialists/$slug"
+      to="/specjalisci/$slug"
       params={{ slug: s.slug }}
       className="group flex cursor-pointer flex-col items-center text-center"
     >
