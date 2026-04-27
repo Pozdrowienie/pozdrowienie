@@ -181,9 +181,9 @@ export const specialists: Specialist[] = [
     category: "coaching",
     space: "mind",
     image: tomasz,
-    imagePosition: "center 18%",
-    imageScale: 1.45,
-    imageTransformOrigin: "center 18%",
+    imagePosition: "center 8%",
+    imageScale: 1.38,
+    imageTransformOrigin: "center 8%",
     phone: "+48 533 206 040",
     about:
       "Coach na poziomie PCC (ICF Level 2) Komunikacja dla Rozwoju. Coaching to dla mnie coś znacznie więcej niż praca czy narzędzie biznesowe. To głęboki proces odkrywania siebie, odwagi i autentyczności.\nDo coacha nie trafiają ludzie „chorzy” – trafiają świadomi i odważni, którzy decydują się wziąć odpowiedzialność za swoje życie i wyruszyć w podróż ku zmianie.\n\nZawsze będę stał na straży wartości coachingowych i wierzył w moc rozwoju opartego na autentyczności, szacunku i zaufaniu. Sesje Coachingu indywidualne i grupowe. Trener Mentalny w trakcie certyfikacji.\nMaskulinum Męskie Kręgi - w trakcie certyfikacji.",
