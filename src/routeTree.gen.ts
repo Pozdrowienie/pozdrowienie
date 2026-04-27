@@ -16,6 +16,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CialoRouteImport } from './routes/cialo'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SpecjalisciSlugRouteImport } from './routes/specjalisci.$slug'
 import { Route as SpecialistsSlugRouteImport } from './routes/specialists.$slug'
 
 const UmyslRoute = UmyslRouteImport.update({
@@ -53,6 +54,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SpecjalisciSlugRoute = SpecjalisciSlugRouteImport.update({
+  id: '/specjalisci/$slug',
+  path: '/specjalisci/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SpecialistsSlugRoute = SpecialistsSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
@@ -68,6 +74,7 @@ export interface FileRoutesByFullPath {
   '/specialists': typeof SpecialistsRouteWithChildren
   '/umysl': typeof UmyslRoute
   '/specialists/$slug': typeof SpecialistsSlugRoute
+  '/specjalisci/$slug': typeof SpecjalisciSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -78,6 +85,7 @@ export interface FileRoutesByTo {
   '/specialists': typeof SpecialistsRouteWithChildren
   '/umysl': typeof UmyslRoute
   '/specialists/$slug': typeof SpecialistsSlugRoute
+  '/specjalisci/$slug': typeof SpecjalisciSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -89,6 +97,7 @@ export interface FileRoutesById {
   '/specialists': typeof SpecialistsRouteWithChildren
   '/umysl': typeof UmyslRoute
   '/specialists/$slug': typeof SpecialistsSlugRoute
+  '/specjalisci/$slug': typeof SpecjalisciSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -101,6 +110,7 @@ export interface FileRouteTypes {
     | '/specialists'
     | '/umysl'
     | '/specialists/$slug'
+    | '/specjalisci/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -111,6 +121,7 @@ export interface FileRouteTypes {
     | '/specialists'
     | '/umysl'
     | '/specialists/$slug'
+    | '/specjalisci/$slug'
   id:
     | '__root__'
     | '/'
@@ -121,6 +132,7 @@ export interface FileRouteTypes {
     | '/specialists'
     | '/umysl'
     | '/specialists/$slug'
+    | '/specjalisci/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -131,6 +143,7 @@ export interface RootRouteChildren {
   PricingRoute: typeof PricingRoute
   SpecialistsRoute: typeof SpecialistsRouteWithChildren
   UmyslRoute: typeof UmyslRoute
+  SpecjalisciSlugRoute: typeof SpecjalisciSlugRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -184,6 +197,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/specjalisci/$slug': {
+      id: '/specjalisci/$slug'
+      path: '/specjalisci/$slug'
+      fullPath: '/specjalisci/$slug'
+      preLoaderRoute: typeof SpecjalisciSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/specialists/$slug': {
       id: '/specialists/$slug'
       path: '/$slug'
@@ -214,6 +234,7 @@ const rootRouteChildren: RootRouteChildren = {
   PricingRoute: PricingRoute,
   SpecialistsRoute: SpecialistsRouteWithChildren,
   UmyslRoute: UmyslRoute,
+  SpecjalisciSlugRoute: SpecjalisciSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
