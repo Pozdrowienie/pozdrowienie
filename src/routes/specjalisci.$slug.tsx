@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
-import { getSpecialist, telHref, type Specialist } from "@/data/specialists";
+import { getSpecialist, type Specialist } from "@/data/specialists";
 import { SpecialistDetail } from "@/components/specialist-detail";
 
 export const Route = createFileRoute("/specjalisci/$slug")({
