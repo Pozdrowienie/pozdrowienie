@@ -72,6 +72,8 @@
   --color-body: var(--body);
   --color-body-foreground: var(--body-foreground);
   --color-body-soft: var(--body-soft);
+  --color-action: var(--action);
+  --color-action-foreground: var(--action-foreground);
   --color-blush: var(--blush);
 }
 
@@ -100,6 +102,8 @@
   --body: oklch(0.62 0.16 15);
   --body-foreground: oklch(0.99 0.005 15);
   --body-soft: oklch(0.95 0.03 15);
+  --action: oklch(0.56 0.22 350);
+  --action-foreground: oklch(0.99 0.005 350);
   --blush: oklch(0.965 0.022 15);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
@@ -154,6 +158,8 @@
   --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
+  --action: oklch(0.68 0.2 350);
+  --action-foreground: oklch(0.99 0.005 350);
 }
 
 @layer base {
