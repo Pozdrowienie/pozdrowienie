@@ -47,7 +47,11 @@ function Pricing() {
                         alt={s.name}
                         loading="lazy"
                         className="h-full w-full object-cover"
-                        style={{ objectPosition: s.imagePosition ?? "center" }}
+                        style={{
+                          objectPosition: s.imagePosition ?? "center",
+                          transform: s.imageScale ? `scale(${s.imageScale})` : undefined,
+                          transformOrigin: s.imageTransformOrigin ?? s.imagePosition ?? "center",
+                        }}
                       />
                     </div>
                     <div>

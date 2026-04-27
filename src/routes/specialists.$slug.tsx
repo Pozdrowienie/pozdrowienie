@@ -85,7 +85,11 @@ function SpecialistProfile() {
                   src={s.image}
                   alt={s.name}
                   className="h-full w-full object-cover"
-                  style={{ objectPosition: s.imagePosition ?? "center" }}
+                  style={{
+                    objectPosition: s.imagePosition ?? "center",
+                    transform: s.imageScale ? `scale(${s.imageScale})` : undefined,
+                    transformOrigin: s.imageTransformOrigin ?? s.imagePosition ?? "center",
+                  }}
                 />
               </div>
               <p className={`mt-6 text-[11px] font-semibold uppercase tracking-[0.22em] ${accent.role}`}>
