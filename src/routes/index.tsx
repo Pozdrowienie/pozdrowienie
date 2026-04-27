@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { mindSpecialists, bodySpecialists } from "@/data/specialists";
 import { BrandHero } from "@/components/brand-hero";
-import { Brain, Flower2, Heart, ShieldCheck, Sparkles } from "lucide-react";
+import { Brain, Flower2, Heart, ShieldCheck, Sparkles, Tags } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -41,6 +41,15 @@ function Index() {
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Button asChild size="lg" className="rounded-full px-7">
             <Link to="/specialists">Poznaj specjalistów</Link>
+          </Button>
+          <Button
+            asChild
+            size="lg"
+            className="rounded-full bg-body px-8 text-body-foreground shadow-md hover:bg-body/90"
+          >
+            <Link to="/pricing" className="gap-2">
+              <Tags className="h-5 w-5" /> Zobacz cennik
+            </Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="rounded-full px-7">
             <Link to="/contact">Kontakt</Link>
@@ -171,9 +180,20 @@ function Index() {
             Każdy specjalista PoZdrowienia odbiera telefon i osobiście umawia wizyty —
             bez formularzy i pośredników.
           </p>
-          <Button asChild size="lg" variant="secondary" className="mt-8 rounded-full px-8">
-            <Link to="/specialists">Zobacz numery do specjalistów</Link>
-          </Button>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <Button asChild size="lg" variant="secondary" className="rounded-full px-8">
+              <Link to="/specialists">Zobacz numery do specjalistów</Link>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              className="rounded-full bg-body px-8 text-body-foreground shadow-lg hover:bg-body/90"
+            >
+              <Link to="/pricing" className="gap-2">
+                <Tags className="h-5 w-5" /> Zobacz cennik
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
     </>
