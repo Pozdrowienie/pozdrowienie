@@ -190,8 +190,8 @@ export const specialists: Specialist[] = [
     specializations: ["Coaching kariery", "Coaching życiowy", "Wypalenie zawodowe"],
     methods: ["Model GROW", "Praca z wartościami", "Plany działania"],
     pricing: [
-      { name: "Sesja coachingowa", price: "200 zł", duration: "50 min" },
-      { name: "Męskie Kręgi - warsztaty rozwojowe ", price: "100 zł", duration: "60 min" },
+      { name: "Sesja Coachingu i Mentoring", price: "300 zł", duration: "60 min" },
+      { name: "Męskie Kręgi", price: "90 zł", duration: "90 min" },
     ],
   },
   {
@@ -214,7 +214,7 @@ export const specialists: Specialist[] = [
     pricing: [
       { name: "Zajęcia grupowe", price: "50 zł", duration: "60 min" },
       { name: "Karnet 4 wejścia", price: "190 zł", duration: "miesiąc" },
-      { name: "Warsztat dla kobiet  \"Medytacja i joga\" ", price: "100 zł", duration: "2 - 3 godz." },
+      { name: "Warsztat dla kobiet \"Medytacja i Joga\"", price: "100 zł", duration: "2 - 3 godz." },
     ],
   },
   {
@@ -237,7 +237,7 @@ export const specialists: Specialist[] = [
     methods: ["Improwizacja ruchowa", "Autentyczny ruch", "Praca z oddechem i ugruntowaniem"],
     pricing: [
       { name: "Zajęcia grupowe", price: "50 zł", duration: "60 min" },
-      { name: "Sesja indywidualna", price: "80 zł", duration: "60 min" },
+      { name: "Sesja indywidualna", price: "100 zł", duration: "60 min" },
       { name: "Warsztat \"Kobiece Ja\"", price: "100 zł", duration: "2 -3 godz." },
     ],
   },
