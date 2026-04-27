@@ -31,8 +31,8 @@ export type Specialist = {
   imageTransformOrigin?: string;
   phone: string;
   about: string;
-  education: string[];
-  courses: string[];
+  education?: string[];
+  courses?: string[];
   specializations: string[];
   methods: string[];
   pricing: { name: string; price: string; duration: string }[];
