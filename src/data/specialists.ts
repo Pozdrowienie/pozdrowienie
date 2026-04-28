@@ -200,7 +200,7 @@ export const specialists: Specialist[] = [
   },
   {
     slug: "anna-marciniak",
-    name: "HATHA JOGA\n\nAnna Marciniak\n+48 691 063 822",
+    name: "Ania Marciniak",
     role: "Hatha Joga",
     category: "joga",
     space: "body",
