@@ -200,14 +200,14 @@ export const specialists: Specialist[] = [
   },
   {
     slug: "anna-marciniak",
-    name: "Anna Marciniak",
+    name: "HATHA JOGA\n\nAnna Marciniak\n+48 691 063 822",
     role: "Hatha Joga",
     category: "joga",
     space: "body",
     image: annaMarciniak,
     phone: "+48 691 063 822",
     about:
-      "Ania prowadzi klasyczną Hatha Jogę – zajęcia o umiarkowanej intensywności, które są bezpieczną przystanią zarówno dla osób początkujących, jak i tych wracających do formy.\n\nSkupiamy się tu na precyzji ruchu i głębokim oddechu.\n\nTo połączenie przynosi konkretne efekty:\nUlga dla ciała: Poczujesz wyraźne rozluźnienie napięć w kręgosłupie i wzmocnienie mięśni.\n\nSpokój dla głowy: Zredukujesz stres, wyciszysz myśli i poprawisz jakość swojego snu.\nAnia dba o to, byś na macie czuł się swobodnie i bezpiecznie, odzyskując naturalną energię życiową.",
+      "Ania prowadzi klasyczną Hatha Jogę – zajęcia o umiarkowanej intensywności, które są bezpieczną przystanią zarówno dla osób początkujących, jak i tych wracających do formy.\n\nSkupiamy się tu na precyzji ruchu i głębokim oddechu.\n\nTo połączenie przynosi konkretne efekty:\nUlga dla ciała: Poczujesz wyraźne rozluźnienie napięć w kręgosłupie i wzmocnienie mięśni.\n\nSpokój dla głowy: Zredukujesz stres, wyciszysz myśli i poprawisz jakość swojego snu.\nAnia dba o to, byś na macie czuł się swobodnie i bezpiecznie, odzyskując naturalnią energię życiową.",
     specializations: [
       "Hatha Joga klasyczna",
       "Joga dla początkujących",
@@ -217,7 +217,7 @@ export const specialists: Specialist[] = [
     methods: ["Asany dostosowane do uczestnika", "Techniki oddechowe", "Relaksacja i medytacja"],
     pricing: [
       { name: "Zajęcia grupowe", price: "50 zł", duration: "60 min" },
-      { name: "Karnet 4 wejścia", price: "190 zł", duration: "miesiąc" },
+      { name: "Karnet 4 wejścia\n\nmiesiąc", price: "190 zł", duration: "" },
       { name: "Warsztat dla kobiet \"Medytacja i Joga\"", price: "100 zł", duration: "2 - 3 godz." },
     ],
   },
