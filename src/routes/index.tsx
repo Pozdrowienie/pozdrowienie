@@ -82,8 +82,8 @@ function Index() {
                 Przestrzeń umysłu
               </h3>
               <p className="mt-3 text-muted-foreground">
-                Psycholog, psychiatra, psychoterapia i seksuologia. Profesjonalne wsparcie
-                w drodze do równowagi emocjonalnej i zdrowia psychicznego.
+                Hatha Joga, Terapia Tańcem i Ruchem. Praca z ciałem, oddechem i ekspresją
+                — droga do uważności i regulacji emocji.
               </p>
               <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-mind group-hover:underline">
                 Poznaj specjalistów →
