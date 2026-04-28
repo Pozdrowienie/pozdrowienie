@@ -73,8 +73,8 @@ function Pricing() {
                   {s.pricing.map((p) => (
                     <div key={p.name} className="flex items-center justify-between py-3">
                       <div>
-                        <p className="font-medium">{p.name}</p>
-                        <p className="text-xs text-muted-foreground">{p.duration}</p>
+                        <p className="whitespace-pre-line font-medium">{p.name}</p>
+                        <p className="whitespace-pre-line text-xs text-muted-foreground">{p.duration}</p>
                       </div>
                       <p className={`font-serif text-lg font-semibold ${accent.price}`}>{p.price}</p>
                     </div>

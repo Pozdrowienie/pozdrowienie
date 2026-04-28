@@ -78,9 +78,9 @@ export const specialists: Specialist[] = [
       "Plan długoterminowej opieki",
     ],
     pricing: [
-      { name: "Pierwsza konsultacja", price: "350 zł", duration: "" },
-      { name: "Wizyta kontrolna", price: "300 zł", duration: "" },
-      { name: "Recepta", price: "150 zł", duration: "" },
+      { name: "Konsultacja psychiatryczna", price: "300 zł", duration: "" },
+      { name: "Zaświadczenie lekarskie", price: "150 zł", duration: "" },
+      { name: "Recepta ", price: "50 zł", duration: "" },
     ],
   },
   {
@@ -107,9 +107,9 @@ export const specialists: Specialist[] = [
       "Psychoedukacja",
     ],
     pricing: [
-      { name: "Sesja indywidualna", price: "180 zł", duration: "50 min" },
-      { name: "Konsultacja diagnostyczna", price: "600 - 800 zł", duration: "50 min" },
-      { name: "Interwencja Kryzysowa", price: "180 zł", duration: "50 min" },
+      { name: "Sesja indywidualna", price: "180 zł", duration: "60 min" },
+      { name: "Konsultacja diagnostyczna", price: "600 - 800 zł", duration: "60 min" },
+      { name: "Interwencja Kryzysowa", price: "180 zł", duration: "60 min" },
     ],
   },
   {
@@ -130,7 +130,7 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Psychoterapia integracyjna", "Terapia schematu", "Podejście psychodynamiczne"],
     pricing: [
-      { name: "Sesja psychoterapii", price: "200 zł", duration: "50 min" },
+      { name: "Sesja psychoterapii", price: "200 zł", duration: "60 min" },
       { name: "Konsultacja wstępna", price: "250 zł", duration: "60 min" },
     ],
   },
@@ -152,7 +152,7 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Podejście integracyjne", "Praca z procesem zmiany", "Wsparcie w trzeźwieniu"],
     pricing: [
-      { name: "Sesja psychoterapii", price: "200 zł", duration: "50 min" },
+      { name: "Sesja psychoterapii", price: "200 zł", duration: "60 min" },
       { name: "Konsultacja wstępna", price: "250 zł", duration: "60 min" },
     ],
   },
@@ -174,8 +174,8 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Terapia poznawczo-behawioralna", "Praca przez zabawę", "Psychoedukacja rodzin"],
     pricing: [
-      { name: "Konsultacja psychologiczna z dzieckiem/ nastolatkiem", price: "180 zł", duration: "50 min" },
-      { name: "Konsultacja rodzicielska", price: "180 zł", duration: "50 min" },
+      { name: "Konsultacja psychologiczna z rodzicem", price: "180 zł", duration: "60 min" },
+      { name: "Konsultacja psychologiczna z dzieckiem / nastolatkiem ", price: "180 zł", duration: "60 min" },
     ],
   },
   {
@@ -200,14 +200,14 @@ export const specialists: Specialist[] = [
   },
   {
     slug: "anna-marciniak",
-    name: "Anna Marciniak",
+    name: "HATHA JOGA\n\nAnna Marciniak\n+48 691 063 822",
     role: "Hatha Joga",
     category: "joga",
     space: "body",
     image: annaMarciniak,
     phone: "+48 691 063 822",
     about:
-      "Ania prowadzi klasyczną Hatha Jogę – zajęcia o umiarkowanej intensywności, które są bezpieczną przystanią zarówno dla osób początkujących, jak i tych wracających do formy.\n\nSkupiamy się tu na precyzji ruchu i głębokim oddechu.\n\nTo połączenie przynosi konkretne efekty:\nUlga dla ciała: Poczujesz wyraźne rozluźnienie napięć w kręgosłupie i wzmocnienie mięśni.\n\nSpokój dla głowy: Zredukujesz stres, wyciszysz myśli i poprawisz jakość swojego snu.\nAnia dba o to, byś na macie czuł się swobodnie i bezpiecznie, odzyskując naturalną energię życiową.",
+      "Ania prowadzi klasyczną Hatha Jogę – zajęcia o umiarkowanej intensywności, które są bezpieczną przystanią zarówno dla osób początkujących, jak i tych wracających do formy.\n\nSkupiamy się tu na precyzji ruchu i głębokim oddechu.\n\nTo połączenie przynosi konkretne efekty:\nUlga dla ciała: Poczujesz wyraźne rozluźnienie napięć w kręgosłupie i wzmocnienie mięśni.\n\nSpokój dla głowy: Zredukujesz stres, wyciszysz myśli i poprawisz jakość swojego snu.\nAnia dba o to, byś na macie czuł się swobodnie i bezpiecznie, odzyskując naturalnią energię życiową.",
     specializations: [
       "Hatha Joga klasyczna",
       "Joga dla początkujących",
@@ -217,7 +217,7 @@ export const specialists: Specialist[] = [
     methods: ["Asany dostosowane do uczestnika", "Techniki oddechowe", "Relaksacja i medytacja"],
     pricing: [
       { name: "Zajęcia grupowe", price: "50 zł", duration: "60 min" },
-      { name: "Karnet 4 wejścia", price: "190 zł", duration: "miesiąc" },
+      { name: "Karnet 4 wejścia\n\nmiesiąc", price: "190 zł", duration: "" },
       { name: "Warsztat dla kobiet \"Medytacja i Joga\"", price: "100 zł", duration: "2 - 3 godz." },
     ],
   },
@@ -240,8 +240,8 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Improwizacja ruchowa", "Autentyczny ruch", "Praca z oddechem i ugruntowaniem"],
     pricing: [
-      { name: "Zajęcia grupowe", price: "50 zł", duration: "60 min" },
-      { name: "Sesja indywidualna", price: "100 zł", duration: "60 min" },
+      { name: "Zajęcia grupowe", price: "50 zł", duration: "50 - 90 min" },
+      { name: "Sesja indywidualna", price: "100 zł", duration: "50 - 90 min" },
       { name: "Warsztat \"Kobiece Ja\"", price: "100 zł", duration: "2 -3 godz." },
     ],
   },
