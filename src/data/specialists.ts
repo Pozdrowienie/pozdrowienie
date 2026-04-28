@@ -78,9 +78,9 @@ export const specialists: Specialist[] = [
       "Plan długoterminowej opieki",
     ],
     pricing: [
-      { name: "Pierwsza konsultacja", price: "350 zł", duration: "" },
-      { name: "Wizyta kontrolna", price: "300 zł", duration: "" },
-      { name: "Recepta", price: "150 zł", duration: "" },
+      { name: "Konsultacja psychiatryczna", price: "300 zł", duration: "" },
+      { name: "Zaświadczenie lekarskie", price: "150 zł", duration: "" },
+      { name: "Recepta ", price: "50 zł", duration: "" },
     ],
   },
   {
@@ -107,9 +107,9 @@ export const specialists: Specialist[] = [
       "Psychoedukacja",
     ],
     pricing: [
-      { name: "Sesja indywidualna", price: "180 zł", duration: "50 min" },
-      { name: "Konsultacja diagnostyczna", price: "600 - 800 zł", duration: "50 min" },
-      { name: "Interwencja Kryzysowa", price: "180 zł", duration: "50 min" },
+      { name: "Sesja indywidualna", price: "180 zł", duration: "60 min" },
+      { name: "Konsultacja diagnostyczna", price: "600 - 800 zł", duration: "60 min" },
+      { name: "Interwencja Kryzysowa", price: "180 zł", duration: "60 min" },
     ],
   },
   {
@@ -130,7 +130,7 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Psychoterapia integracyjna", "Terapia schematu", "Podejście psychodynamiczne"],
     pricing: [
-      { name: "Sesja psychoterapii", price: "200 zł", duration: "50 min" },
+      { name: "Sesja psychoterapii", price: "200 zł", duration: "60 min" },
       { name: "Konsultacja wstępna", price: "250 zł", duration: "60 min" },
     ],
   },
@@ -152,7 +152,7 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Podejście integracyjne", "Praca z procesem zmiany", "Wsparcie w trzeźwieniu"],
     pricing: [
-      { name: "Sesja psychoterapii", price: "200 zł", duration: "50 min" },
+      { name: "Sesja psychoterapii", price: "200 zł", duration: "60 min" },
       { name: "Konsultacja wstępna", price: "250 zł", duration: "60 min" },
     ],
   },
@@ -174,8 +174,8 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Terapia poznawczo-behawioralna", "Praca przez zabawę", "Psychoedukacja rodzin"],
     pricing: [
-      { name: "Konsultacja psychologiczna z dzieckiem/ nastolatkiem", price: "180 zł", duration: "50 min" },
-      { name: "Konsultacja rodzicielska", price: "180 zł", duration: "50 min" },
+      { name: "Konsultacja psychologiczna z rodzicem", price: "180 zł", duration: "60 min" },
+      { name: "Konsultacja psychologiczna z dzieckiem / nastolatkiem ", price: "180 zł", duration: "60 min" },
     ],
   },
   {
@@ -240,8 +240,8 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Improwizacja ruchowa", "Autentyczny ruch", "Praca z oddechem i ugruntowaniem"],
     pricing: [
-      { name: "Zajęcia grupowe", price: "50 zł", duration: "60 min" },
-      { name: "Sesja indywidualna", price: "100 zł", duration: "60 min" },
+      { name: "Zajęcia grupowe", price: "50 zł", duration: "50 - 90 min" },
+      { name: "Sesja indywidualna", price: "100 zł", duration: "50 - 90 min" },
       { name: "Warsztat \"Kobiece Ja\"", price: "100 zł", duration: "2 -3 godz." },
     ],
   },
