@@ -106,7 +106,7 @@ export function SiteFooter() {
         </div>
 
         <p className="mt-8 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} PoZdrowienie. Wszelkie prawa zastrzeżone.
+          © {new Date().getFullYear()} PoZdrowienie. Wszelkie prawa zastrzeżone. Psycholog Bolesławiec, Psychiatra Bolesławiec
         </p>
       </div>
     </footer>

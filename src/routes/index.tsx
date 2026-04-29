@@ -82,8 +82,7 @@ function Index() {
                 Przestrzeń umysłu
               </h3>
               <p className="mt-3 text-muted-foreground">
-                Hatha Joga, Terapia Tańcem i Ruchem. Praca z ciałem, oddechem i ekspresją
-                — droga do uważności i regulacji emocji.
+                To bezpieczna przestrzeń, w której przy profesjonalnym wsparciu psychologa, psychoterapeuty i psychiatry uporządkujesz trudne myśli oraz emocje. Pomagamy zrozumieć siebie na nowo, wyciszyć wewnętrzny chaos i bezpiecznie powrócić do życiowej równowagi.
               </p>
               <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-mind group-hover:underline">
                 Poznaj specjalistów →
@@ -104,8 +103,7 @@ function Index() {
                 Przestrzeń ciała
               </h3>
               <p className="mt-3 text-muted-foreground">
-                Hatha Joga i Terapia Tańcem i Ruchem. Praca z ciałem, oddechem i ekspresją
-                — droga do uważności, ugruntowania i radości z ruchu.
+                To strefa świadomej pracy somatycznej, gdzie poprzez Hatha Jogę, Terapię Tańcemi ruchem, oraz relaksację uwolnisz nagromadzone napięcia. Uczymy, jak na nowo zaufać swojemu organizmowi, zredukować codzienny stres i głęboko zregenerować przebodźcowany układ nerwowy.
               </p>
               <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-body group-hover:underline">
                 Zajęcia i specjaliści →
