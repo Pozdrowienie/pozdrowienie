@@ -48,7 +48,7 @@ export const categoryMeta: Record<
   dzieci: { label: "PSYCHOLOG DZIECI I MŁODZIEŻY I RODZICÓW", space: "mind" },
   coaching: { label: "Coaching", space: "mind" },
   joga: { label: "Joga", space: "body" },
-  taniec: { label: "TERAPIA TAŃCEM I RUCHEM (DMT)\nTANIEC INTUICYJNY", space: "body" },
+  taniec: { label: "TERAPIA TAŃCEM I RUCHEM (DMT) \nTANIEC INTUICYJNY", space: "body" },
 };
 
 export const specialists: Specialist[] = [
@@ -224,7 +224,7 @@ export const specialists: Specialist[] = [
   {
     slug: "ula-palczewska",
     name: "Ula Palczewska",
-    role: "TERAPIA TAŃCEM I RUCHEM (DMT)\nTANIEC INTUICYJNY",
+    role: "TERAPIA TAŃCEM I RUCHEM (DMT) \nTANIEC INTUICYJNY",
     category: "taniec",
     space: "body",
     image: ulaPalczewska,
