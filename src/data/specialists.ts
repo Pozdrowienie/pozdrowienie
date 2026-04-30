@@ -167,8 +167,8 @@ export const specialists: Specialist[] = [
     about:
       "Jestem psycholożką, pedagożką oraz socjoterapeutką. Od ponad dekady pracuję z dziećmi, młodzieżą i rodzicami. Jestem również pomysłodawczynią Projektu Rel. - czyli przestrzeni wsparcia dla mam w burzliwej relacji z nastolatkiem. Na naszych spotkaniach, przy herbacie w bezpiecznej atmosferze, bez oceniania nauczysz się jak odzyskać relację z dzieckiem, które właśnie dorasta. \nSłowo rel - to młodzieżowe słowo roku 2023 ( z ang. relatable) - oznaczające ja też tak mam, zgadzam się, mam tak samo. Nazwa idealnie oddaje ducha spotkania grupowego, podczas którego otrzymasz wsparcie i posłuchasz doswiadczeń innych mam. \nPodczas warsztatów koncentrujemy na Twoich potrzebach i poprzez wspólne strategie poprawiamy relację z Twoim nastolatkiem, ale też z ... samą sobą :)  Przecwiczymy konkretne scenariusze rozmów, które wdrożysz od razu po powrocie do domu. Więcej informacji w zakładce Projekt rel. na mojej stronie annaantoniewicz.pl. \n\nW pracy z bliskie jest mi podejście NVC (Porozumienie bez Przemocy), w którym zachowanie dziecka rozumiemy jako komunikat o jego niezaspokojonych potrzebach.\nNieustannie poszerzam swoje kwalifikację, uczestniczę w kursach i szkoleniach. Pracuję wykorzystując elementy terapii poznawczo- behawioralnej, oraz Terapii Skoncentrowanej na Rozwiązaniach. ",
     specializations: [
-      "Trudności emocjonalne i lękowe",
-      "Problemy szkolne",
+      "Wsparcie w żalobie",
+      "Trudności w relacjach rówieśniczych",
       "Konsultacje rodzicielskie",
       "Diagnoza rozwojowa",
     ],
