@@ -165,7 +165,7 @@ export const specialists: Specialist[] = [
     image: annaAntoniewicz,
     phone: "+48 577 157 373",
     about:
-      "Jestem psychologiem, pedagogiem i socjoterapeutką z ponad dziesięcioletnim doświadczeniem w pracy z dziećmi. Wierzę, że każde zachowanie dziecka to ukryty komunikat. W moim gabinecie pomagam rozkodować te wiadomości.\n\nWspieram mamy nastolatków, prowadzę grupę wsparcia -  Projekt rel. w którym koncentrujemy się na relacji z nastolatkiem oraz na Twoich  potrzebach i poprzez wspólne strategie poprawiamy relację z twoim nastolatkiem, ale też z ... samą sobą :) \nW pracy z rodzicami bliskie jest mi podejście NVC (Porozumienie bez Przemocy), w którym zachowanie dziecka rozumiemy jako komunikat o jego niezaspokojonych potrzebach. Nieustannie poszerzam swoje kwalifikację, uczestniczę w kursach i szkoleniach. Od października rozpoczynam 4-letnią Szkołę Psychoterapii w nurcie Poznawczo-Behawioralnym. Prowadzę Treningi Umiejętności Społecznych i warsztaty rozwijające kompetencje emocjonalne dla dzieci i młodzieży.",
+      "Jestem pomysłodawczynią Projektu Rel. - czyli przestrzeni wsparcia dla mam w burzliwej relacji z nastolatkiem. Słowo rel - to młodzieżowe słowo roku 2023 ( z ang. relatable) - oznaczające ja też tak mam, zgadzam się, mam tak samo. Podczas warsztatów koncentrujemy na Twoich potrzebach i poprzez wspólne strategie poprawiamy relację z Twoim nastolatkiem, ale też z ... samą sobą :) W pracy z bliskie jest mi podejście NVC (Porozumienie bez Przemocy), w którym zachowanie dziecka rozumiemy jako komunikat o jego niezaspokojonych potrzebach. \nNieustannie poszerzam swoje kwalifikację, uczestniczę w kursach i szkoleniach. ",
     specializations: [
       "Trudności emocjonalne i lękowe",
       "Problemy szkolne",
