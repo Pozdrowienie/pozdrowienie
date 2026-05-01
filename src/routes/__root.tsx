@@ -29,12 +29,21 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Gabinet Zdrowia Psychicznego — Anna Antoniewicz" },
+      { title: "PoZdrowienie" },
       {
         name: "description",
         content:
           "Mental health clinic in Bolesławiec offering psychiatric, psychological, psychotherapy and sexology care in a warm, supportive environment.",
       },
+      { property: "og:title", content: "PoZdrowienie" },
+      { name: "twitter:title", content: "PoZdrowienie" },
+      { name: "description", content: "Terapia Społecznosc Rozwój" },
+      { property: "og:description", content: "Terapia Społecznosc Rozwój" },
+      { name: "twitter:description", content: "Terapia Społecznosc Rozwój" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1d2424ae-b200-4713-b3be-f87bf02ad96c/id-preview-7e191827--ad27bc72-7d37-477b-bd78-dec1ec252057.lovable.app-1777554088293.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/1d2424ae-b200-4713-b3be-f87bf02ad96c/id-preview-7e191827--ad27bc72-7d37-477b-bd78-dec1ec252057.lovable.app-1777554088293.png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:type", content: "website" },
     ],
     links: [{ rel: "stylesheet", href: appCss }],
   }),
