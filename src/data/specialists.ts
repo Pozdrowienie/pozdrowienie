@@ -108,7 +108,7 @@ export const specialists: Specialist[] = [
     ],
     pricing: [
       { name: "Sesja indywidualna", price: "180 zł", duration: "60 min" },
-      { name: "Diagnostyka: \nADHD - dorośli\nZaburzenia osobowości-  SCID - 5- PD\nOsobowość-  NEO-PI-R", price: "600 - 800 zł", duration: "60 min" },
+      { name: "Diagnostyka:\nADHD - dorośli\nZaburzenia osobowości: SCID - 5- PD\nOsobowość: NEO-PI-R", price: "600 - 800 zł", duration: "60 min" },
       { name: "Interwencja Kryzysowa", price: "180 zł", duration: "60 min" },
     ],
   },
