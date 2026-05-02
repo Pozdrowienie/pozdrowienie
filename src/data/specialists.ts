@@ -170,7 +170,7 @@ export const specialists: Specialist[] = [
       "Psychoedukacja",
       "Trudności w relacjach rówieśniczych",
       "Konsultacje rodzicielskie",
-      "Diagnoza rozwojowa",
+      "Wsparcie w żałobie",
     ],
     methods: ["Terapia poznawczo-behawioralna", "Praca przez zabawę", "Psychoedukacja rodzin"],
     pricing: [
