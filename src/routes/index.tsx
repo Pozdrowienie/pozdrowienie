@@ -103,7 +103,7 @@ function Index() {
                 Przestrzeń ciała
               </h3>
               <p className="mt-3 text-muted-foreground">
-                To strefa świadomej pracy somatycznej, gdzie poprzez Hatha Jogę, Terapię Tańcemi ruchem, oraz relaksację uwolnisz nagromadzone napięcia. Uczymy, jak na nowo zaufać swojemu organizmowi, zredukować codzienny stres i głęboko zregenerować przebodźcowany układ nerwowy.
+                To strefa świadomej pracy somatycznej, gdzie poprzez Hatha Jogę, Terapię Tańcem i Ruchem, oraz relaksację uwolnisz nagromadzone napięcia. Uczymy, jak na nowo zaufać swojemu organizmowi, zredukować codzienny stres i głęboko zregenerować przebodźcowany układ nerwowy.
               </p>
               <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-body group-hover:underline">
                 Zajęcia i specjaliści →
