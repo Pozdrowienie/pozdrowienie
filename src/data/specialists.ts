@@ -176,7 +176,7 @@ export const specialists: Specialist[] = [
     pricing: [
       { name: "Konsultacja psychologiczna z rodzicem", price: "180 zł", duration: "60 min" },
       { name: "Konsultacja psychologiczna z dzieckiem / nastolatkiem ", price: "180 zł", duration: "60 min" },
-      { name: "Warsztaty grupowe dla mam nastolatków ", price: "100zł", duration: "120 min" },
+      { name: "Warsztaty grupowe dla mam - Projekt rel. ", price: "100zł", duration: "120 min" },
     ],
   },
   {
