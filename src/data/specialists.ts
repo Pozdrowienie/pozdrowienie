@@ -152,8 +152,8 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Podejście integracyjne", "Praca z procesem zmiany", "Wsparcie w trzeźwieniu"],
     pricing: [
-      { name: "Sesja psychoterapii", price: "200 zł", duration: "60 min" },
-      { name: "Konsultacja wstępna", price: "250 zł", duration: "60 min" },
+      { name: "Sesja psychoterapii", price: "200 zł", duration: "50 min" },
+      { name: "Konsultacja wstępna", price: "250 zł", duration: "50 min" },
     ],
   },
   {
