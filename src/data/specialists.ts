@@ -107,9 +107,9 @@ export const specialists: Specialist[] = [
       "Psychoedukacja",
     ],
     pricing: [
-      { name: "Sesja indywidualna", price: "180 zł", duration: "60 min" },
-      { name: "Diagnostyka:\nADHD - dorośli\nZaburzenia osobowości: SCID - 5- PD\nOsobowość: NEO-PI-R", price: "600 - 800 zł", duration: "60 min" },
-      { name: "Interwencja Kryzysowa", price: "180 zł", duration: "60 min" },
+      { name: "Sesja indywidualna", price: "180 zł", duration: "50 min" },
+      { name: "Diagnostyka:\nADHD - dorośli\nZaburzenia osobowości: SCID - 5- PD\nOsobowość: NEO-PI-R", price: "600 - 800 zł", duration: "50 min" },
+      { name: "Interwencja Kryzysowa", price: "180 zł", duration: "50 min" },
     ],
   },
   {
@@ -130,8 +130,8 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Psychoterapia integracyjna", "Terapia schematu", "Podejście psychodynamiczne"],
     pricing: [
-      { name: "Sesja psychoterapii", price: "200 zł", duration: "60 min" },
-      { name: "Konsultacja wstępna", price: "250 zł", duration: "60 min" },
+      { name: "Sesja psychoterapii", price: "200 zł", duration: "50 min" },
+      { name: "Konsultacja wstępna", price: "250 zł", duration: "50 min" },
     ],
   },
   {
@@ -174,8 +174,8 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Terapia poznawczo-behawioralna", "Praca przez zabawę", "Psychoedukacja rodzin"],
     pricing: [
-      { name: "Konsultacja psychologiczna z rodzicem", price: "180 zł", duration: "60 min" },
-      { name: "Konsultacja psychologiczna z dzieckiem / nastolatkiem ", price: "180 zł", duration: "60 min" },
+      { name: "Konsultacja psychologiczna z rodzicem", price: "180 zł", duration: "50 min" },
+      { name: "Konsultacja psychologiczna z dzieckiem / nastolatkiem ", price: "180 zł", duration: "50 min" },
       { name: "Warsztaty grupowe dla mam - Projekt rel. ", price: "100zł", duration: "120 min" },
     ],
   },
@@ -195,7 +195,7 @@ export const specialists: Specialist[] = [
     specializations: ["Coaching kariery", "Coaching życiowy", "Wypalenie zawodowe"],
     methods: ["Model GROW", "Praca z wartościami", "Plany działania"],
     pricing: [
-      { name: "Sesja Coachingu i Mentoring", price: "300 zł", duration: "60 min" },
+      { name: "Sesja Coachingu i Mentoring", price: "300 zł", duration: "50 min" },
       { name: "Męskie Kręgi", price: "90 zł", duration: "90 min" },
     ],
   },
@@ -217,7 +217,7 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Asany dostosowane do uczestnika", "Techniki oddechowe", "Relaksacja i medytacja"],
     pricing: [
-      { name: "Zajęcia grupowe", price: "50 zł", duration: "60 min" },
+      { name: "Zajęcia grupowe", price: "50 zł", duration: "50 min" },
       { name: "Karnet 4 wejścia\n", price: "190 zł", duration: "" },
       { name: "Warsztat dla kobiet \"Medytacja i Joga\"", price: "100 zł", duration: "2 - 3 godz." },
     ],
