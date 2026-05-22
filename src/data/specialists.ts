@@ -159,7 +159,7 @@ export const specialists: Specialist[] = [
   {
     slug: "anna-antoniewicz",
     name: "Anna Antoniewicz",
-    role: "PSYCHOLOG DZIECI I MŁODZIEŻY I RODZICÓW",
+    role: "PSYCHOLOG DZIECI I MŁODZIEŻY I DOROSŁYCH",
     category: "dzieci",
     space: "mind",
     image: annaAntoniewicz,
