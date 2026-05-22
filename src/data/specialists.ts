@@ -45,7 +45,7 @@ export const categoryMeta: Record<
   psycholog: { label: "Psycholog", space: "mind" },
   psychiatra: { label: "Psychiatra", space: "mind" },
   psychoterapeuta: { label: "Psychoterapeuta", space: "mind" },
-  dzieci: { label: "PSYCHOLOG DZIECI I MŁODZIEŻY I RODZICÓW", space: "mind" },
+  dzieci: { label: "PSYCHOLOG DZIECI I MŁODZIEŻY I DOROSŁYCH", space: "mind" },
   coaching: { label: "Coaching", space: "mind" },
   joga: { label: "Joga", space: "body" },
   taniec: { label: "TERAPIA TAŃCEM I RUCHEM (DMT) \nTANIEC INTUICYJNY", space: "body" },
@@ -159,7 +159,7 @@ export const specialists: Specialist[] = [
   {
     slug: "anna-antoniewicz",
     name: "Anna Antoniewicz",
-    role: "PSYCHOLOG DZIECI I MŁODZIEŻY I RODZICÓW",
+    role: "PSYCHOLOG DZIECI I MŁODZIEŻY I DOROSŁYCH",
     category: "dzieci",
     space: "mind",
     image: annaAntoniewicz,
