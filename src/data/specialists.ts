@@ -165,7 +165,7 @@ export const specialists: Specialist[] = [
     image: annaAntoniewicz,
     phone: "+48 577 157 373",
     about:
-      "Jestem psycholożką, pedagożką oraz socjoterapeutką. Od ponad dekady związana jestem zawodowo z dziećmi, młodzieżą i rodzicami.  Pracuję z rodzicami, którzy czują bezradność i są zaniepokojeni rozwojem swojego dziecka. Wspieram kobiety w wypaleniu rodzicielskim oraz w sytuacjach okołorozwodowych. W gabinecie pracuję z dziećmi i z nastolatkami w dedykowanej przyjaznej przestrzeni wykorzystując techniki poznawczo- behawioralne oraz elementy Terapii Skoncentrowanej na Rozwiązaniach. W pracy z bliskie jest mi podejście NVC (Porozumienie bez Przemocy), w którym zachowanie dziecka rozumiemy jako komunikat o jego niezaspokojonych potrzebach.\nJestem również pomysłodawczynią Projektu Rel. - czyli przestrzeni wsparcia dla mam w burzliwej relacji z dzieckiem i nastolatkiem. Na naszych spotkaniach, przy herbacie w bezpiecznej atmosferze, bez oceniania nauczysz się jak odzyskać relację z dzieckiem, które właśnie dorasta.\nPodczas warsztatów koncentrujemy na Twoich potrzebach i poprzez wspólne strategie poprawiamy relację z Twoim nastolatkiem, ale też z ... samą sobą :) Przećwiczymy konkretne scenariusze rozmów, które wdrożysz od razu po powrocie do domu. Więcej informacji w zakładce Projekt rel. na mojej stronie annaantoniewicz.pl.",
+      "Warsztat \"Wyregulowana\"\n\n60 min\n\n70zł",
     specializations: [
       "Psychoedukacja",
       "Trudności w relacjach rówieśniczych",
