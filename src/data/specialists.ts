@@ -165,7 +165,7 @@ export const specialists: Specialist[] = [
     image: annaAntoniewicz,
     phone: "+48 577 157 373",
     about:
-      "Warsztat \"Wyregulowana\"\n\n60 min\n\n70zł",
+      "Prywatnie i zawodowo fascynuje mnie to, jak bardzo nasze emocje są połączone z ciałem. Codziennie widzę w gabinecie kobiety, które noszą na swoich barkach zbyt dużo. To właśnie z dlatego narodził się pomysł na warsztaty „Wyregulowana”. Łączę wiedzę psychologiczną z uważnością i pracą z ciałem, bo wiem, że samego stresu nie da się po prostu przegadać – trzeba pozwolić mu fizycznie odpłynąć. W pracy gabinetowej z dorosłymi",
     specializations: [
       "Psychoedukacja",
       "Trudności w relacjach rówieśniczych",
