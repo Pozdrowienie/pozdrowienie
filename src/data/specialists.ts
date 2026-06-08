@@ -80,7 +80,7 @@ export const specialists: Specialist[] = [
     pricing: [
       { name: "Konsultacja psychiatryczna", price: "250 zł – 300 zł", duration: "" },
       { name: "Konsultacja receptowa", price: "70 – 150 zł", duration: "" },
-      { name: "Konsultacja z wystawieniem zaświadczenia lekarskiego poza wizytą", price: "150 zł", duration: "" },
+      { name: "Konsultacja z wystawieniem zaświadczenia lekarskiego poza wizytą", price: "150 zł – 200 zł", duration: "" },
     ],
   },
   {
