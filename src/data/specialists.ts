@@ -78,9 +78,8 @@ export const specialists: Specialist[] = [
       "Plan długoterminowej opieki",
     ],
     pricing: [
-      { name: "Konsultacja psychiatryczna \n\n250 zł – 300 zł", price: "\n", duration: "" },
-      { name: "\n", price: "\n", duration: "" },
-      { name: "Konsultacja receptowa", price: "70 - 150 zł", duration: "" },
+      { name: "Konsultacja psychiatryczna", price: "250 zł – 300 zł", duration: "" },
+      { name: "Konsultacja receptowa", price: "70 – 150 zł", duration: "" },
       { name: "Konsultacja z wystawieniem zaświadczenia lekarskiego poza wizytą", price: "150 zł", duration: "" },
     ],
   },
