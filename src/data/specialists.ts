@@ -174,9 +174,8 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Terapia poznawczo-behawioralna", "Praca przez zabawę", "Psychoedukacja rodzin"],
     pricing: [
-      { name: "Konsultacja psychologiczna", price: "180 zł", duration: "60 min" },
-      { name: "Konsultacja psychologiczna z dzieckiem / nastolatkiem ", price: "180 zł", duration: "50 min" },
-      { name: "\n", price: "W\n\n70zł", duration: "\n" },
+      { name: "Konsultacja psychologiczna", price: "180 zł", duration: "50 min" },
+      { name: "Konsultacja psychologiczna z dzieckiem / nastolatkiem", price: "180 zł", duration: "50 min" },
     ],
   },
   {
