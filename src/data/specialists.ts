@@ -212,7 +212,7 @@ export const specialists: Specialist[] = [
       "Hatha Joga klasyczna",
       "Joga dla początkujących",
       "Pranayama",
-      "Joga dla początkujących i zaawansowanych",
+      "Joga dla zaawansowanych",
     ],
     methods: ["Asany dostosowane do uczestnika", "Techniki oddechowe", "Relaksacja i medytacja"],
     pricing: [
