@@ -218,7 +218,7 @@ export const specialists: Specialist[] = [
     pricing: [
       { name: "Zajęcia grupowe", price: "60 zł", duration: "50 min" },
       { name: "Karnet 4 wejścia\n", price: "200 zł", duration: "" },
-      { name: "Warsztat dla kobiet \"Medytacja i Joga\"", price: "100 zł", duration: "2 - 3 godz." },
+      { name: "Warsztat dla kobiet \"Medytacja i Joga\"", price: "100 zł", duration: "\n" },
     ],
   },
   {
