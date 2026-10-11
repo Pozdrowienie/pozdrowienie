@@ -24,9 +24,11 @@ export const Route = createFileRoute("/specialists")({
         property: "og:description",
         content: "Poznaj nasz zespół — przestrzeń umysłu i przestrzeń ciała.",
       },
+      { property: "og:url", content: "https://www.pozdrowienie.com.pl/specialists" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://www.pozdrowienie.com.pl/specialists" }],
   }),
   component: SpecialistsPage,
 });

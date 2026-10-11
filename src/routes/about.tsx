@@ -4,13 +4,22 @@ import { BrandWatermark } from "@/components/brand-watermark";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — Gabinet Zdrowia Psychicznego" },
-      { name: "description", content: "Learn about our clinic's mission, values and approach to mental health care." },
-      { property: "og:title", content: "About Us — Gabinet Zdrowia Psychicznego" },
-      { property: "og:description", content: "Mental health clinic in Bolesławiec built on empathy, ethics and evidence." },
+      { title: "O nas — PoZdrowienie Bolesławiec" },
+      {
+        name: "description",
+        content:
+          "Poznaj misję i wartości PoZdrowienia — wsparcie psychologa, psychoterapeuty i psychiatry w Bolesławcu.",
+      },
+      { property: "og:title", content: "O nas — PoZdrowienie Bolesławiec" },
+      {
+        property: "og:description",
+        content: "PoZdrowienie w Bolesławcu — empatia, etyka zawodu i holistyczne podejście do zdrowia.",
+      },
+      { property: "og:url", content: "https://www.pozdrowienie.com.pl/about" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://www.pozdrowienie.com.pl/about" }],
   }),
   component: About,
 });

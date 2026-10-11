@@ -7,17 +7,29 @@ import { Brain, Flower2, Heart, ShieldCheck, Sparkles, Tags } from "lucide-react
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "PoZdrowienie — Terapia · Społeczność · Rozwój" },
+      {
+        title:
+          "PoZdrowienie — Psycholog, psychoterapeuta i psychiatra w Bolesławcu",
+      },
       {
         name: "description",
         content:
-          "PoZdrowienie w Bolesławcu — holistyczne podejście do zdrowia psychicznego i fizycznego. Terapia, joga, taniec, rozwój.",
+          "Psycholog, psychoterapeuta i psychiatra w Bolesławcu. Diagnoza ADHD, coaching, męskie kręgi, joga i terapia tańcem. PoZdrowienie — zadbaj o ciało i umysł.",
       },
-      { property: "og:title", content: "PoZdrowienie" },
-      { property: "og:description", content: "Terapia · Społeczność · Rozwój — Bolesławiec" },
+      {
+        property: "og:title",
+        content: "PoZdrowienie — Psycholog, psychoterapeuta i psychiatra w Bolesławcu",
+      },
+      {
+        property: "og:description",
+        content:
+          "Psycholog, psychoterapeuta i psychiatra w Bolesławcu. Diagnoza ADHD, coaching, męskie kręgi, joga i terapia tańcem. Znajdziesz u nas wsparcie dla umysłu i zajęcia, które uczą ciało odpuszczać.",
+      },
+      { property: "og:url", content: "https://www.pozdrowienie.com.pl/" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://www.pozdrowienie.com.pl/" }],
   }),
   component: Index,
 });
@@ -35,11 +47,12 @@ function Index() {
       {/* Intro */}
       <section className="mx-auto max-w-4xl px-6 py-16 text-center">
         <p className="text-lg leading-relaxed text-muted-foreground">
-          PoZdrowienie w Bolesławcu powstało z przekonania, że o zdrowie trzeba dbać
-          całościowo — nie dopiero wtedy, gdy coś zaczyna boleć. Znajdziesz u nas
-          profesjonalne wsparcie psychologa, psychoterapeuty i psychiatry oraz zajęcia,
-          które uczą ciało odpuszczać: jogę, taniec i relaksację. Zaczynasz dokładnie tam,
-          gdzie jesteś — w swoim tempie i bez oceniania.
+          Psycholog, psychoterapeuta i psychiatra w Bolesławcu. Diagnoza ADHD, coaching,
+          męskie kręgi, joga i terapia tańcem. PoZdrowienie w Bolesławcu powstało z
+          przekonania, że o zdrowie trzeba dbać całościowo — nie dopiero wtedy, gdy coś
+          zaczyna boleć. Znajdziesz u nas profesjonalne wsparcie psychologa,
+          psychoterapeuty i psychiatry oraz zajęcia, które uczą ciało odpuszczać: jogę,
+          taniec i relaksację.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Button asChild size="lg" className="rounded-full px-7">
