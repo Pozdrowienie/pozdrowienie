@@ -15,6 +15,8 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:title", content: "PoZdrowienie" },
       { property: "og:description", content: "Terapia · Społeczność · Rozwój — Bolesławiec" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,
@@ -245,7 +247,7 @@ function SpecialistCard({
           />
         </div>
       </div>
-      <p className={`mt-4 text-xs font-medium uppercase tracking-wider ${roleClass}`}>
+      <p className={`mt-4 whitespace-pre-line text-xs font-medium uppercase tracking-wider ${roleClass}`}>
         {s.role}
       </p>
       <h3 className="mt-1 font-serif text-base font-semibold">{s.name}</h3>

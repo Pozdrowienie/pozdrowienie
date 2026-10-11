@@ -44,7 +44,7 @@ export function SpecialistCard({ s }: { s: Specialist }) {
           />
         </div>
         <p
-          className={`mt-4 text-[11px] font-semibold uppercase tracking-[0.18em] ${accent.role}`}
+          className={`mt-4 whitespace-pre-line text-[11px] font-semibold uppercase tracking-[0.18em] ${accent.role}`}
         >
           {s.role}
         </p>

@@ -58,7 +58,7 @@ export function SpecialistDetail({ specialist: s }: { specialist: Specialist }) 
                   }}
                 />
               </div>
-              <p className={`mt-6 text-[11px] font-semibold uppercase tracking-[0.22em] ${accent.role}`}>
+              <p className={`mt-6 whitespace-pre-line text-[11px] font-semibold uppercase tracking-[0.22em] ${accent.role}`}>
                 {s.role}
               </p>
               <p className="mt-2 font-serif text-2xl font-semibold text-brand-navy md:text-3xl">
