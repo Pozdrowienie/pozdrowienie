@@ -5,7 +5,7 @@ import marek from "@/assets/specialist-marek.jpg";
 import annaAntoniewicz from "@/assets/specialist-anna-antoniewicz.jpg";
 import tomasz from "@/assets/specialist-tomasz-karczewski-new.jpeg";
 import annaMarciniak from "@/assets/specialist-anna-marciniak.jpg";
-import ulaPalczewska from "@/assets/specialist-ula-palczewska-bg.jpg.asset.json";
+import ulaPalczewska from "@/assets/specialist-ula-palczewska-bg2.jpg.asset.json";
 import joannaWolar from "@/assets/specialist-joanna-wolar-white.jpg";
 
 export type SpecialistCategory =
