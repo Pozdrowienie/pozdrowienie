@@ -11,9 +11,11 @@ export const Route = createFileRoute("/pricing")({
       { name: "description", content: "Przejrzysty cennik konsultacji psychiatrycznych, psychologicznych, terapii i jogi w PoZdrowieniu." },
       { property: "og:title", content: "Cennik usług — PoZdrowienie" },
       { property: "og:description", content: "Przejrzysty cennik konsultacji w PoZdrowieniu." },
+      { property: "og:url", content: "https://www.pozdrowienie.com.pl/pricing" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://www.pozdrowienie.com.pl/pricing" }],
   }),
   component: Pricing,
 });

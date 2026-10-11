@@ -3,23 +3,38 @@ import { Button } from "@/components/ui/button";
 import { getSpecialist, type Specialist } from "@/data/specialists";
 import { SpecialistDetail } from "@/components/specialist-detail";
 
+const DOM = "https://www.pozdrowienie.com.pl";
+const flat = (t: string) => t.replace(/\s*\n\s*/g, " · ");
+const cut = (t: string, n = 155) =>
+  t.length <= n ? t : t.slice(0, t.lastIndexOf(" ", n)).trimEnd() + "…";
+
 export const Route = createFileRoute("/specjalisci/$slug")({
   loader: ({ params }): { specialist: Specialist } => {
     const specialist = getSpecialist(params.slug);
     if (!specialist) throw notFound();
     return { specialist };
   },
-  head: ({ loaderData }) => ({
+  head: ({ params, loaderData }) => ({
     meta: loaderData
       ? [
-          { title: `${loaderData.specialist.name} — ${loaderData.specialist.role} | PoZdrowienie` },
-          { name: "description", content: loaderData.specialist.about.slice(0, 155) },
-          { property: "og:title", content: `${loaderData.specialist.name} — ${loaderData.specialist.role}` },
-          { property: "og:description", content: loaderData.specialist.about.slice(0, 155) },
+          {
+            title: `${loaderData.specialist.name} — ${flat(loaderData.specialist.role)} | PoZdrowienie`,
+          },
+          { name: "description", content: cut(loaderData.specialist.about) },
+          {
+            property: "og:title",
+            content: `${loaderData.specialist.name} — ${flat(loaderData.specialist.role)}`,
+          },
+          { property: "og:description", content: cut(loaderData.specialist.about) },
+          {
+            property: "og:url",
+            content: `${DOM}/specjalisci/${params.slug}`,
+          },
           { property: "og:type", content: "website" },
           { name: "twitter:card", content: "summary_large_image" },
         ]
       : [],
+    links: [{ rel: "canonical", href: `${DOM}/specjalisci/${params.slug}` }],
   }),
   notFoundComponent: () => (
     <div className="mx-auto max-w-md py-20 text-center">

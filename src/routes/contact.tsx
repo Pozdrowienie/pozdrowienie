@@ -6,13 +6,22 @@ import { BrandWatermark } from "@/components/brand-watermark";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact & Book Appointment — Gabinet Zdrowia Psychicznego" },
-      { name: "description", content: "Book an appointment or contact our mental health clinic in Bolesławiec." },
-      { property: "og:title", content: "Contact & Book Appointment" },
-      { property: "og:description", content: "Reach our team — we're here to help." },
+      { title: "Kontakt — PoZdrowienie Bolesławiec" },
+      {
+        name: "description",
+        content:
+          "Zadzwoń i umów wizytę w PoZdrowieniu w Bolesławcu. Numery telefonów do specjalistów, adres i godziny otwarcia.",
+      },
+      { property: "og:title", content: "Kontakt — PoZdrowienie Bolesławiec" },
+      {
+        property: "og:description",
+        content: "Umów wizytę w Bolesławcu — zadzwoń bezpośrednio do specjalisty.",
+      },
+      { property: "og:url", content: "https://www.pozdrowienie.com.pl/contact" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://www.pozdrowienie.com.pl/contact" }],
   }),
   component: Contact,
 });

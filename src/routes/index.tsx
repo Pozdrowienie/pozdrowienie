@@ -25,9 +25,11 @@ export const Route = createFileRoute("/")({
         content:
           "Psycholog, psychoterapeuta i psychiatra w Bolesławcu. Diagnoza ADHD, coaching, męskie kręgi, joga i terapia tańcem. Znajdziesz u nas wsparcie dla umysłu i zajęcia, które uczą ciało odpuszczać.",
       },
+      { property: "og:url", content: "https://www.pozdrowienie.com.pl/" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://www.pozdrowienie.com.pl/" }],
   }),
   component: Index,
 });
