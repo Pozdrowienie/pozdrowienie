@@ -17,7 +17,6 @@ import { Route as CialoRouteImport } from './routes/cialo'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as SpecjalisciSlugRouteImport } from './routes/specjalisci.$slug'
-import { Route as SpecialistsSlugRouteImport } from './routes/specialists.$slug'
 
 const UmyslRoute = UmyslRouteImport.update({
   id: '/umysl',
@@ -59,11 +58,6 @@ const SpecjalisciSlugRoute = SpecjalisciSlugRouteImport.update({
   path: '/specjalisci/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SpecialistsSlugRoute = SpecialistsSlugRouteImport.update({
-  id: '/$slug',
-  path: '/$slug',
-  getParentRoute: () => SpecialistsRoute,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -71,9 +65,8 @@ export interface FileRoutesByFullPath {
   '/cialo': typeof CialoRoute
   '/contact': typeof ContactRoute
   '/pricing': typeof PricingRoute
-  '/specialists': typeof SpecialistsRouteWithChildren
+  '/specialists': typeof SpecialistsRoute
   '/umysl': typeof UmyslRoute
-  '/specialists/$slug': typeof SpecialistsSlugRoute
   '/specjalisci/$slug': typeof SpecjalisciSlugRoute
 }
 export interface FileRoutesByTo {
@@ -82,9 +75,8 @@ export interface FileRoutesByTo {
   '/cialo': typeof CialoRoute
   '/contact': typeof ContactRoute
   '/pricing': typeof PricingRoute
-  '/specialists': typeof SpecialistsRouteWithChildren
+  '/specialists': typeof SpecialistsRoute
   '/umysl': typeof UmyslRoute
-  '/specialists/$slug': typeof SpecialistsSlugRoute
   '/specjalisci/$slug': typeof SpecjalisciSlugRoute
 }
 export interface FileRoutesById {
@@ -94,9 +86,8 @@ export interface FileRoutesById {
   '/cialo': typeof CialoRoute
   '/contact': typeof ContactRoute
   '/pricing': typeof PricingRoute
-  '/specialists': typeof SpecialistsRouteWithChildren
+  '/specialists': typeof SpecialistsRoute
   '/umysl': typeof UmyslRoute
-  '/specialists/$slug': typeof SpecialistsSlugRoute
   '/specjalisci/$slug': typeof SpecjalisciSlugRoute
 }
 export interface FileRouteTypes {
@@ -109,7 +100,6 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/specialists'
     | '/umysl'
-    | '/specialists/$slug'
     | '/specjalisci/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -120,7 +110,6 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/specialists'
     | '/umysl'
-    | '/specialists/$slug'
     | '/specjalisci/$slug'
   id:
     | '__root__'
@@ -131,7 +120,6 @@ export interface FileRouteTypes {
     | '/pricing'
     | '/specialists'
     | '/umysl'
-    | '/specialists/$slug'
     | '/specjalisci/$slug'
   fileRoutesById: FileRoutesById
 }
@@ -141,7 +129,7 @@ export interface RootRouteChildren {
   CialoRoute: typeof CialoRoute
   ContactRoute: typeof ContactRoute
   PricingRoute: typeof PricingRoute
-  SpecialistsRoute: typeof SpecialistsRouteWithChildren
+  SpecialistsRoute: typeof SpecialistsRoute
   UmyslRoute: typeof UmyslRoute
   SpecjalisciSlugRoute: typeof SpecjalisciSlugRoute
 }
@@ -204,27 +192,8 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SpecjalisciSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/specialists/$slug': {
-      id: '/specialists/$slug'
-      path: '/$slug'
-      fullPath: '/specialists/$slug'
-      preLoaderRoute: typeof SpecialistsSlugRouteImport
-      parentRoute: typeof SpecialistsRoute
-    }
   }
 }
-
-interface SpecialistsRouteChildren {
-  SpecialistsSlugRoute: typeof SpecialistsSlugRoute
-}
-
-const SpecialistsRouteChildren: SpecialistsRouteChildren = {
-  SpecialistsSlugRoute: SpecialistsSlugRoute,
-}
-
-const SpecialistsRouteWithChildren = SpecialistsRoute._addFileChildren(
-  SpecialistsRouteChildren,
-)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
@@ -232,7 +201,7 @@ const rootRouteChildren: RootRouteChildren = {
   CialoRoute: CialoRoute,
   ContactRoute: ContactRoute,
   PricingRoute: PricingRoute,
-  SpecialistsRoute: SpecialistsRouteWithChildren,
+  SpecialistsRoute: SpecialistsRoute,
   UmyslRoute: UmyslRoute,
   SpecjalisciSlugRoute: SpecjalisciSlugRoute,
 }
