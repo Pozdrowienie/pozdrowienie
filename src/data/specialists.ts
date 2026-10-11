@@ -231,8 +231,9 @@ export const specialists: Specialist[] = [
     category: "taniec",
     space: "body",
     image: ulaPalczewska,
-    imageScale: 1.35,
-    imageTransformOrigin: "center 30%",
+    imagePosition: "center 30%",
+    imageScale: 1.20,
+    imageTransformOrigin: "center 40%",
     phone: "+48 608 525 148",
     about:
       "Z wykształcenia jestem fizjoterapeutką, absolwentką 4-letniej Szkoły Counsellingu Gestalt oraz Trenerką Rozwojowej Pracy poprzez Ciało, Taniec i Ruch (w trakcie szkolenia) w Polskim Instytucie Psychoterapii Tańcem i Ruchem w Warszawie. Od dziecka towarzyszy mi muzyka, a od czasów nastoletnich taniec współczesny, który do dziś, stale porusza moje serce. Myślę obrazami, czuję dźwiękami, poruszam się z obecnością. Zawsze marzyłam o pracy, która w sposób twórczy i rozwojowy łączyłaby ciało, emocje, świadomość - najlepiej w ruchu i taką obecnie mam przyjemność doświadczać.",
