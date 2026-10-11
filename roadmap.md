@@ -7,3 +7,4 @@
 - [x] Replace portrait with the uploaded photo that keeps its studio background; crop it for the circular frame.
 - [x] Update pricing: group classes 90 min 60 zł, individual 50 min 100 zł, remove the workshop row.
 - [x] Verify profile page and Cennik show the new photo and prices.
+- [x] Raise the portrait slightly in the circular crop without cutting the curls.
