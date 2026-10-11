@@ -23,6 +23,8 @@ export type Specialist = {
   name: string;
   role: string;
   category: SpecialistCategory;
+  /** Dodatkowe kategorie, w których osoba też się pojawia. */
+  extraCategories?: SpecialistCategory[];
   /** mind = turkus, body = róż — używane w stylach kart */
   space: "mind" | "body";
   image: string;
@@ -251,6 +253,7 @@ export const specialists: Specialist[] = [
     name: "Joanna Wolar",
     role: "Psychoterapeutka\nJoga \"czuły reset\"",
     category: "psychoterapia",
+    extraCategories: ["joga"],
     space: "body",
     image: joannaWolar,
     imageScale: 1.35,
