@@ -184,7 +184,7 @@ export const specialists: Specialist[] = [
   {
     slug: "tomasz-karczewski",
     name: "Tomasz Karczewski ",
-    role: "Coach",
+    role: "COACH\nMĘSKIE KRĘGI",
     category: "coaching",
     space: "mind",
     image: tomasz,
