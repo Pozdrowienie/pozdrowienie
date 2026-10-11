@@ -122,7 +122,7 @@ function Index() {
           {[
             { icon: Heart, title: "Empatia", text: "Zaczynamy od rozmowy o tym, co dla Ciebie ważne. Bez pośpiechu i bez oceniania." },
             { icon: ShieldCheck, title: "Bezpieczeństwo", text: "To, co przynosisz na spotkanie, zostaje między nami — zgodnie z etyką zawodu." },
-            { icon: Sparkles, title: "Holistyczne podejście do zdrowia", text: "Dbamy o nie razem — rozmowa o emocjach i praca z ciałem uzupełniają się nawzajem." },
+            { icon: Sparkles, title: "Holistyczne podejście do zdrowia", text: "Łączymy wsparcie psychologiczne i pracę z ciałem." },
           ].map(({ icon: Icon, title, text }) => (
             <div key={title} className="rounded-2xl border border-border/60 bg-surface p-6 shadow-sm">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-navy/10 text-brand-navy">
