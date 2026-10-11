@@ -5,7 +5,7 @@ import marek from "@/assets/specialist-marek.jpg";
 import annaAntoniewicz from "@/assets/specialist-anna-antoniewicz.jpg";
 import tomasz from "@/assets/specialist-tomasz-karczewski-new.jpeg";
 import annaMarciniak from "@/assets/specialist-anna-marciniak.jpg";
-import ulaPalczewska from "@/assets/specialist-ula-palczewska-white.jpg";
+import ulaPalczewska from "@/assets/specialist-ula-palczewska-bg.jpg.asset.json";
 import joannaWolar from "@/assets/specialist-joanna-wolar-white.jpg";
 
 export type SpecialistCategory =
@@ -230,10 +230,7 @@ export const specialists: Specialist[] = [
     role: "TERAPIA TAŃCEM I RUCHEM (DMT) \nTANIEC INTUICYJNY",
     category: "taniec",
     space: "body",
-    image: ulaPalczewska,
-    imagePosition: "center 30%",
-    imageScale: 1.20,
-    imageTransformOrigin: "center 40%",
+    image: ulaPalczewska.url,
     phone: "+48 608 525 148",
     about:
       "Z wykształcenia jestem fizjoterapeutką, absolwentką 4-letniej Szkoły Counsellingu Gestalt oraz Trenerką Rozwojowej Pracy poprzez Ciało, Taniec i Ruch (w trakcie szkolenia) w Polskim Instytucie Psychoterapii Tańcem i Ruchem w Warszawie. Od dziecka towarzyszy mi muzyka, a od czasów nastoletnich taniec współczesny, który do dziś, stale porusza moje serce. Myślę obrazami, czuję dźwiękami, poruszam się z obecnością. Zawsze marzyłam o pracy, która w sposób twórczy i rozwojowy łączyłaby ciało, emocje, świadomość - najlepiej w ruchu i taką obecnie mam przyjemność doświadczać.",
@@ -245,9 +242,8 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Improwizacja ruchowa", "Autentyczny ruch", "Praca z oddechem i ugruntowaniem"],
     pricing: [
-      { name: "Zajęcia grupowe", price: "50 zł", duration: "50 - 90 min" },
-      { name: "Sesja indywidualna", price: "100 zł", duration: "50 - 90 min" },
-      { name: "Warsztat \"Kobiece Ja\"", price: "100 zł", duration: "2 -3 godz." },
+      { name: "Zajęcia grupowe", price: "60 zł", duration: "90 min" },
+      { name: "Sesja indywidualna", price: "100 zł", duration: "50 min" },
     ],
   },
   {
