@@ -13,3 +13,8 @@
 - [x] Drop the Psychoterapia category: remove its circle, icon and data entry.
 - [x] List Joanna under Psychoterapeuta in Przestrzeń Umysłu, keeping her in the Joga circle.
 - [x] Verify the circles row, both space pages, the Psychoterapeuta and Joga filters and her profile page.
+
+# Joanna Wolar — move to the body space
+- [x] Reclassify Joanna as Joga only (space: body) and drop the Psychoterapeuta entry and extraCategories.
+- [x] Place her entry right after Ania Marciniak so both stand together in the full list and in the Joga circle.
+- [x] Verify Przestrzeń Ciała, Przestrzeń Umysłu, the Joga filter and her profile page.
