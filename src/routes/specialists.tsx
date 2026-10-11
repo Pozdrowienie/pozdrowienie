@@ -43,13 +43,14 @@ function SpecialistsPage() {
         : specialists.filter(
             (s) => s.category === active || s.extraCategories?.includes(active),
           );
-    // Nauczycielki jogi obok siebie: Joanna tuż za Anią Marciniak.
+    if (active !== "joga") return list;
+    // W kółku „Joga" nauczycielki stoją obok siebie: Joanna tuż za Anią Marciniak.
     const anchor = list.findIndex((s) => s.slug === "anna-marciniak");
     const joanna = list.findIndex((s) => s.slug === "joanna-wolar");
     if (anchor === -1 || joanna === -1 || joanna === anchor + 1) return list;
     const out = [...list];
-    out.splice(joanna, 1);
-    out.splice(out.findIndex((s) => s.slug === "anna-marciniak") + 1, 0, specialists[joanna]);
+    const [moved] = out.splice(joanna, 1);
+    out.splice(out.findIndex((s) => s.slug === "anna-marciniak") + 1, 0, moved);
     return out;
   }, [active]);
 
