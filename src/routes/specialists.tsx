@@ -38,7 +38,7 @@ function SpecialistsPage() {
 
   const filtered = useMemo(() => {
     if (active === "all") return specialists;
-    return specialists.filter((s) => s.category === active);
+    return specialists.filter((s) => s.category === active || s.extraCategories?.includes(active));
   }, [active]);
 
   useEffect(() => {
