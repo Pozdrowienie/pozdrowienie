@@ -260,10 +260,10 @@ export const specialists: Specialist[] = [
     imageScale: 1.35,
     phone: "+48 536 582 643",
     about: "Jestem absolwentką Całościowego Kursu Psychoterapii w nurcie integratywnym, w trakcie certyfikacji. Prowadzę zajęcia z jogi psychosomatycznej \"czuły reset\", jako certyfikowana nauczycielka Hatha Jogi, RYT 200 Yoga Alliance.\n\nW swojej pracy skupiam uwagę na połączeniu przestrzeni ciała oraz umysłu. Dbam o komfort i swobodę podczas praktyki.\n\nMoje holistyczne podejście opiera się na poczuciu bezpieczeństwa oraz na tym co tu i teraz, a także domknięciu każdego procesu wyciszeniem i powrotem do siebie. Podczas praktyki będziemy pracować z emocjami oraz ciałem.\n\nDoświadczenia z życia potrafią manifestować się poprzez odczuwanie:\n\n•Lęku\n\n•Przytłoczenia\n\n•Smutku\n\n•Wstydu\n\n•Złości\n\n•Presji\n\nNa zajęciach tematycznych podczas praktyki jogi będziemy uwalniać i rozpoznawać poszczególne emocje skumulowane w ciele.",
-    specializations: ["Joga psychosomatyczna \"czuły reset\"", "Praca z emocjami i ciałem", "Wyciszenie i powrót do siebie"],
+    specializations: ["Regulacja układu nerwowego", "Relaksacja i praca z oddechem", "Wyciszenie i powrót do siebie"],
     methods: [],
     pricing: [
-      { name: "Pojedyncze spotkanie", price: "60 zł", duration: "50 min" },
+      { name: "Joga \"czuły reset\" zajęcia grupowe", price: "60 zł", duration: "50 min" },
       { name: "Karnet miesięczny — 4 spotkania", price: "200 zł", duration: "4 × 50 min" },
     ],
   },
