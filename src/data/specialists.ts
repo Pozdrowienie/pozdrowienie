@@ -245,9 +245,8 @@ export const specialists: Specialist[] = [
     ],
     methods: ["Improwizacja ruchowa", "Autentyczny ruch", "Praca z oddechem i ugruntowaniem"],
     pricing: [
-      { name: "Zajęcia grupowe", price: "50 zł", duration: "50 - 90 min" },
-      { name: "Sesja indywidualna", price: "100 zł", duration: "50 - 90 min" },
-      { name: "Warsztat \"Kobiece Ja\"", price: "100 zł", duration: "2 -3 godz." },
+      { name: "Zajęcia grupowe", price: "60 zł", duration: "90 min" },
+      { name: "Sesja indywidualna", price: "100 zł", duration: "50 min" },
     ],
   },
   {
