@@ -61,13 +61,15 @@ function Pricing() {
                       <h2 className="font-serif text-xl font-semibold">{s.name}</h2>
                     </div>
                   </div>
-                  <a
-                    href={telHref(s.phone)}
-                    className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold shadow-sm transition ${accent.btn}`}
-                  >
-                    <Phone className="h-4 w-4" />
-                    {s.phone}
-                  </a>
+                  {s.phone && (
+                    <a
+                      href={telHref(s.phone)}
+                      className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold shadow-sm transition ${accent.btn}`}
+                    >
+                      <Phone className="h-4 w-4" />
+                      {s.phone}
+                    </a>
+                  )}
                 </div>
                 <div className="mt-5 divide-y divide-border/60">
                   {s.pricing.map((p) => (

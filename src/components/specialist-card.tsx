@@ -51,19 +51,23 @@ export function SpecialistCard({ s }: { s: Specialist }) {
         <h3 className="mt-1 font-serif text-xl font-semibold">{s.name}</h3>
       </Link>
 
-      <a
-        href={telHref(s.phone)}
-        className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-action px-5 py-2.5 text-sm font-semibold text-action-foreground shadow-sm transition hover:bg-action/90"
-      >
-        <Phone className="h-4 w-4" />
-        {s.space === "mind" ? "Zadzwoń i umów wizytę" : "Zadzwoń i zarezerwuj miejsce"}
-      </a>
-      <a
-        href={telHref(s.phone)}
-        className="mt-2 text-xs font-medium text-muted-foreground hover:text-foreground"
-      >
-        {s.phone}
-      </a>
+      {s.phone && (
+        <>
+          <a
+            href={telHref(s.phone)}
+            className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-full bg-action px-5 py-2.5 text-sm font-semibold text-action-foreground shadow-sm transition hover:bg-action/90"
+          >
+            <Phone className="h-4 w-4" />
+            {s.space === "mind" ? "Zadzwoń i umów wizytę" : "Zadzwoń i zarezerwuj miejsce"}
+          </a>
+          <a
+            href={telHref(s.phone)}
+            className="mt-2 text-xs font-medium text-muted-foreground hover:text-foreground"
+          >
+            {s.phone}
+          </a>
+        </>
+      )}
     </article>
   );
 }
