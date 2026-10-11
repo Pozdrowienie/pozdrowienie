@@ -16,6 +16,7 @@ const ORDER: SpecialistCategory[] = [
   "psychoterapeuta",
   "dzieci",
   "coaching",
+  "psychoterapia",
   "joga",
   "taniec",
 ];
@@ -28,6 +29,7 @@ const ICONS: Record<SpecialistCategory, React.ComponentType<{ className?: string
   coaching: Sparkles,
   joga: Flower2,
   taniec: Music2,
+  psychoterapia: HeartHandshake,
 };
 
 export function CategoryCircles({

@@ -6,11 +6,13 @@ import annaAntoniewicz from "@/assets/specialist-anna-antoniewicz.jpg";
 import tomasz from "@/assets/specialist-tomasz-karczewski-new.jpeg";
 import annaMarciniak from "@/assets/specialist-anna-marciniak.jpg";
 import ulaPalczewska from "@/assets/specialist-ula-palczewska.jpg";
+import joannaWolar from "@/assets/specialist-joanna-wolar.jpg";
 
 export type SpecialistCategory =
   | "psycholog"
   | "psychiatra"
   | "psychoterapeuta"
+  | "psychoterapia"
   | "joga"
   | "taniec"
   | "coaching"
@@ -45,6 +47,7 @@ export const categoryMeta: Record<
   psycholog: { label: "Psycholog", space: "mind" },
   psychiatra: { label: "Psychiatra", space: "mind" },
   psychoterapeuta: { label: "Psychoterapeuta", space: "mind" },
+  psychoterapia: { label: "Psychoterapia", space: "body" },
   dzieci: { label: "PSYCHOLOG DZIECI I MŁODZIEŻY I DOROSŁYCH", space: "mind" },
   coaching: { label: "Coaching", space: "mind" },
   joga: { label: "Joga", space: "body" },
@@ -244,6 +247,19 @@ export const specialists: Specialist[] = [
       { name: "Sesja indywidualna", price: "100 zł", duration: "50 - 90 min" },
       { name: "Warsztat \"Kobiece Ja\"", price: "100 zł", duration: "2 -3 godz." },
     ],
+  },
+  {
+    slug: "joanna-wolar",
+    name: "Joanna Wolar",
+    role: "Psychoterapeutka",
+    category: "psychoterapia",
+    space: "body",
+    image: joannaWolar,
+    phone: "",
+    about: "",
+    specializations: [],
+    methods: [],
+    pricing: [],
   },
 ];
 

@@ -70,13 +70,15 @@ export function SpecialistDetail({ specialist: s }: { specialist: Specialist }) 
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-brand-navy/80">
                 {s.space === "mind" ? "Zadzwoń i umów wizytę" : "Zadzwoń i zarezerwuj miejsce"}
               </p>
-              <a
-                href={telHref(s.phone)}
-                className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-action px-6 py-4 text-base font-semibold text-action-foreground shadow-lg transition hover:bg-action/90"
-              >
-                <Phone className="h-5 w-5" />
-                {s.phone}
-              </a>
+                {s.phone && (
+                  <a
+                    href={telHref(s.phone)}
+                    className="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full bg-action px-6 py-4 text-base font-semibold text-action-foreground shadow-lg transition hover:bg-action/90"
+                  >
+                    <Phone className="h-5 w-5" />
+                    {s.phone}
+                  </a>
+                )}
               <Button asChild variant="outline" className="mt-3 w-full rounded-full border-brand-green/35 bg-surface/80">
                 <Link to="/pricing">
                   <ListChecks className="mr-2 h-4 w-4" /> Cennik
@@ -136,12 +138,14 @@ export function SpecialistDetail({ specialist: s }: { specialist: Specialist }) 
       </section>
 
       <div className="sticky bottom-0 z-40 border-t border-border/70 bg-background/95 px-4 py-3 shadow-2xl backdrop-blur md:hidden">
-        <a
-          href={telHref(s.phone)}
-          className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-action px-6 py-4 text-base font-semibold text-action-foreground shadow-lg transition hover:bg-action/90"
-        >
-          <Phone className="h-5 w-5" /> Zadzwoń: {s.phone}
-        </a>
+        {s.phone && (
+          <a
+            href={telHref(s.phone)}
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-action px-6 py-4 text-base font-semibold text-action-foreground shadow-lg transition hover:bg-action/90"
+          >
+            <Phone className="h-5 w-5" /> Zadzwoń: {s.phone}
+          </a>
+        )}
       </div>
     </>
   );
