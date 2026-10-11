@@ -120,9 +120,9 @@ function Index() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-6 md:grid-cols-3">
           {[
-            { icon: Heart, title: "Empatia", text: "Każda wizyta zaczyna się od wysłuchania — bez oceniania, w Twoim tempie." },
-            { icon: ShieldCheck, title: "Dyskrecja i bezpieczeństwo", text: "Przestrzeń oparta na etyce zawodowej i poszanowaniu prywatności." },
-            { icon: Sparkles, title: "Holistycznie", text: "Łączymy profesjonalne metody pracy z umysłem i ciałem." },
+            { icon: Heart, title: "Wysłuchamy", text: "Zaczynamy od rozmowy o tym, co dla Ciebie ważne. Bez pośpiechu i bez oceniania." },
+            { icon: ShieldCheck, title: "Twoja prywatność", text: "To, co przynosisz na spotkanie, zostaje między nami — zgodnie z etyką zawodu." },
+            { icon: Sparkles, title: "Ciało i głowa", text: "Dbamy o nie razem — rozmowa o emocjach i praca z ciałem uzupełniają się nawzajem." },
           ].map(({ icon: Icon, title, text }) => (
             <div key={title} className="rounded-2xl border border-border/60 bg-surface p-6 shadow-sm">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-navy/10 text-brand-navy">
