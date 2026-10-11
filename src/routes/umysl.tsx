@@ -19,6 +19,8 @@ export const Route = createFileRoute("/umysl")({
         property: "og:description",
         content: "Psycholog, psychiatra, psychoterapia — wsparcie zdrowia psychicznego w Bolesławcu.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: MindPage,

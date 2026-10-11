@@ -8,6 +8,8 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "Learn about our clinic's mission, values and approach to mental health care." },
       { property: "og:title", content: "About Us — Gabinet Zdrowia Psychicznego" },
       { property: "og:description", content: "Mental health clinic in Bolesławiec built on empathy, ethics and evidence." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: About,

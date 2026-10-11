@@ -16,7 +16,8 @@ export const Route = createFileRoute("/specjalisci/$slug")({
           { name: "description", content: loaderData.specialist.about.slice(0, 155) },
           { property: "og:title", content: `${loaderData.specialist.name} — ${loaderData.specialist.role}` },
           { property: "og:description", content: loaderData.specialist.about.slice(0, 155) },
-          { property: "og:image", content: loaderData.specialist.image },
+          { property: "og:type", content: "website" },
+          { name: "twitter:card", content: "summary_large_image" },
         ]
       : [],
   }),
