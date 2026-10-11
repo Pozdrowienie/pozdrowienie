@@ -35,10 +35,11 @@ function Index() {
       {/* Intro */}
       <section className="mx-auto max-w-4xl px-6 py-16 text-center">
         <p className="text-lg leading-relaxed text-muted-foreground">
-          PoZdrowienie w Bolesławcu jest miejscem, które powstało z potrzeby równowagi i
-          holistycznego spojrzenia na zdrowie. Dbamy o przestrzeń ciała i umysłu — ruch
-          spotyka się ze spokojem, a umysł otrzymuje profesjonalne wsparcie w drodze do
-          równowagi.
+          PoZdrowienie w Bolesławcu powstało z przekonania, że o zdrowie trzeba dbać
+          całościowo — nie dopiero wtedy, gdy coś zaczyna boleć. Znajdziesz u nas
+          profesjonalne wsparcie psychologa, psychoterapeuty i psychiatry oraz zajęcia,
+          które uczą ciało odpuszczać: jogę, taniec i relaksację. Zaczynasz dokładnie tam,
+          gdzie jesteś — w swoim tempie i bez oceniania.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Button asChild size="lg" className="rounded-full px-7">
