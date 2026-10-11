@@ -11,6 +11,8 @@ export const Route = createFileRoute("/pricing")({
       { name: "description", content: "Przejrzysty cennik konsultacji psychiatrycznych, psychologicznych, terapii i jogi w PoZdrowieniu." },
       { property: "og:title", content: "Cennik usług — PoZdrowienie" },
       { property: "og:description", content: "Przejrzysty cennik konsultacji w PoZdrowieniu." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Pricing,
@@ -55,7 +57,7 @@ function Pricing() {
                       />
                     </div>
                     <div>
-                      <p className={`text-xs font-semibold uppercase tracking-wider ${accent.role}`}>
+                      <p className={`whitespace-pre-line text-xs font-semibold uppercase tracking-wider ${accent.role}`}>
                         {s.role}
                       </p>
                       <h2 className="font-serif text-xl font-semibold">{s.name}</h2>

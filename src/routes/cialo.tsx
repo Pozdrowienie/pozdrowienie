@@ -19,6 +19,8 @@ export const Route = createFileRoute("/cialo")({
         property: "og:description",
         content: "Hatha Joga i Taniec Intuicyjny — uważność i ekspresja przez ciało.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: BodyPage,

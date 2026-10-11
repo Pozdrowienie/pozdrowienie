@@ -10,6 +10,8 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Book an appointment or contact our mental health clinic in Bolesławiec." },
       { property: "og:title", content: "Contact & Book Appointment" },
       { property: "og:description", content: "Reach our team — we're here to help." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Contact,

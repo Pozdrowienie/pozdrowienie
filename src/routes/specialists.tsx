@@ -24,6 +24,8 @@ export const Route = createFileRoute("/specialists")({
         property: "og:description",
         content: "Poznaj nasz zespół — przestrzeń umysłu i przestrzeń ciała.",
       },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: SpecialistsPage,
