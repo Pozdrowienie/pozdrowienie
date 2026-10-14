@@ -129,7 +129,7 @@ export function BrandHero({
       </svg>
 
 
-      {/* Line-art building — desktop right side, mobile faint backdrop */}
+      {/* Line-art building — temporarily hidden while the hero video is on trial
       <img
         src={building}
         alt="PoZdrowienie — budynek w Bolesławcu"
@@ -141,6 +141,7 @@ export function BrandHero({
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full select-none object-contain object-bottom opacity-15 mix-blend-multiply md:hidden"
       />
+      */}
 
       <div className="relative mx-auto flex max-w-6xl items-center px-6 py-20 md:py-28">
         <div className="max-w-xl text-brand-navy">
