@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Brain, HeartHandshake, Flower2, Users, MessageCircle, Stethoscope, ScanSearch, Fingerprint, Baby, Music2, Compass, ArrowUpRight, Phone } from "lucide-react";
+import { Brain, HeartHandshake, Flower2, Users, MessageCircle, Stethoscope, ScanSearch, Fingerprint, Baby, Music2, Compass, Sparkles, ArrowUpRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { homeServices, type HomeService } from "@/data/services";
@@ -10,10 +10,12 @@ const serviceIcons = {
   pary: HeartHandshake, psychoterapia: Brain, joga: Flower2, kregi: Users,
   psycholog: MessageCircle, psychiatra: Stethoscope, adhd: ScanSearch,
   osobowosc: Fingerprint, dzieci: Baby, taniec: Music2, coaching: Compass,
+  warsztaty: Sparkles,
 };
 
 export function ServiceFinder() {
   const [selected, setSelected] = useState<HomeService | null>(null);
+  const notes = selected && "notes" in selected ? selected.notes : undefined;
 
   return (
     <section aria-labelledby="services-heading" className="border-y border-border/60 bg-surface-soft py-12 md:py-16">
