@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { mindSpecialists, bodySpecialists } from "@/data/specialists";
 import { BrandHero } from "@/components/brand-hero";
+import { ServiceFinder } from "@/components/service-finder";
 import { Brain, CalendarDays, Flower2, Heart, ShieldCheck, Sparkles, Tags } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -83,6 +84,8 @@ function Index() {
           </Button>
         </div>
       </section>
+
+      <ServiceFinder />
 
       {/* Dwie przestrzenie */}
       <section className="mx-auto max-w-6xl px-6 py-16">
