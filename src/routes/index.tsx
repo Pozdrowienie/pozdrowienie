@@ -75,7 +75,7 @@ function Index() {
           <Button
             asChild
             size="lg"
-            className="h-auto gap-3 rounded-full bg-brand-navy px-10 py-5 text-lg font-semibold tracking-wide text-brand-navy-foreground shadow-lg transition hover:-translate-y-0.5 hover:bg-brand-navy/90 hover:shadow-xl"
+            className="h-auto gap-3 rounded-full bg-brand-navy px-10 py-5 text-lg font-semibold tracking-wide text-mind-foreground shadow-lg transition hover:-translate-y-0.5 hover:bg-brand-navy/90 hover:shadow-xl"
           >
             <Link to="/grafik" className="gap-3">
               <CalendarDays className="h-6 w-6" /> Grafik
