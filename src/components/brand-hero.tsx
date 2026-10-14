@@ -1,11 +1,12 @@
 import heroVideo from "@/assets/hero-video.mp4.asset.json";
-import building from "@/assets/building-sketch-navy.png";
+import building from "@/assets/building-sketch-on-film.png";
 
 /**
  * Brand hero — video backdrop with a crisp white veil so navy text stays
  * readable, a delicate pink radial blush and softly floating mint + pink
- * wavy lines. The line-art building is sketched over the film in navy ink
- * (mix-blend-multiply), so the moving picture shows through the paper.
+ * wavy lines. The line-art building is sketched straight onto the film:
+ * navy ink with a soft white halo, so the strokes stay visible where the
+ * moving picture behind them is dark.
  */
 export function BrandHero({
   eyebrow,
