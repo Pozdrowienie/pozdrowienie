@@ -10,6 +10,18 @@ export const homeServices = [
   { id: "dzieci", label: "Konsultacje dla dzieci i młodzieży", slugs: ["anna-antoniewicz"], space: "mind" },
   { id: "taniec", label: "Taniec intuicyjny", slugs: ["ula-palczewska"], space: "body" },
   { id: "coaching", label: "Coaching i mentoring", slugs: ["tomasz-karczewski"], space: "mind" },
+  {
+    id: "warsztaty",
+    label: "Warsztaty rozwojowe",
+    slugs: ["ula-palczewska", "anna-marciniak", "joanna-wolar", "anna-antoniewicz"],
+    space: "body",
+    notes: {
+      "ula-palczewska": "„W Poruszeniu ku zmianie” — więcej informacji na profilu IG @ulapalczewska",
+      "anna-marciniak": "„Poranna Joga i medytacja”",
+      "joanna-wolar": "„Wyregulowana” — warsztat dla kobiet: regulacja układu nerwowego z kąpielą w dźwiękach gongu. Prowadzą: Joanna Wolar i Anna Antoniewicz.",
+      "anna-antoniewicz": "„Wyregulowana” — warsztat dla kobiet: regulacja układu nerwowego z kąpielą w dźwiękach gongu. Prowadzą: Joanna Wolar i Anna Antoniewicz.",
+    },
+  },
 ] as const;
 
 export type HomeService = (typeof homeServices)[number];

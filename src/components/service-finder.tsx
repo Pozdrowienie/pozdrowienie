@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Brain, HeartHandshake, Flower2, Users, MessageCircle, Stethoscope, ScanSearch, Fingerprint, Baby, Music2, Compass, ArrowUpRight, Phone } from "lucide-react";
+import { Brain, HeartHandshake, Flower2, Users, MessageCircle, Stethoscope, ScanSearch, Fingerprint, Baby, Music2, Compass, Sparkles, ArrowUpRight, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { homeServices, type HomeService } from "@/data/services";
@@ -10,10 +10,12 @@ const serviceIcons = {
   pary: HeartHandshake, psychoterapia: Brain, joga: Flower2, kregi: Users,
   psycholog: MessageCircle, psychiatra: Stethoscope, adhd: ScanSearch,
   osobowosc: Fingerprint, dzieci: Baby, taniec: Music2, coaching: Compass,
+  warsztaty: Sparkles,
 };
 
 export function ServiceFinder() {
   const [selected, setSelected] = useState<HomeService | null>(null);
+  const notes = selected && "notes" in selected ? (selected.notes as Record<string, string>) : undefined;
 
   return (
     <section aria-labelledby="services-heading" className="border-y border-border/60 bg-surface-soft py-12 md:py-16">
@@ -58,6 +60,9 @@ export function ServiceFinder() {
                     <Button asChild variant="link" className="h-auto justify-start whitespace-normal p-0 text-left font-serif text-lg text-brand-navy">
                       <Link to="/specjalisci/$slug" params={{ slug }} onClick={() => setSelected(null)}>{specialist.name}<ArrowUpRight aria-hidden="true" /></Link>
                     </Button>
+                    {notes?.[slug] && (
+                      <p className="mt-1 whitespace-normal text-sm leading-snug text-muted-foreground">{notes[slug]}</p>
+                    )}
                     <div className="mt-3 flex flex-wrap gap-2">
                       <Button asChild size="sm" className="rounded-full bg-action text-action-foreground hover:bg-action/90">
                         <a href={telHref(specialist.phone)}><Phone aria-hidden="true" />{specialist.phone}</a>
