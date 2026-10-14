@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowLeft, ListChecks, Phone, Sparkles } from "lucide-react";
+import { ArrowLeft, Globe, ListChecks, Phone, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BrandHero } from "@/components/brand-hero";
 import { BrandWaves } from "@/components/brand-waves";
@@ -84,6 +84,13 @@ export function SpecialistDetail({ specialist: s }: { specialist: Specialist }) 
                   <ListChecks className="mr-2 h-4 w-4" /> Cennik
                 </Link>
               </Button>
+              {s.website && (
+                <Button asChild variant="outline" className="mt-3 w-full rounded-full border-brand-navy/20 bg-surface/80 text-brand-navy">
+                  <a href={s.website} target="_blank" rel="noopener noreferrer" className="whitespace-normal">
+                    <Globe className="mr-2 h-4 w-4" /> {s.website.replace(/^https?:\/\//, "")}
+                  </a>
+                </Button>
+              )}
               <p className="mt-3 text-xs text-muted-foreground">
                 Specjalista osobiście odbiera telefon i ustala dogodny termin.
               </p>
