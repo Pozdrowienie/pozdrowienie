@@ -1,12 +1,9 @@
 import heroVideo from "@/assets/hero-video.mp4.asset.json";
-import building from "@/assets/building-sketch-on-film.png";
 
 /**
  * Brand hero — video backdrop with a crisp white veil so navy text stays
  * readable, a delicate pink radial blush and softly floating mint + pink
- * wavy lines. The line-art building is sketched straight onto the film:
- * navy ink with a soft white halo, so the strokes stay visible where the
- * moving picture behind them is dark.
+ * wavy lines.
  */
 export function BrandHero({
   eyebrow,
@@ -129,21 +126,6 @@ export function BrandHero({
           fill="url(#hero-pink-a)"
         />
       </svg>
-
-
-      {/* Line-art building sketched onto the film — navy ink with a soft white
-          halo baked into the asset, so it needs no blend mode here */}
-      <img
-        src={building}
-        alt="PoZdrowienie — budynek w Bolesławcu"
-        className="pointer-events-none absolute inset-y-0 right-0 hidden h-full w-[58%] select-none object-contain object-right opacity-95 md:block"
-      />
-      <img
-        src={building}
-        alt=""
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 h-full w-full select-none object-contain object-bottom opacity-45 md:hidden"
-      />
 
       <div className="relative mx-auto flex max-w-6xl items-center px-6 py-20 md:py-28">
         <div className="max-w-xl text-brand-navy">

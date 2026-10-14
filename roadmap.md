@@ -35,7 +35,7 @@
 # Homepage service finder
 - [x] Add service tiles under Grafik, preserving the prominent pricing and specialist links.
 - [x] Connect each service to the appropriate specialists and verify desktop/mobile navigation.
-- [x] Hero: dodać film w sekcji powitalnej — film wgrany (1920x1080, 18 s) ustawiony jako tło; rysunek domu ukryty (do przywrócenia); „PoZdrowienie" widoczne. Użytkowniczka zatwierdziła próbne ustawienie.
+- [x] Hero: film wgrany (1920x1080, 18 s) jako tło, mgiełka i napis „PoZdrowienie"; rysunek domu usunięty na rzecz samego filmu. Użytkowniczka zatwierdziła.
 
 # Film w tle — rozmiar pliku
 - [x] Skompresować film w tle: 21,9 MB → 7,5 MB (SSIM 0,985, klatki nie do odróżnienia), podstrona ładuje mniejszy plik.
