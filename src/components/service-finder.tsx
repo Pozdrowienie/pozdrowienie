@@ -15,7 +15,7 @@ const serviceIcons = {
 
 export function ServiceFinder() {
   const [selected, setSelected] = useState<HomeService | null>(null);
-  const notes = selected && "notes" in selected ? selected.notes : undefined;
+  const notes = selected && "notes" in selected ? (selected.notes as Record<string, string>) : undefined;
 
   return (
     <section aria-labelledby="services-heading" className="border-y border-border/60 bg-surface-soft py-12 md:py-16">
