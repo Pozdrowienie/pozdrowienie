@@ -24,3 +24,8 @@
 - [x] Give every subpage its own description and self-address; remove the duplicate invisible specialist page.
 - [x] Add robots.txt and a sitemap with all 16 addresses; mark the site as Polish.
 - [ ] Rewrite the "O nas" page, whose text is still in English — waiting for the user's wording.
+
+# Grafik
+- [ ] Add the supplied weekly schedule with specialist portraits, phone links and pricing links.
+- [ ] Make Grafik accessible from the site navigation on desktop and mobile.
+- [ ] Verify all days, joint couples therapy, phone links and pricing navigation.
