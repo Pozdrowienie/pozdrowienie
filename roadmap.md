@@ -30,3 +30,4 @@
 - [x] Make Grafik accessible from the site navigation on desktop and mobile.
 - [x] Verify all days, joint couples therapy, phone links and pricing navigation.
 - [x] Add a large "Grafik" button on the homepage below the three intro buttons and above the "Dwie przestrzenie" section.
+- [x] Add Marek Pisarski (psychoterapia indywidualna) to Thursday and verify the card, phone link and pricing link.

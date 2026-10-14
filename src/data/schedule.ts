@@ -22,6 +22,7 @@ export const weeklySchedule: { day: string; entries: ScheduleEntry[] }[] = [
     { service: "Hatha Joga", specialists: ["anna-marciniak"], space: "body" },
   ] },
   { day: "Czwartek", entries: [
+    { service: "Psychoterapia indywidualna", specialists: ["marek-pisarski"], space: "mind" },
     { service: "Konsultacje psychiatryczne", specialists: ["krystian-antoniewicz"], space: "mind" },
     { service: "Taniec intuicyjny", specialists: ["ula-palczewska"], space: "body" },
   ] },
