@@ -96,35 +96,36 @@ export function BrandHero({
           </linearGradient>
         </defs>
 
-        {/* MINT LEFT — back hill (tall, broad) */}
+        {/* MINT LEFT — back hill (tall, broad). Right side slopes down into the
+            baseline instead of a vertical wall, so it blends into the pink hills. */}
         <path
-          d="M-40,320 L-40,150 C140,90 320,170 520,140 C620,125 700,160 760,180 L760,320 Z"
+          d="M-40,320 L-40,150 C140,90 320,170 520,140 C620,125 720,165 790,205 C840,235 870,285 880,320 Z"
           fill="url(#hero-mint-c)"
         />
         {/* MINT — mid hill */}
         <path
-          d="M-40,320 L-40,200 C160,140 340,210 540,190 C640,180 720,210 760,225 L760,320 Z"
+          d="M-40,320 L-40,200 C160,140 340,210 540,190 C640,180 730,208 790,240 C835,265 860,298 868,320 Z"
           fill="url(#hero-mint-b)"
         />
         {/* MINT — front hill (darker, lower) */}
         <path
-          d="M-40,320 L-40,235 C180,185 360,250 560,235 C660,228 730,245 760,255 L760,320 Z"
+          d="M-40,320 L-40,235 C180,185 360,250 560,235 C660,228 745,250 800,278 C838,298 855,312 860,320 Z"
           fill="url(#hero-mint-a)"
         />
 
-        {/* PINK RIGHT — back hill */}
+        {/* PINK RIGHT — back hill (mirror of mint, sloped left side) */}
         <path
-          d="M1480,320 L1480,140 C1300,80 1100,170 900,140 C800,125 720,160 680,180 L680,320 Z"
+          d="M1480,320 L1480,140 C1300,80 1100,170 900,140 C800,125 700,165 630,205 C580,235 550,285 540,320 Z"
           fill="url(#hero-pink-c)"
         />
         {/* PINK — mid hill */}
         <path
-          d="M1480,320 L1480,195 C1280,135 1080,205 880,190 C780,180 710,210 680,225 L680,320 Z"
+          d="M1480,320 L1480,195 C1280,135 1080,205 880,190 C780,180 690,208 630,240 C585,265 560,298 552,320 Z"
           fill="url(#hero-pink-b)"
         />
         {/* PINK — front hill */}
         <path
-          d="M1480,320 L1480,230 C1260,180 1080,245 880,235 C780,228 710,245 680,255 L680,320 Z"
+          d="M1480,320 L1480,230 C1260,180 1080,245 880,235 C780,228 695,250 640,278 C602,298 585,312 580,320 Z"
           fill="url(#hero-pink-a)"
         />
       </svg>
