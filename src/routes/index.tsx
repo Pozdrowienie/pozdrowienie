@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { mindSpecialists, bodySpecialists } from "@/data/specialists";
 import { BrandHero } from "@/components/brand-hero";
-import { Brain, Flower2, Heart, ShieldCheck, Sparkles, Tags } from "lucide-react";
+import { Brain, CalendarDays, Flower2, Heart, ShieldCheck, Sparkles, Tags } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -68,6 +68,18 @@ function Index() {
           </Button>
           <Button asChild size="lg" variant="outline" className="rounded-full px-7">
             <Link to="/contact">Kontakt</Link>
+          </Button>
+        </div>
+
+        <div className="mt-10 flex justify-center">
+          <Button
+            asChild
+            size="lg"
+            className="h-auto gap-3 rounded-full bg-brand-navy px-10 py-5 text-lg font-semibold tracking-wide text-mind-foreground shadow-lg transition hover:-translate-y-0.5 hover:bg-brand-navy/90 hover:shadow-xl"
+          >
+            <Link to="/grafik" className="gap-3">
+              <CalendarDays className="h-6 w-6" /> Grafik
+            </Link>
           </Button>
         </div>
       </section>
