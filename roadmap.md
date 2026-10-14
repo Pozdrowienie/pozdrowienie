@@ -35,3 +35,4 @@
 # Homepage service finder
 - [x] Add service tiles under Grafik, preserving the prominent pricing and specialist links.
 - [x] Connect each service to the appropriate specialists and verify desktop/mobile navigation.
+- [ ] Hero: dodać film w sekcji powitalnej (czeka na plik od użytkownika; sugerowano 1920x1080, MP4, 6-10 s, bez dzwieku)
