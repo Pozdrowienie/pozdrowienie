@@ -9,6 +9,7 @@ const nav = [
   { to: "/cialo", label: "Przestrzeń ciała" },
   { to: "/specialists", label: "Specjaliści" },
   { to: "/pricing", label: "Cennik" },
+  { to: "/terapia-par", label: "Terapia par" },
   { to: "/grafik", label: "Grafik" },
   { to: "/contact", label: "Kontakt" },
 ] as const;
