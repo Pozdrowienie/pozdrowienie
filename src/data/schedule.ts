@@ -10,6 +10,8 @@ export const weeklySchedule: { day: string; entries: ScheduleEntry[] }[] = [
     { service: "Psychoterapia indywidualna", specialists: ["marek-pisarski"], space: "mind" },
     { service: "Konsultacje psychologiczne i diagnoza ADHD", specialists: ["aksana-gogulska"], space: "mind" },
     { service: "Warsztat rozwojowy „Wyregulowana”", specialists: ["anna-antoniewicz"], note: "W wybrane poniedziałki", space: "mind" },
+  ] },
+  { day: "Wtorek", entries: [
     { service: "Konsultacje psychiatryczne", specialists: ["krystian-antoniewicz"], space: "mind" },
     { service: "Konsultacje psychologiczne i diagnoza ADHD", specialists: ["aksana-gogulska"], space: "mind" },
     { service: "Męskie Kręgi", specialists: ["tomasz-karczewski"], note: "Spotkania co 3 tygodnie", space: "mind" },
