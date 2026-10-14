@@ -32,6 +32,7 @@
 - [x] Add a large "Grafik" button on the homepage below the three intro buttons and above the "Dwie przestrzenie" section.
 - [x] Add Marek Pisarski (psychoterapia indywidualna) to Thursday and verify the card, phone link and pricing link.
 - [x] Add Taniec intuicyjny to Tuesday ("Wybrane wtorki") and Męskie Kręgi to Thursday ("W wybrane czwartki") — the two swap days; verified on the page.
+- [x] Add warsztat rozwojowy „Wyregulowana” (Anna Antoniewicz) to Monday ("W wybrane poniedziałki") and verify all days kept their entries.
 
 # Homepage service finder
 - [x] Add service tiles under Grafik, preserving the prominent pricing and specialist links.
