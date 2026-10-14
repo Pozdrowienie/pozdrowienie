@@ -31,3 +31,7 @@
 - [x] Verify all days, joint couples therapy, phone links and pricing navigation.
 - [x] Add a large "Grafik" button on the homepage below the three intro buttons and above the "Dwie przestrzenie" section.
 - [x] Add Marek Pisarski (psychoterapia indywidualna) to Thursday and verify the card, phone link and pricing link.
+
+# Homepage service finder
+- [ ] Add service tiles under Grafik, preserving the prominent pricing and specialist links.
+- [ ] Connect each service to the appropriate specialists and verify desktop/mobile navigation.
