@@ -38,4 +38,4 @@
 - [x] Hero: dodać film w sekcji powitalnej — film wgrany (1920x1080, 18 s) ustawiony jako tło; rysunek domu ukryty (do przywrócenia); „PoZdrowienie" widoczne. Użytkowniczka zatwierdziła próbne ustawienie.
 
 # Film w tle — rozmiar pliku
-- [ ] Skompresować film w tle (obecnie ok. 22 MB) bez zauważalnej utraty jakości, żeby szybciej ładował się na telefonach.
+- [x] Skompresować film w tle: 21,9 MB → 7,5 MB (SSIM 0,985, klatki nie do odróżnienia), podstrona ładuje mniejszy plik.
