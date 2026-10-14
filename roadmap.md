@@ -35,4 +35,4 @@
 # Homepage service finder
 - [x] Add service tiles under Grafik, preserving the prominent pricing and specialist links.
 - [x] Connect each service to the appropriate specialists and verify desktop/mobile navigation.
-- [ ] Hero: dodać film w sekcji powitalnej — film wgrany (1920x1080, 18 s) i ustawiony na próbę jako tło; rysunek domu ukryty (do przywrócenia); „PoZdrowienie" widoczne. Czeka na decyzję użytkownika.
+- [x] Hero: dodać film w sekcji powitalnej — film wgrany (1920x1080, 18 s) ustawiony jako tło; rysunek domu ukryty (do przywrócenia); „PoZdrowienie" widoczne. Użytkowniczka zatwierdziła próbne ustawienie.
