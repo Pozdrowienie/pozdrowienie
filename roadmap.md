@@ -31,6 +31,7 @@
 - [x] Verify all days, joint couples therapy, phone links and pricing navigation.
 - [x] Add a large "Grafik" button on the homepage below the three intro buttons and above the "Dwie przestrzenie" section.
 - [x] Add Marek Pisarski (psychoterapia indywidualna) to Thursday and verify the card, phone link and pricing link.
+- [x] Add Taniec intuicyjny to Tuesday ("Wybrane wtorki") and Męskie Kręgi to Thursday ("W wybrane czwartki") — the two swap days; verified on the page.
 
 # Homepage service finder
 - [x] Add service tiles under Grafik, preserving the prominent pricing and specialist links.

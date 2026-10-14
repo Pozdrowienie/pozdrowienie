@@ -14,6 +14,7 @@ export const weeklySchedule: { day: string; entries: ScheduleEntry[] }[] = [
     { service: "Konsultacje psychiatryczne", specialists: ["krystian-antoniewicz"], space: "mind" },
     { service: "Konsultacje psychologiczne i diagnoza ADHD", specialists: ["aksana-gogulska"], space: "mind" },
     { service: "Męskie Kręgi", specialists: ["tomasz-karczewski"], note: "Spotkania co 3 tygodnie", space: "mind" },
+    { service: "Taniec intuicyjny", specialists: ["ula-palczewska"], note: "Wybrane wtorki", space: "body" },
   ] },
   { day: "Środa", entries: [
     { service: "Psychoterapia indywidualna", specialists: ["karolina-ferensowicz"], space: "mind" },
@@ -25,6 +26,7 @@ export const weeklySchedule: { day: string; entries: ScheduleEntry[] }[] = [
     { service: "Psychoterapia indywidualna", specialists: ["marek-pisarski"], space: "mind" },
     { service: "Konsultacje psychiatryczne", specialists: ["krystian-antoniewicz"], space: "mind" },
     { service: "Taniec intuicyjny", specialists: ["ula-palczewska"], space: "body" },
+    { service: "Męskie Kręgi", specialists: ["tomasz-karczewski"], note: "W wybrane czwartki", space: "mind" },
   ] },
   { day: "Piątek", entries: [
     { service: "Psycholog — dzieci, młodzież i dorośli", specialists: ["anna-antoniewicz"], space: "mind" },
