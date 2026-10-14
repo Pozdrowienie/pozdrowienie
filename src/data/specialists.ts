@@ -203,7 +203,7 @@ export const specialists: Specialist[] = [
     methods: ["Model GROW", "Praca z wartościami", "Plany działania"],
     pricing: [
       { name: "Sesja Coachingu i Mentoring", price: "300 zł", duration: "50 min" },
-      { name: "Męskie Kręgi", price: "90 zł", duration: "90 min" },
+      { name: "Męskie Kręgi", price: "100 zł", duration: "90 min" },
     ],
   },
   {
