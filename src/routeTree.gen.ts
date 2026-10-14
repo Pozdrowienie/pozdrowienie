@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as UmyslRouteImport } from './routes/umysl'
 import { Route as SpecialistsRouteImport } from './routes/specialists'
 import { Route as PricingRouteImport } from './routes/pricing'
+import { Route as GrafikRouteImport } from './routes/grafik'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CialoRouteImport } from './routes/cialo'
 import { Route as AboutRouteImport } from './routes/about'
@@ -31,6 +32,11 @@ const SpecialistsRoute = SpecialistsRouteImport.update({
 const PricingRoute = PricingRouteImport.update({
   id: '/pricing',
   path: '/pricing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GrafikRoute = GrafikRouteImport.update({
+  id: '/grafik',
+  path: '/grafik',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -64,6 +70,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/cialo': typeof CialoRoute
   '/contact': typeof ContactRoute
+  '/grafik': typeof GrafikRoute
   '/pricing': typeof PricingRoute
   '/specialists': typeof SpecialistsRoute
   '/umysl': typeof UmyslRoute
@@ -74,6 +81,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/cialo': typeof CialoRoute
   '/contact': typeof ContactRoute
+  '/grafik': typeof GrafikRoute
   '/pricing': typeof PricingRoute
   '/specialists': typeof SpecialistsRoute
   '/umysl': typeof UmyslRoute
@@ -85,6 +93,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/cialo': typeof CialoRoute
   '/contact': typeof ContactRoute
+  '/grafik': typeof GrafikRoute
   '/pricing': typeof PricingRoute
   '/specialists': typeof SpecialistsRoute
   '/umysl': typeof UmyslRoute
@@ -97,6 +106,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/cialo'
     | '/contact'
+    | '/grafik'
     | '/pricing'
     | '/specialists'
     | '/umysl'
@@ -107,6 +117,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/cialo'
     | '/contact'
+    | '/grafik'
     | '/pricing'
     | '/specialists'
     | '/umysl'
@@ -117,6 +128,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/cialo'
     | '/contact'
+    | '/grafik'
     | '/pricing'
     | '/specialists'
     | '/umysl'
@@ -128,6 +140,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   CialoRoute: typeof CialoRoute
   ContactRoute: typeof ContactRoute
+  GrafikRoute: typeof GrafikRoute
   PricingRoute: typeof PricingRoute
   SpecialistsRoute: typeof SpecialistsRoute
   UmyslRoute: typeof UmyslRoute
@@ -155,6 +168,13 @@ declare module '@tanstack/react-router' {
       path: '/pricing'
       fullPath: '/pricing'
       preLoaderRoute: typeof PricingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/grafik': {
+      id: '/grafik'
+      path: '/grafik'
+      fullPath: '/grafik'
+      preLoaderRoute: typeof GrafikRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -200,6 +220,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   CialoRoute: CialoRoute,
   ContactRoute: ContactRoute,
+  GrafikRoute: GrafikRoute,
   PricingRoute: PricingRoute,
   SpecialistsRoute: SpecialistsRoute,
   UmyslRoute: UmyslRoute,
