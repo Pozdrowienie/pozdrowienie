@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { mindSpecialists, bodySpecialists } from "@/data/specialists";
 import { BrandHero } from "@/components/brand-hero";
-import { Brain, Flower2, Heart, ShieldCheck, Sparkles, Tags } from "lucide-react";
+import { Brain, CalendarDays, Flower2, Heart, ShieldCheck, Sparkles, Tags } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
