@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as UmyslRouteImport } from './routes/umysl'
+import { Route as TerapiaParRouteImport } from './routes/terapia-par'
 import { Route as SpecialistsRouteImport } from './routes/specialists'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as GrafikRouteImport } from './routes/grafik'
@@ -22,6 +23,11 @@ import { Route as SpecjalisciSlugRouteImport } from './routes/specjalisci.$slug'
 const UmyslRoute = UmyslRouteImport.update({
   id: '/umysl',
   path: '/umysl',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TerapiaParRoute = TerapiaParRouteImport.update({
+  id: '/terapia-par',
+  path: '/terapia-par',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SpecialistsRoute = SpecialistsRouteImport.update({
@@ -73,6 +79,7 @@ export interface FileRoutesByFullPath {
   '/grafik': typeof GrafikRoute
   '/pricing': typeof PricingRoute
   '/specialists': typeof SpecialistsRoute
+  '/terapia-par': typeof TerapiaParRoute
   '/umysl': typeof UmyslRoute
   '/specjalisci/$slug': typeof SpecjalisciSlugRoute
 }
@@ -84,6 +91,7 @@ export interface FileRoutesByTo {
   '/grafik': typeof GrafikRoute
   '/pricing': typeof PricingRoute
   '/specialists': typeof SpecialistsRoute
+  '/terapia-par': typeof TerapiaParRoute
   '/umysl': typeof UmyslRoute
   '/specjalisci/$slug': typeof SpecjalisciSlugRoute
 }
@@ -96,6 +104,7 @@ export interface FileRoutesById {
   '/grafik': typeof GrafikRoute
   '/pricing': typeof PricingRoute
   '/specialists': typeof SpecialistsRoute
+  '/terapia-par': typeof TerapiaParRoute
   '/umysl': typeof UmyslRoute
   '/specjalisci/$slug': typeof SpecjalisciSlugRoute
 }
@@ -109,6 +118,7 @@ export interface FileRouteTypes {
     | '/grafik'
     | '/pricing'
     | '/specialists'
+    | '/terapia-par'
     | '/umysl'
     | '/specjalisci/$slug'
   fileRoutesByTo: FileRoutesByTo
@@ -120,6 +130,7 @@ export interface FileRouteTypes {
     | '/grafik'
     | '/pricing'
     | '/specialists'
+    | '/terapia-par'
     | '/umysl'
     | '/specjalisci/$slug'
   id:
@@ -131,6 +142,7 @@ export interface FileRouteTypes {
     | '/grafik'
     | '/pricing'
     | '/specialists'
+    | '/terapia-par'
     | '/umysl'
     | '/specjalisci/$slug'
   fileRoutesById: FileRoutesById
@@ -143,6 +155,7 @@ export interface RootRouteChildren {
   GrafikRoute: typeof GrafikRoute
   PricingRoute: typeof PricingRoute
   SpecialistsRoute: typeof SpecialistsRoute
+  TerapiaParRoute: typeof TerapiaParRoute
   UmyslRoute: typeof UmyslRoute
   SpecjalisciSlugRoute: typeof SpecjalisciSlugRoute
 }
@@ -154,6 +167,13 @@ declare module '@tanstack/react-router' {
       path: '/umysl'
       fullPath: '/umysl'
       preLoaderRoute: typeof UmyslRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terapia-par': {
+      id: '/terapia-par'
+      path: '/terapia-par'
+      fullPath: '/terapia-par'
+      preLoaderRoute: typeof TerapiaParRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/specialists': {
@@ -223,6 +243,7 @@ const rootRouteChildren: RootRouteChildren = {
   GrafikRoute: GrafikRoute,
   PricingRoute: PricingRoute,
   SpecialistsRoute: SpecialistsRoute,
+  TerapiaParRoute: TerapiaParRoute,
   UmyslRoute: UmyslRoute,
   SpecjalisciSlugRoute: SpecjalisciSlugRoute,
 }
