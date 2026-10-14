@@ -130,18 +130,18 @@ export function BrandHero({
       </svg>
 
 
-      {/* Line-art building sketched over the film — navy ink on paper, so the
-          moving picture shows through everywhere but the strokes */}
+      {/* Line-art building sketched onto the film — navy ink with a soft white
+          halo baked into the asset, so it needs no blend mode here */}
       <img
         src={building}
         alt="PoZdrowienie — budynek w Bolesławcu"
-        className="pointer-events-none absolute inset-y-0 right-0 hidden h-full w-[58%] select-none object-contain object-right opacity-90 mix-blend-multiply md:block"
+        className="pointer-events-none absolute inset-y-0 right-0 hidden h-full w-[58%] select-none object-contain object-right opacity-95 md:block"
       />
       <img
         src={building}
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 h-full w-full select-none object-contain object-bottom opacity-30 mix-blend-multiply md:hidden"
+        className="pointer-events-none absolute inset-0 h-full w-full select-none object-contain object-bottom opacity-45 md:hidden"
       />
 
       <div className="relative mx-auto flex max-w-6xl items-center px-6 py-20 md:py-28">
