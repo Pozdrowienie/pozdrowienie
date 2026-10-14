@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { specialists, telHref } from "@/data/specialists";
 import { BrandWatermark } from "@/components/brand-watermark";
 import { BrandHero } from "@/components/brand-hero";
@@ -80,7 +80,16 @@ function Pricing() {
                   {s.pricing.map((p) => (
                     <div key={p.name} className="flex items-center justify-between py-3">
                       <div>
-                        <p className="whitespace-pre-line font-medium">{p.name}</p>
+                        {p.href ? (
+                          <Link
+                            to={p.href}
+                            className="whitespace-pre-line font-medium underline-offset-4 hover:underline"
+                          >
+                            {p.name}
+                          </Link>
+                        ) : (
+                          <p className="whitespace-pre-line font-medium">{p.name}</p>
+                        )}
                         <p className="whitespace-pre-line text-xs text-muted-foreground">{p.duration}</p>
                       </div>
                       <p className={`font-serif text-lg font-semibold ${accent.price}`}>{p.price}</p>
