@@ -60,6 +60,9 @@ export function ServiceFinder() {
                     <Button asChild variant="link" className="h-auto justify-start whitespace-normal p-0 text-left font-serif text-lg text-brand-navy">
                       <Link to="/specjalisci/$slug" params={{ slug }} onClick={() => setSelected(null)}>{specialist.name}<ArrowUpRight aria-hidden="true" /></Link>
                     </Button>
+                    {notes?.[slug] && (
+                      <p className="mt-1 whitespace-normal text-sm leading-snug text-muted-foreground">{notes[slug]}</p>
+                    )}
                     <div className="mt-3 flex flex-wrap gap-2">
                       <Button asChild size="sm" className="rounded-full bg-action text-action-foreground hover:bg-action/90">
                         <a href={telHref(specialist.phone)}><Phone aria-hidden="true" />{specialist.phone}</a>
