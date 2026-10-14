@@ -77,6 +77,7 @@ export function SiteFooter() {
               <li><Link to="/cialo" className="text-muted-foreground hover:text-body">Przestrzeń ciała</Link></li>
               <li><Link to="/specialists" className="text-muted-foreground hover:text-brand-navy">Specjaliści</Link></li>
               <li><Link to="/pricing" className="text-muted-foreground hover:text-brand-navy">Cennik</Link></li>
+              <li><Link to="/grafik" className="text-muted-foreground hover:text-brand-navy">Grafik</Link></li>
               <li><Link to="/contact" className="text-muted-foreground hover:text-brand-navy">Kontakt</Link></li>
             </ul>
           </div>

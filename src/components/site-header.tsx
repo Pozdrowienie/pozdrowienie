@@ -1,5 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import logo from "@/assets/logo.png";
+import { Button } from "@/components/ui/button";
+import { CalendarDays } from "lucide-react";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -7,6 +9,7 @@ const nav = [
   { to: "/cialo", label: "Przestrzeń ciała" },
   { to: "/specialists", label: "Specjaliści" },
   { to: "/pricing", label: "Cennik" },
+  { to: "/grafik", label: "Grafik" },
   { to: "/contact", label: "Kontakt" },
 ] as const;
 
@@ -32,7 +35,7 @@ export function SiteHeader() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-6 lg:flex">
+        <nav className="hidden items-center gap-5 xl:flex">
           {nav.map((item) => (
             <Link
               key={item.to}
@@ -46,12 +49,17 @@ export function SiteHeader() {
           ))}
         </nav>
 
+        <div className="flex items-center gap-2">
+        <Button asChild variant="ghost" size="sm" className="text-brand-navy xl:hidden">
+          <Link to="/grafik"><CalendarDays />Grafik</Link>
+        </Button>
         <Link
           to="/specialists"
-          className="rounded-full bg-brand-navy px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-navy/90"
+          className="rounded-full bg-brand-navy px-3 py-2 text-xs font-semibold text-primary-foreground shadow-sm transition hover:bg-brand-navy/90 sm:px-5 sm:text-sm"
         >
           Zadzwoń do specjalisty
         </Link>
+        </div>
       </div>
     </header>
   );
