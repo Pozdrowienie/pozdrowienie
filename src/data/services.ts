@@ -19,7 +19,7 @@ export const homeServices = [
       "ula-palczewska": "„W Poruszeniu ku zmianie” — więcej informacji na profilu IG @ulapalczewska",
       "anna-marciniak": "„Poranna Joga i medytacja”",
       "joanna-wolar": "„Wyregulowana” — warsztat dla kobiet: regulacja układu nerwowego z kąpielą w dźwiękach gongu. Prowadzą: Joanna Wolar i Anna Antoniewicz.",
-      "anna-antoniewicz": "„Wyregulowana” — warsztat dla kobiet: regulacja układu nerwowego z kąpielą w dźwiękach gongu. Prowadzą: Joanna Wolar i Anna Antoniewicz.",
+      "anna-antoniewicz": "„Wyregulowana” — warsztat dla kobiet: regulacja układu nerwowego z kąpielą w dźwiękach gongu. Prowadzą: Joanna Wolar i Anna Antoniewicz. Więcej informacji: annaantoniewicz.pl",
     },
   },
 ] as const;

@@ -33,6 +33,8 @@ export type Specialist = {
   imageScale?: number;
   imageTransformOrigin?: string;
   phone: string;
+  /** Własna strona WWW specjalisty. */
+  website?: string;
   about: string;
   education?: string[];
   courses?: string[];
@@ -169,8 +171,9 @@ export const specialists: Specialist[] = [
     space: "mind",
     image: annaAntoniewicz,
     phone: "+48 577 157 373",
+    website: "https://annaantoniewicz.pl",
     about:
-      "​Jestem psychologiem, pedagogiem, socjoterapeutką i trenerką mindfulness. W swojej pracy nie oceniam i nie stawiam dystansu. Jestem po to, aby stworzyć przestrzeń, w której możesz poczuć się bezpiecznie – ze wszystkim, co akurat przeżywasz.\n\nW moim gabinecie pracuję z dziećmi, młodzieżą oraz osobami dorosłymi:\n\nZ dorosłymi pracuję głównie w obszarach depresji, stanów lękowych, oraz przewlekłego napięcia emocjonalnego.\n\nZ nastolatkami pracuję integratywnie, łącząc nurt poznawczo-behawioralny (CBT) z ujęciem systemowym. \n\nZ dziećmi -  buduję relację opartą na terapii zabawą oraz języku empatii NVC, pomagając najmłodszym oswajać ich wielkie emocje.\n\nJestem również twórczynią i prowadzącą warsztatów dla kobiet „Wyregulowana”.\n\nTo spotkania dedykowane kobietom, które na co dzień zmagają się z głębokim napięciem emocjonalnym, stresem, a także tym, które przechodzą przez trudny czas depresji. Warsztaty oparłam na elementach MBCT (Terapii Poznawczej Opartej na Uważności).\n\n\nWięcej informacji:  annaantoniewicz.pl",
+      "​Jestem psychologiem, pedagogiem, socjoterapeutką i trenerką mindfulness. W swojej pracy nie oceniam i nie stawiam dystansu. Jestem po to, aby stworzyć przestrzeń, w której możesz poczuć się bezpiecznie – ze wszystkim, co akurat przeżywasz.\n\nW moim gabinecie pracuję z dziećmi, młodzieżą oraz osobami dorosłymi:\n\nZ dorosłymi pracuję głównie w obszarach depresji, stanów lękowych, oraz przewlekłego napięcia emocjonalnego.\n\nZ nastolatkami pracuję integratywnie, łącząc nurt poznawczo-behawioralny (CBT) z ujęciem systemowym. \n\nZ dziećmi -  buduję relację opartą na terapii zabawą oraz języku empatii NVC, pomagając najmłodszym oswajać ich wielkie emocje.\n\nJestem również twórczynią i prowadzącą warsztatów dla kobiet „Wyregulowana”.\n\nTo spotkania dedykowane kobietom, które na co dzień zmagają się z głębokim napięciem emocjonalnym, stresem, a także tym, które przechodzą przez trudny czas depresji. Warsztaty oparłam na elementach MBCT (Terapii Poznawczej Opartej na Uważności).",
     specializations: [
       "Psychoedukacja",
       "Trudności w relacjach rówieśniczych",

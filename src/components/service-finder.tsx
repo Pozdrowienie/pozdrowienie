@@ -13,6 +13,23 @@ const serviceIcons = {
   warsztaty: Sparkles,
 };
 
+const LINK_RE = /(https?:\/\/[^\s]+|[a-z0-9-]+(?:\.[a-z0-9-]+)+(?:\/[^\s]*)?)/gi;
+
+/** Renders URLs inside a note as clickable links opening in a new tab. */
+function withLinks(text: string) {
+  return text.split(LINK_RE).map((part, i) => {
+    if (i % 2 === 1) {
+      const href = /^https?:\/\//i.test(part) ? part : `https://${part}`;
+      return (
+        <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="font-medium text-brand-navy underline underline-offset-4 hover:text-mind">
+          {part}
+        </a>
+      );
+    }
+    return part;
+  });
+}
+
 export function ServiceFinder() {
   const [selected, setSelected] = useState<HomeService | null>(null);
   const notes = selected && "notes" in selected ? (selected.notes as Record<string, string>) : undefined;
@@ -61,7 +78,7 @@ export function ServiceFinder() {
                       <Link to="/specjalisci/$slug" params={{ slug }} onClick={() => setSelected(null)}>{specialist.name}<ArrowUpRight aria-hidden="true" /></Link>
                     </Button>
                     {notes?.[slug] && (
-                      <p className="mt-1 whitespace-normal text-sm leading-snug text-muted-foreground">{notes[slug]}</p>
+                      <p className="mt-1 whitespace-normal text-sm leading-snug text-muted-foreground">{withLinks(notes[slug])}</p>
                     )}
                     <div className="mt-3 flex flex-wrap gap-2">
                       <Button asChild size="sm" className="rounded-full bg-action text-action-foreground hover:bg-action/90">
