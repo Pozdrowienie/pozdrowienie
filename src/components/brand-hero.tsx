@@ -1,12 +1,12 @@
 import heroVideo from "@/assets/hero-video.mp4.asset.json";
-// Building hidden while the hero video is on trial — restore this import together with the <img> tags below.
-// import building from "@/assets/building-sketch.png";
+import building from "@/assets/building-sketch-on-film.png";
 
 /**
  * Brand hero — video backdrop with a crisp white veil so navy text stays
  * readable, a delicate pink radial blush and softly floating mint + pink
- * wavy lines. The line-art building is temporarily hidden behind the
- * video (restore once the video is approved or reverted).
+ * wavy lines. The line-art building is sketched straight onto the film:
+ * navy ink with a soft white halo, so the strokes stay visible where the
+ * moving picture behind them is dark.
  */
 export function BrandHero({
   eyebrow,
@@ -96,53 +96,54 @@ export function BrandHero({
           </linearGradient>
         </defs>
 
-        {/* MINT LEFT — back hill (tall, broad) */}
+        {/* MINT LEFT — back hill (tall, broad). Right side slopes down into the
+            baseline instead of a vertical wall, so it blends into the pink hills. */}
         <path
-          d="M-40,320 L-40,150 C140,90 320,170 520,140 C620,125 700,160 760,180 L760,320 Z"
+          d="M-40,320 L-40,150 C140,90 320,170 520,140 C620,125 720,165 790,205 C840,235 870,285 880,320 Z"
           fill="url(#hero-mint-c)"
         />
         {/* MINT — mid hill */}
         <path
-          d="M-40,320 L-40,200 C160,140 340,210 540,190 C640,180 720,210 760,225 L760,320 Z"
+          d="M-40,320 L-40,200 C160,140 340,210 540,190 C640,180 730,208 790,240 C835,265 860,298 868,320 Z"
           fill="url(#hero-mint-b)"
         />
         {/* MINT — front hill (darker, lower) */}
         <path
-          d="M-40,320 L-40,235 C180,185 360,250 560,235 C660,228 730,245 760,255 L760,320 Z"
+          d="M-40,320 L-40,235 C180,185 360,250 560,235 C660,228 745,250 800,278 C838,298 855,312 860,320 Z"
           fill="url(#hero-mint-a)"
         />
 
-        {/* PINK RIGHT — back hill */}
+        {/* PINK RIGHT — back hill (mirror of mint, sloped left side) */}
         <path
-          d="M1480,320 L1480,140 C1300,80 1100,170 900,140 C800,125 720,160 680,180 L680,320 Z"
+          d="M1480,320 L1480,140 C1300,80 1100,170 900,140 C800,125 700,165 630,205 C580,235 550,285 540,320 Z"
           fill="url(#hero-pink-c)"
         />
         {/* PINK — mid hill */}
         <path
-          d="M1480,320 L1480,195 C1280,135 1080,205 880,190 C780,180 710,210 680,225 L680,320 Z"
+          d="M1480,320 L1480,195 C1280,135 1080,205 880,190 C780,180 690,208 630,240 C585,265 560,298 552,320 Z"
           fill="url(#hero-pink-b)"
         />
         {/* PINK — front hill */}
         <path
-          d="M1480,320 L1480,230 C1260,180 1080,245 880,235 C780,228 710,245 680,255 L680,320 Z"
+          d="M1480,320 L1480,230 C1260,180 1080,245 880,235 C780,228 695,250 640,278 C602,298 585,312 580,320 Z"
           fill="url(#hero-pink-a)"
         />
       </svg>
 
 
-      {/* Line-art building — temporarily hidden while the hero video is on trial
+      {/* Line-art building sketched onto the film — navy ink with a soft white
+          halo baked into the asset, so it needs no blend mode here */}
       <img
         src={building}
         alt="PoZdrowienie — budynek w Bolesławcu"
-        className="pointer-events-none absolute inset-y-0 right-0 hidden h-full w-[58%] select-none object-contain object-right opacity-85 mix-blend-multiply md:block"
+        className="pointer-events-none absolute inset-y-0 right-0 hidden h-full w-[58%] select-none object-contain object-right opacity-95 md:block"
       />
       <img
         src={building}
         alt=""
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 h-full w-full select-none object-contain object-bottom opacity-15 mix-blend-multiply md:hidden"
+        className="pointer-events-none absolute inset-0 h-full w-full select-none object-contain object-bottom opacity-45 md:hidden"
       />
-      */}
 
       <div className="relative mx-auto flex max-w-6xl items-center px-6 py-20 md:py-28">
         <div className="max-w-xl text-brand-navy">
