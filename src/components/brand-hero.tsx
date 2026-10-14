@@ -1,12 +1,11 @@
 import heroVideo from "@/assets/hero-video.mp4.asset.json";
-// Building hidden while the hero video is on trial — restore this import together with the <img> tags below.
-// import building from "@/assets/building-sketch.png";
+import building from "@/assets/building-sketch-navy.png";
 
 /**
  * Brand hero — video backdrop with a crisp white veil so navy text stays
  * readable, a delicate pink radial blush and softly floating mint + pink
- * wavy lines. The line-art building is temporarily hidden behind the
- * video (restore once the video is approved or reverted).
+ * wavy lines. The line-art building is sketched over the film in navy ink
+ * (mix-blend-multiply), so the moving picture shows through the paper.
  */
 export function BrandHero({
   eyebrow,
