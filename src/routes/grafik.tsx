@@ -63,7 +63,9 @@ function ScheduleCard({ entry }: { entry: ScheduleEntry }) {
       <h3 className={`font-serif text-xl font-semibold tracking-normal ${isBody ? "text-body" : "text-mind"}`}>{entry.service}</h3>
       {entry.note && <p className="mt-2 text-sm text-muted-foreground">{entry.note}</p>}
       <div className="mt-5 space-y-5">
-        {people.map((person) => (
+        {people.map((person) => {
+          const showActions = !entry.contactSlug || person.slug === entry.contactSlug;
+          return (
           <div key={person.slug}>
             <Link to="/specjalisci/$slug" params={{ slug: person.slug }} className="flex items-center gap-3 text-sm font-semibold text-foreground hover:text-primary">
               <span className="size-12 shrink-0 overflow-hidden rounded-full bg-surface-soft ring-1 ring-border">
@@ -71,16 +73,19 @@ function ScheduleCard({ entry }: { entry: ScheduleEntry }) {
               </span>
               <span>{person.name.trim()}</span>
             </Link>
-            <div className="mt-3 flex flex-wrap items-center gap-2">
-              <Button asChild size="sm" className="bg-action text-action-foreground hover:bg-action/90">
-                <a href={telHref(person.phone)} aria-label={`Zadzwoń: ${person.name.trim()}, ${person.phone}`}><Phone />{person.phone}</a>
-              </Button>
-              <Button asChild size="sm" variant="ghost">
-                <Link to="/pricing" hash={person.slug} aria-label={`Cennik: ${person.name.trim()}`}>Cennik<ArrowUpRight /></Link>
-              </Button>
-            </div>
+            {showActions && (
+              <div className="mt-3 flex flex-wrap items-center gap-2">
+                <Button asChild size="sm" className="bg-action text-action-foreground hover:bg-action/90">
+                  <a href={telHref(person.phone)} aria-label={`Zadzwoń: ${person.name.trim()}, ${person.phone}`}><Phone />{person.phone}</a>
+                </Button>
+                <Button asChild size="sm" variant="ghost">
+                  <Link to="/pricing" hash={person.slug} aria-label={`Cennik: ${person.name.trim()}`}>Cennik<ArrowUpRight /></Link>
+                </Button>
+              </div>
+            )}
           </div>
-        ))}
+          );
+        })}
       </div>
     </article>
   );

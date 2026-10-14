@@ -2,6 +2,8 @@ export type ScheduleEntry = {
   service: string;
   specialists: string[];
   note?: string;
+  /** Gdy podany: przyciski telefonu i cennika pokazujemy tylko tej osobie (zapisy na jeden numer). */
+  contactSlug?: string;
   space: "mind" | "body";
 };
 
@@ -9,7 +11,7 @@ export const weeklySchedule: { day: string; entries: ScheduleEntry[] }[] = [
   { day: "Poniedziałek", entries: [
     { service: "Psychoterapia indywidualna", specialists: ["marek-pisarski"], space: "mind" },
     { service: "Konsultacje psychologiczne i diagnoza ADHD", specialists: ["aksana-gogulska"], space: "mind" },
-    { service: "Warsztat rozwojowy „Wyregulowana”", specialists: ["anna-antoniewicz"], note: "W wybrane poniedziałki", space: "mind" },
+    { service: "Warsztat rozwojowy „Wyregulowana”", specialists: ["anna-antoniewicz", "joanna-wolar"], contactSlug: "anna-antoniewicz", note: "W wybrane poniedziałki", space: "mind" },
   ] },
   { day: "Wtorek", entries: [
     { service: "Konsultacje psychiatryczne", specialists: ["krystian-antoniewicz"], space: "mind" },
