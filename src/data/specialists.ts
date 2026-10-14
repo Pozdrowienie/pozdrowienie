@@ -38,7 +38,7 @@ export type Specialist = {
   courses?: string[];
   specializations: string[];
   methods: string[];
-  pricing: { name: string; price: string; duration: string }[];
+  pricing: { name: string; price: string; duration: string; href?: string }[];
 };
 
 export const categoryMeta: Record<
@@ -135,6 +135,7 @@ export const specialists: Specialist[] = [
     pricing: [
       { name: "Sesja psychoterapii", price: "200 zł", duration: "50 min" },
       { name: "Konsultacja wstępna", price: "250 zł", duration: "50 min" },
+      { name: "Terapia par i małżeństw\nKonsultacja pary", price: "320 zł", duration: "70 min", href: "/terapia-par" },
     ],
   },
   {
@@ -157,6 +158,7 @@ export const specialists: Specialist[] = [
     pricing: [
       { name: "Sesja psychoterapii", price: "200 zł", duration: "50 min" },
       { name: "Konsultacja wstępna", price: "250 zł", duration: "50 min" },
+      { name: "Terapia par i małżeństw\nKonsultacja pary", price: "320 zł", duration: "70 min", href: "/terapia-par" },
     ],
   },
   {
