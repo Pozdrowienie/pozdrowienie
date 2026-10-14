@@ -1,5 +1,6 @@
 import heroVideo from "@/assets/hero-video.mp4.asset.json";
-import building from "@/assets/building-sketch.png";
+// Building hidden while the hero video is on trial — restore this import together with the <img> tags below.
+// import building from "@/assets/building-sketch.png";
 
 /**
  * Brand hero — video backdrop with a crisp white veil so navy text stays
