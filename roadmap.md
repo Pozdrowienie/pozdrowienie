@@ -33,5 +33,5 @@
 - [x] Add Marek Pisarski (psychoterapia indywidualna) to Thursday and verify the card, phone link and pricing link.
 
 # Homepage service finder
-- [ ] Add service tiles under Grafik, preserving the prominent pricing and specialist links.
-- [ ] Connect each service to the appropriate specialists and verify desktop/mobile navigation.
+- [x] Add service tiles under Grafik, preserving the prominent pricing and specialist links.
+- [x] Connect each service to the appropriate specialists and verify desktop/mobile navigation.
