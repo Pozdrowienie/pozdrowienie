@@ -1,9 +1,11 @@
+import heroVideo from "@/assets/hero-video.mp4.asset.json";
 import building from "@/assets/building-sketch.png";
 
 /**
- * Brand hero — crisp white background with a delicate pink radial blush
- * and softly floating mint + pink wavy lines. Line-art building sits
- * cleanly in the white space. Navy serif text.
+ * Brand hero — video backdrop with a crisp white veil so navy text stays
+ * readable, a delicate pink radial blush and softly floating mint + pink
+ * wavy lines. The line-art building is temporarily hidden behind the
+ * video (restore once the video is approved or reverted).
  */
 export function BrandHero({
   eyebrow,
@@ -24,13 +26,31 @@ export function BrandHero({
     <section
       className={`relative isolate w-full overflow-hidden bg-white ${h}`}
     >
+      {/* Hero video — full backdrop, muted and looping */}
+      <video
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 h-full w-full select-none object-cover"
+        src={heroVideo.url}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+      />
+
+      {/* Soft white veil over the video so navy text stays legible */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 bg-white/60"
+      />
+
       {/* Soft pink radial blush from bottom corners — background texture only */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse 70% 55% at 0% 100%, color-mix(in oklab, var(--blush) 85%, transparent) 0%, transparent 60%), radial-gradient(ellipse 70% 55% at 100% 100%, color-mix(in oklab, var(--blush) 70%, transparent) 0%, transparent 60%), radial-gradient(ellipse 90% 50% at 50% 0%, #ffffff 0%, transparent 70%)",
+            "radial-gradient(ellipse 70% 55% at 0% 100%, color-mix(in oklab, var(--blush) 85%, transparent) 0%, transparent 60%), radial-gradient(ellipse 70% 55% at 100% 100%, color-mix(in oklab, var(--blush) 70%, transparent) 0%, transparent 60%), radial-gradient(ellipse 90% 50% at 50% 0%, rgba(255,255,255,0.75) 0%, transparent 70%)",
         }}
       />
 
