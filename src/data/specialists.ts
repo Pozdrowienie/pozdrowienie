@@ -173,12 +173,12 @@ export const specialists: Specialist[] = [
     phone: "+48 577 157 373",
     website: "https://annaantoniewicz.pl",
     about:
-      "​Jestem psychologiem, pedagogiem, socjoterapeutką i trenerką mindfulness. W swojej pracy nie oceniam i nie stawiam dystansu. Jestem po to, aby stworzyć przestrzeń, w której możesz poczuć się bezpiecznie – ze wszystkim, co akurat przeżywasz.\n\nW moim gabinecie pracuję z dziećmi, młodzieżą oraz osobami dorosłymi:\n\nZ dorosłymi pracuję głównie w obszarach depresji, stanów lękowych, oraz przewlekłego napięcia emocjonalnego.\n\nZ nastolatkami pracuję integratywnie, łącząc nurt poznawczo-behawioralny (CBT) z ujęciem systemowym. \n\nZ dziećmi -  buduję relację opartą na terapii zabawą oraz języku empatii NVC, pomagając najmłodszym oswajać ich wielkie emocje.\n\nJestem również twórczynią i prowadzącą warsztatów dla kobiet „Wyregulowana”.\n\nTo spotkania dedykowane kobietom, które na co dzień zmagają się z głębokim napięciem emocjonalnym, stresem, a także tym, które przechodzą przez trudny czas depresji. Warsztaty oparłam na elementach MBCT (Terapii Poznawczej Opartej na Uważności).",
+      "​Jestem psychologiem, pedagogiem, socjoterapeutką i trenerką mindfulness. Moje bogate doświadczenie zawodowe opiera się na codziennej pracy z każdą grupą wiekową. Pracowałam w przedszkolu, w szkole podstawowej, a  aktualnie w szkole średniej. Bliska jest mi również praca z młodymi dorosłymi, którzy dopiero wkraczają w samodzielność i mierzą się z wyzwaniami wczesnej dorosłości. Dzięki tej przekrojowej praktyce doskonale rozumiem dynamikę zmian, potrzeby oraz trudności charakterystyczne dla każdego etapu dorastania.\n\nWspieram kobiety w\n\nOferuję profesjonalne wsparcie okołoporodowe dla kobiet, które doświadczają trudności w nowej roli rodzicielstwa\n\nZapewniam również wsparcie okołoporodowe dla kobiet, które przygotowują się do nowej roli, mierzą się z lękiem lub doświadczają trudności w pierwszych miesiącach rodzicielstwa.\nWspieram dzieci w procesie okołorozwodowym, \n\nWspieram dzieci w procesie okołorozwodowym, pomagając przejść przez ten wymagający proces z poczuciem bezpieczeństwa i uważnością na potrzeby często tez ukazując inną perspektywę i wsparcie.\n\nJestem również twórczynią i prowadzącą warsztatów dla kobiet „Wyregulowana”.\n\nTo spotkania dedykowane kobietom, które na co dzień zmagają się z napięciem emocjonalnym, stresem, a także tym, które przechodzą przez trudny czas depresji. Warsztaty oparłam na elementach MBCT (Terapii Poznawczej Opartej na Uważności), uważnosci, oddechu i relaksacji przy dźwiękach gongu. ",
     specializations: [
       "Psychoedukacja",
       "Trudności w relacjach rówieśniczych",
       "Konsultacje rodzicielskie",
-      "Wsparcie w żałobie",
+      "Wsparcie w kryzysach",
     ],
     methods: ["Terapia poznawczo-behawioralna", "Praca przez zabawę", "Psychoedukacja rodzin"],
     pricing: [
