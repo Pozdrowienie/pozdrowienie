@@ -9,50 +9,20 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as UmyslRouteImport } from './routes/umysl'
-import { Route as TerapiaParRouteImport } from './routes/terapia-par'
-import { Route as SpecialistsRouteImport } from './routes/specialists'
-import { Route as PricingRouteImport } from './routes/pricing'
-import { Route as GrafikRouteImport } from './routes/grafik'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as CialoRouteImport } from './routes/cialo'
-import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as CialoRouteImport } from './routes/cialo'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as GrafikRouteImport } from './routes/grafik'
+import { Route as PricingRouteImport } from './routes/pricing'
+import { Route as SpecialistsRouteImport } from './routes/specialists'
+import { Route as TerapiaParRouteImport } from './routes/terapia-par'
+import { Route as UmyslRouteImport } from './routes/umysl'
 import { Route as SpecjalisciSlugRouteImport } from './routes/specjalisci.$slug'
 
-const UmyslRoute = UmyslRouteImport.update({
-  id: '/umysl',
-  path: '/umysl',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TerapiaParRoute = TerapiaParRouteImport.update({
-  id: '/terapia-par',
-  path: '/terapia-par',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SpecialistsRoute = SpecialistsRouteImport.update({
-  id: '/specialists',
-  path: '/specialists',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PricingRoute = PricingRouteImport.update({
-  id: '/pricing',
-  path: '/pricing',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GrafikRoute = GrafikRouteImport.update({
-  id: '/grafik',
-  path: '/grafik',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CialoRoute = CialoRouteImport.update({
-  id: '/cialo',
-  path: '/cialo',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -60,9 +30,39 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const CialoRoute = CialoRouteImport.update({
+  id: '/cialo',
+  path: '/cialo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GrafikRoute = GrafikRouteImport.update({
+  id: '/grafik',
+  path: '/grafik',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PricingRoute = PricingRouteImport.update({
+  id: '/pricing',
+  path: '/pricing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SpecialistsRoute = SpecialistsRouteImport.update({
+  id: '/specialists',
+  path: '/specialists',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TerapiaParRoute = TerapiaParRouteImport.update({
+  id: '/terapia-par',
+  path: '/terapia-par',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UmyslRoute = UmyslRouteImport.update({
+  id: '/umysl',
+  path: '/umysl',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SpecjalisciSlugRoute = SpecjalisciSlugRouteImport.update({
@@ -162,53 +162,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/umysl': {
-      id: '/umysl'
-      path: '/umysl'
-      fullPath: '/umysl'
-      preLoaderRoute: typeof UmyslRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/terapia-par': {
-      id: '/terapia-par'
-      path: '/terapia-par'
-      fullPath: '/terapia-par'
-      preLoaderRoute: typeof TerapiaParRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/specialists': {
-      id: '/specialists'
-      path: '/specialists'
-      fullPath: '/specialists'
-      preLoaderRoute: typeof SpecialistsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/pricing': {
-      id: '/pricing'
-      path: '/pricing'
-      fullPath: '/pricing'
-      preLoaderRoute: typeof PricingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/grafik': {
-      id: '/grafik'
-      path: '/grafik'
-      fullPath: '/grafik'
-      preLoaderRoute: typeof GrafikRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/cialo': {
-      id: '/cialo'
-      path: '/cialo'
-      fullPath: '/cialo'
-      preLoaderRoute: typeof CialoRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -218,11 +176,53 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/cialo': {
+      id: '/cialo'
+      path: '/cialo'
+      fullPath: '/cialo'
+      preLoaderRoute: typeof CialoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/grafik': {
+      id: '/grafik'
+      path: '/grafik'
+      fullPath: '/grafik'
+      preLoaderRoute: typeof GrafikRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pricing': {
+      id: '/pricing'
+      path: '/pricing'
+      fullPath: '/pricing'
+      preLoaderRoute: typeof PricingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/specialists': {
+      id: '/specialists'
+      path: '/specialists'
+      fullPath: '/specialists'
+      preLoaderRoute: typeof SpecialistsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terapia-par': {
+      id: '/terapia-par'
+      path: '/terapia-par'
+      fullPath: '/terapia-par'
+      preLoaderRoute: typeof TerapiaParRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/umysl': {
+      id: '/umysl'
+      path: '/umysl'
+      fullPath: '/umysl'
+      preLoaderRoute: typeof UmyslRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/specjalisci/$slug': {
