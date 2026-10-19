@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MapPin, Phone, Mail, Clock, Navigation } from "lucide-react";
+import { MapPin, Mail, Clock, Navigation } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { BrandWatermark } from "@/components/brand-watermark";
 
@@ -45,7 +45,6 @@ function Contact() {
             title="Adres"
             lines={["ul. Jeleniogórska 5", "59-700 Bolesławiec", "obok Szpitala św. Łukasza"]}
           />
-          <InfoRow icon={Phone} title="Telefon informacja ogólna" lines={["+48 792 99 7337"]} />
           <InfoRow icon={Mail} title="Email" lines={["ka.psychiatra@gmail.com"]} />
           <InfoRow icon={Clock} title="Godziny otwarcia" lines={["Pon – Pt: 9:00 – 20:00"]} />
           <Button asChild size="lg" className="w-full rounded-full">

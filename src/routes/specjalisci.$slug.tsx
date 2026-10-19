@@ -44,9 +44,11 @@ export const Route = createFileRoute("/specjalisci/$slug")({
       </Button>
     </div>
   ),
-  errorComponent: ({ error }) => (
+  errorComponent: ({ error }: { error: unknown }) => (
     <div className="mx-auto max-w-md py-20 text-center">
-      <p className="text-muted-foreground">{error.message}</p>
+      <p className="text-muted-foreground">
+        {error instanceof Error ? error.message : String(error)}
+      </p>
     </div>
   ),
   component: SpecialistProfile,
