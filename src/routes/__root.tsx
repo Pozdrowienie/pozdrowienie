@@ -1,6 +1,7 @@
 import { Outlet, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { VoiceReceptionist } from "@/components/voice-receptionist";
 
 import appCss from "../styles.css?url";
 
@@ -73,6 +74,7 @@ function RootComponent() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <SiteHeader />
+      <VoiceReceptionist />
       <main className="flex-1">
         <Outlet />
       </main>
