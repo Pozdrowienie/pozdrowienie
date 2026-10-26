@@ -1,7 +1,6 @@
 import { Outlet, createRootRoute, HeadContent, Scripts } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import { VoiceReceptionist } from "@/components/voice-receptionist";
 
 import appCss from "../styles.css?url";
 
@@ -50,6 +49,13 @@ export const Route = createRootRoute({
         href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap",
       },
     ],
+    scripts: [
+      {
+        src: "https://homepl.ai-voicereceptionist.com/widget/v1/embed.js",
+        "data-agent-id": "97da3ebf-86e1-4254-9b75-23069e97d3ca",
+        defer: true,
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
@@ -74,7 +80,6 @@ function RootComponent() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <SiteHeader />
-      <VoiceReceptionist />
       <main className="flex-1">
         <Outlet />
       </main>
