@@ -4,6 +4,8 @@ export type ScheduleEntry = {
   note?: string;
   /** Gdy podany: przyciski telefonu i cennika pokazujemy tylko tej osobie (zapisy na jeden numer). */
   contactSlug?: string;
+  /** Podstrona z opisem zajęć (przycisk „Więcej informacji”). */
+  infoPath?: "/wyregulowana";
   space: "mind" | "body";
 };
 
@@ -11,7 +13,6 @@ export const weeklySchedule: { day: string; entries: ScheduleEntry[] }[] = [
   { day: "Poniedziałek", entries: [
     { service: "Psychoterapia indywidualna", specialists: ["marek-pisarski"], space: "mind" },
     { service: "Konsultacje psychologiczne i diagnoza ADHD", specialists: ["aksana-gogulska"], space: "mind" },
-    { service: "Warsztat rozwojowy „Wyregulowana”", specialists: ["anna-antoniewicz", "joanna-wolar"], contactSlug: "anna-antoniewicz", note: "W wybrane poniedziałki", space: "mind" },
   ] },
   { day: "Wtorek", entries: [
     { service: "Konsultacje psychiatryczne", specialists: ["krystian-antoniewicz"], space: "mind" },
@@ -34,5 +35,6 @@ export const weeklySchedule: { day: string; entries: ScheduleEntry[] }[] = [
   { day: "Piątek", entries: [
     { service: "Psycholog — dzieci, młodzież i dorośli", specialists: ["anna-antoniewicz"], space: "mind" },
     { service: "Joga „czuły reset”", specialists: ["joanna-wolar"], space: "body" },
+    { service: "Warsztat rozwojowy „Wyregulowana”", specialists: ["anna-antoniewicz", "joanna-wolar"], contactSlug: "anna-antoniewicz", note: "Wybrane piątki miesiąca", infoPath: "/wyregulowana", space: "mind" },
   ] },
 ];
