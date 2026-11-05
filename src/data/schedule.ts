@@ -35,6 +35,6 @@ export const weeklySchedule: { day: string; entries: ScheduleEntry[] }[] = [
   { day: "Piątek", entries: [
     { service: "Psycholog — dzieci, młodzież i dorośli", specialists: ["anna-antoniewicz"], space: "mind" },
     { service: "Joga „czuły reset”", specialists: ["joanna-wolar"], space: "body" },
-    { service: "Warsztat rozwojowy „Wyregulowana”", specialists: ["anna-antoniewicz", "joanna-wolar"], contactSlug: "anna-antoniewicz", note: "Wybrane piątki miesiąca", infoPath: "/wyregulowana", space: "mind" },
+    { service: "Warsztat rozwojowy „Wyregulowana”", specialists: ["anna-antoniewicz", "joanna-wolar"], note: "Wybrane piątki miesiąca", infoPath: "/wyregulowana", space: "mind" },
   ] },
 ];
