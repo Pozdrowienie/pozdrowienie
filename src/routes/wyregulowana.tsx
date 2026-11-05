@@ -36,7 +36,10 @@ const leaders = [
 ];
 
 function WyregulowanaPage() {
-  const anna = getSpecialist("anna-antoniewicz");
+  const bookings = leaders.flatMap(({ slug }) => {
+    const person = getSpecialist(slug);
+    return person ? [{ slug, firstName: person.name.trim().split(" ")[0], phone: person.phone }] : [];
+  });
   const facts = [
     { icon: CalendarDays, label: "Kiedy?", text: "W wybrane piątki, 18:30 – 20:00" },
     { icon: MapPin, label: "Gdzie?", text: "PoZdrowienie, ul. Jeleniogórska 5, Bolesławiec" },
@@ -106,13 +109,16 @@ function WyregulowanaPage() {
         </div>
       </section>
 
-      {anna && (
+      {bookings.length > 0 && (
         <section className="rounded-lg bg-secondary p-6 text-center">
           <h2 className="font-serif text-2xl font-semibold text-brand-navy">Zarezerwuj miejsce</h2>
+          <p className="mt-2 text-sm text-muted-foreground">Zadzwoń do jednej z prowadzących.</p>
           <div className="mt-4 flex flex-wrap justify-center gap-3">
-            <Button asChild size="lg" className="bg-action text-action-foreground hover:bg-action/90">
-              <a href={telHref(anna.phone)} aria-label={`Zadzwoń i zarezerwuj miejsce: ${anna.phone}`}><Phone />{anna.phone}</a>
-            </Button>
+            {bookings.map(({ slug, firstName, phone }) => (
+              <Button key={slug} asChild size="lg" className="bg-action text-action-foreground hover:bg-action/90">
+                <a href={telHref(phone)} aria-label={`Zadzwoń i zarezerwuj miejsce: ${firstName}, ${phone}`}><Phone />{firstName} · {phone}</a>
+              </Button>
+            ))}
             <Button asChild size="lg" variant="ghost">
               <Link to="/grafik">Grafik<ArrowUpRight /></Link>
             </Button>
