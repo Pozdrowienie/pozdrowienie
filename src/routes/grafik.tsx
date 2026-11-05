@@ -62,6 +62,11 @@ function ScheduleCard({ entry }: { entry: ScheduleEntry }) {
     <article className={`min-w-0 rounded-lg border border-border border-t-4 bg-surface p-5 ${isBody ? "border-t-body" : "border-t-mind"}`}>
       <h3 className={`font-serif text-xl font-semibold tracking-normal ${isBody ? "text-body" : "text-mind"}`}>{entry.service}</h3>
       {entry.note && <p className="mt-2 text-sm text-muted-foreground">{entry.note}</p>}
+      {entry.infoPath && (
+        <Button asChild size="sm" variant="outline" className="mt-3">
+          <Link to={entry.infoPath}>Więcej informacji<ArrowUpRight /></Link>
+        </Button>
+      )}
       <div className="mt-5 space-y-5">
         {people.map((person) => {
           const showActions = !entry.contactSlug || person.slug === entry.contactSlug;
